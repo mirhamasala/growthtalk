@@ -24,10 +24,11 @@
     &:focus,
     &:active,
     &.active {
-        color: white;
-        // border-color: $light-yellow;
-        // background-color: white;
-        opacity: 1;
+      color: white;
+      // border-color: $light-yellow;
+      // background-color: white;
+      opacity: 1;
+      outline: 0;
     }
 }
 
@@ -59,4 +60,16 @@
 
 .navbar{
   padding: 1.5rem 1rem;
+}
+
+.close{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 3;
+}
+
+.text-styling{
+  white-space: pre-wrap;
+  text-align: left;
 }

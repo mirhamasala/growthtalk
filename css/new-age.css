@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -202,6 +202,7 @@ header.masthead .device-container .screen img {
 
 header.masthead .mb-6 {
   margin-bottom: 5rem !important;
+  line-height: 1.5em;
 }
 
 @media (min-width: 1200px) {
@@ -453,6 +454,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   color: white;
   opacity: 1;
+  outline: 0;
 }
 
 .button-centered {
@@ -482,4 +484,16 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .navbar {
   padding: 1.5rem 1rem;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 3;
+}
+
+.text-styling {
+  white-space: pre-wrap;
+  text-align: left;
 }
