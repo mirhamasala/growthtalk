@@ -1,12 +1,12 @@
 // Bootstrap overrides for this template
 .bg-primary {
-    background: $theme-primary;
-    background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
-    background: linear-gradient($theme-primary, darken($theme-primary, 5%));
+    background: $light-yellow;
+    background: -webkit-linear-gradient($light-yellow, darken($light-yellow, 5%));
+    background: linear-gradient($light-yellow, darken($light-yellow, 5%));
 }
 
 .text-primary {
-    color: $theme-primary;
+    color: $light-yellow;
 }
 
 .no-gutter > [class*='col-'] {
@@ -16,24 +16,47 @@
 
 .btn-outline {
     color: white;
-    border: 1px solid;
-    border-color: white;
+    font-weight: 700;
+    display: inline-flex;
+    // border: 1px solid;
+    // border-color: white;
     &:hover,
     &:focus,
     &:active,
     &.active {
         color: white;
-        border-color: $theme-primary;
-        background-color: $theme-primary;
+        // border-color: $light-yellow;
+        // background-color: white;
+        opacity: 1;
     }
+}
+
+.button-centered{
+  text-align: center;
 }
 
 .btn {
     border-radius: 300px;
+    background-color: $blue;
+    opacity: .9;
     @include alt-font;
 }
 
 .btn-xl {
     font-size: 11px;
     padding: 15px 45px;
+}
+
+@media (min-width: 1200px) {
+  .img-fluid {
+    // Part 1: Set a maximum relative to the parent
+    max-width: 150%;
+    // Part 2: Override the height to auto, otherwise images will be stretched
+    // when setting a width and height attribute on the img element.
+    height: auto;
+  }
+}
+
+.navbar{
+  padding: 1.5rem 1rem;
 }

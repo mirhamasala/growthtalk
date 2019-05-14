@@ -62,10 +62,16 @@
     }
 }
 
-@mixin heading-font {
-    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+@mixin h1-font {
+    font-family: 'PT Serif', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
     font-weight: 200;
     letter-spacing: 1px;
+    color: $orange;
+}
+
+@mixin heading-font {
+    font-family: 'PT Serif', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    color: black;
 }
 
 @mixin body-font {
@@ -77,3 +83,4 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+

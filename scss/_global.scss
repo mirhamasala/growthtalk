@@ -10,11 +10,11 @@ body {
 }
 
 a {
-    color: $theme-primary;
+    color: $light-yellow;
     @include transition-all;
     &:hover,
     &:focus {
-        color: darken($theme-primary, 10%);
+        color: darken($light-yellow, 10%);
     }
 }
 
@@ -29,13 +29,18 @@ hr.light {
     border-color: white;
 }
 
-h1,
+h1
+{
+  @include h1-font;
+}
+
 h2,
 h3,
 h4,
 h5,
-h6 {
-    @include heading-font;
+h6
+{
+  @include heading-font;
 }
 
 p {
