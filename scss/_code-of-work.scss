@@ -1,9 +1,10 @@
 section.code-of-work {
-  padding: 200px 0;
+  padding: 150px 0;
 
   .inline-icon-text{
     display: flex;
     flex-direction: row;
+    text-align: center;
   }
 
   .growth-talk-icon{
@@ -18,6 +19,17 @@ section.code-of-work {
   }
 
   .subtitle{
-    padding: 20px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .subtitle h4{
+    width: 100%;
+    height: 50%;
+    background-color: $orange;
+  }
+
+  .line-height{
+    line-height: 1.5;
   }
 }
