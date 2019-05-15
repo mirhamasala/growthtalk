@@ -1,0 +1,23 @@
+section.code-of-work {
+  padding: 200px 0;
+
+  .inline-icon-text{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .growth-talk-icon{
+    width: auto;
+    height: 50px;
+    padding-right: 30px;
+  }
+
+  .text-vertically-centered{
+    display: flex;
+    align-items: center;
+  }
+
+  .subtitle{
+    padding: 20px;
+  }
+}

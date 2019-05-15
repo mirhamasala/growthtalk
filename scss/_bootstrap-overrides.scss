@@ -67,9 +67,19 @@
   top: 5px;
   right: 10px;
   z-index: 3;
+  color: $orange;
 }
 
 .text-styling{
-  white-space: pre-wrap;
-  text-align: left;
+  margin: 0px 150px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#manifesto-title{
+  text-align: center;
+}
+
+.manifesto-list{
+  line-height: 1.5;
 }

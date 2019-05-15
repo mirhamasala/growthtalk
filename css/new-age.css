@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
 }
 
 a {
@@ -491,9 +491,52 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   top: 5px;
   right: 10px;
   z-index: 3;
+  color: #f09c67;
 }
 
 .text-styling {
-  white-space: pre-wrap;
-  text-align: left;
+  margin: 0px 150px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#manifesto-title {
+  text-align: center;
+}
+
+.manifesto-list {
+  line-height: 1.5;
+}
+
+section.code-of-work {
+  padding: 200px 0;
+}
+
+section.code-of-work .inline-icon-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+section.code-of-work .growth-talk-icon {
+  width: auto;
+  height: 50px;
+  padding-right: 30px;
+}
+
+section.code-of-work .text-vertically-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+section.code-of-work .subtitle {
+  padding: 20px;
 }
