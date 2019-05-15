@@ -1,0 +1,30 @@
+.button-hghlt{
+  display: inline-block;
+
+  & a {
+    font-weight: 1000;
+    position: relative;
+    padding: 0 -5em;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 25%;
+      background-color: rgba(76,132,146,.6);
+      z-index: -10;
+      -webkit-transition: all .1s linear;
+      -moz-transition: all .1s linear;
+      transition: all .1s linear;
+      opacity: .9;
+    }
+    &:hover {
+      cursor: pointer;
+      &:after {
+        background-color: rgba(76,132,146,.8);
+      }
+    }
+  }
+}
+
