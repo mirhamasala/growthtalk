@@ -373,33 +373,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   line-height: 1.5;
 }
 
-.come-in {
-  -webkit-transform: translateY(150px);
-  transform: translateY(150px);
-  -webkit-animation: come-in 0.8s ease forwards;
-  animation: come-in 0.8s ease forwards;
-}
-
-.come-in:nth-child(odd) {
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
-  /* So they look staggered */
-}
-
-@-webkit-keyframes come-in {
-  to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@keyframes come-in {
-  to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
 section.code-of-work {
   padding: 150px 0;
 }
