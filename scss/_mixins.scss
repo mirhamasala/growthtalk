@@ -71,7 +71,7 @@
 
 @mixin heading-font {
     font-family: 'PT Serif', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-    color: black;
+    color: $dark-gray;
 }
 
 @mixin body-font {

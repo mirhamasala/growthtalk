@@ -20,15 +20,17 @@
     display: inline-flex;
     // border: 1px solid;
     // border-color: white;
+    box-shadow: 0 4px 20px $blue;
+    background-color: $blue;
+    opacity: 1;
     &:hover,
     &:focus,
     &:active,
     &.active {
       color: white;
-      // border-color: $light-yellow;
-      // background-color: white;
-      opacity: 1;
+      opacity: .9;
       outline: 0;
+      box-shadow: 0 4px 14px $blue;
     }
 }
 
@@ -37,10 +39,10 @@
 }
 
 .btn {
-    border-radius: 300px;
-    background-color: $light-blue;
-    opacity: .9;
-    @include alt-font;
+  border-radius: 50em;
+  // background-color: hsl(210, 97%, 63%);
+  @include alt-font;
+
 }
 
 .btn-xl {

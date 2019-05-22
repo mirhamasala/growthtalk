@@ -48,13 +48,14 @@ h4,
 h5,
 h6 {
   font-family: 'PT Serif', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-  color: black;
+  color: #5a6175;
 }
 
 p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+  color: #5a6175;
 }
 
 section {
@@ -86,11 +87,6 @@ section h2 {
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
   color: #ebe3cf;
-}
-
-#mainNav #logo {
-  width: 5;
-  height: 5;
 }
 
 #mainNav .navbar-toggler {
@@ -314,12 +310,18 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-shadow: 0 4px 20px #4c8492;
+  box-shadow: 0 4px 20px #4c8492;
+  background-color: #4c8492;
+  opacity: 1;
 }
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   color: white;
-  opacity: 1;
+  opacity: .9;
   outline: 0;
+  -webkit-box-shadow: 0 4px 14px #4c8492;
+  box-shadow: 0 4px 14px #4c8492;
 }
 
 .button-centered {
@@ -327,9 +329,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .btn {
-  border-radius: 300px;
-  background-color: #559ad1;
-  opacity: .9;
+  border-radius: 50em;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -416,10 +416,6 @@ section.code-of-work .subtitle h4 {
 
 section.code-of-work .line-height {
   line-height: 1.5;
-}
-
-section.packages {
-  background-color: #faf8f3;
 }
 
 section.packages .text-justify {

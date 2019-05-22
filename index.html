@@ -35,15 +35,20 @@
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-padding" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/growthtalk-icon.png" width="150" height="auto" class="d-inline-block align-top" alt="growthtalk-logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container d-flex justify-content-between">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/growthtalk-icon.png" width="180" height="auto" class="d-inline-block align-top" alt="growthtalk-logo"></a>
+      <div class="button-hghlt">
+        <a>I'm curious!</a>
+      </div>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -59,36 +64,9 @@
             <a href="#download" class="btn btn-outline btn-xl">I'm curious!</a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </nav>
-
-  <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-padding" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/growthtalk-icon.png" id="logo" alt="growthtalk-logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav> -->
 
   <header class="masthead">
     <div class="container h-100">
@@ -111,13 +89,37 @@
     </div>
   </header>
 
-  <section class="download bg-primary text-center" id="download">
+  <section class="cd-timeline js-cd-timeline">
+     <div class="container container--lg cd-timeline__container">
+        <div class="cd-timeline__block">
+           <div class="cd-timeline__img cd-timeline__img--picture">
+              <img src="assets/img/cd-icon-picture.svg" alt="Picture">
+           </div> <!-- cd-timeline__img -->
+
+           <div class="cd-timeline__content text-component">
+              <h2>Title of section 1</h2>
+              <p class="text--subtle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+
+         <div class="flex flex--space-between flex--center-y">
+           <span class="cd-timeline__date">Jan 14</span>
+           <a href="#0" class="btn btn--subtle">Read more</a>
+         </div>
+           </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
+
+        <div class="cd-timeline__block">
+           <!-- ... -->
+        </div> <!-- cd-timeline__block -->
+     </div>
+  </section> <!-- cd-timeline -->
+
+  <section class="download text-center" id="download" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="50">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
           <h1 class="section-heading">We believe that knowledge-sharing should be as resilient as water flowing.</h1>
-          <div class="button-centered">
-            <button type="button" class="btn btn-outline btn-white btn-xl js-scroll-trigger" data-toggle="modal" data-target=".bd-manifesto-modal-lg">Read our manifesto</button>
+          <div class="button-centered button-hghlt">
+            <a data-toggle="modal" data-target=".bd-manifesto-modal-lg">Read our manifesto</a>
           </div>
         </div>
       </div>
@@ -183,34 +185,8 @@
     </div>
   </div>
 
-  <section class="code-of-work">
-    <div class="cow-content" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="50">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 my-auto">
-            <div class="inline-icon-text">
-              <img src="img/icon-transparent.png" class="growth-talk-icon" alt="growthtalk-icon">
-              <h2 class="text-vertically-centered">Code of Work</h2>
-            </div>
-          </div>
-          <div class="col-lg-6 my-auto ">
-            <h4 class="subtitle line-height">GrowthTalk’s Code of Work Will Always Be Crème de la Crème</h4>
-            <p class="line-height">
-              #1 - Really high standards for our work. We mean it. <br> <br>
-              #2 - Helping you build your voice is helping us spread knowledge. <br><br>
-              #3 - Zero bullshit tolerance in every single way. <br><br>
-              #4 - Only long-form content (7-min reads and above). No catch here. Only science and storytelling. <br><br>
-              #5 - Human-crafted content. <br><br>
-              #6 - We aren’t perfect but we try to write flawlessly and edit maniacally. <br><br>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="packages" id="packages">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="30">
       <div class="row">
         <div class="col-md-8 mx-auto">
           <div class="text-justify">
@@ -311,6 +287,31 @@
     </div>
   </div>
 
+  <section class="code-of-work">
+    <div class="cow-content" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="50">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 my-auto">
+            <div class="inline-icon-text">
+              <img src="img/icon-transparent.png" class="growth-talk-icon" alt="growthtalk-icon">
+              <h2 class="text-vertically-centered">Code of Work</h2>
+            </div>
+          </div>
+          <div class="col-lg-6 my-auto ">
+            <h4 class="subtitle line-height">GrowthTalk’s Code of Work Will Always Be Crème de la Crème</h4>
+            <p class="line-height">
+              #1 - Really high standards for our work. We mean it. <br> <br>
+              #2 - Helping you build your voice is helping us spread knowledge. <br><br>
+              #3 - Zero bullshit tolerance in every single way. <br><br>
+              #4 - Only long-form content (7-min reads and above). No catch here. Only science and storytelling. <br><br>
+              #5 - Human-crafted content. <br><br>
+              #6 - We aren’t perfect but we try to write flawlessly and edit maniacally. <br><br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <footer>
