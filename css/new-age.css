@@ -375,18 +375,36 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  padding-bottom: 50px;
-  margin: 30px 30px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 30px 30px 0px 30px;
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
+@media (min-width: 992px) {
+  .manifesto-top {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 574px) {
+  .manifesto-top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 30px 30px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+}
+
 .manifesto-img img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .manifesto-title {
@@ -395,32 +413,80 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .manifesto-title h1 {
   color: #61082B;
-  font-size: 600%;
+  font-size: 180%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+@media (min-width: 574px) {
+  .manifesto-title h1 {
+    margin-top: 0px;
+    font-size: 220%;
+    padding-left: 30px;
+    padding-top: 40px;
+    text-align: initial;
+  }
+}
+
+@media (min-width: 992px) {
+  .manifesto-title h1 {
+    font-size: 450%;
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .manifesto-title h1 {
+    font-size: 600%;
+    padding-left: 30px;
+    padding-top: 80px;
+  }
 }
 
 .manifesto-text {
   margin: none;
-  text-align: justify;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .manifesto-text {
-    margin: 0px 200px;
+    margin: 0px 220px;
+    text-align: justify;
   }
+}
+
+.text-normal {
+  color: black;
+  font-size: 18px;
 }
 
 .text-hghlt {
+  padding-left: 10px;
+  border-left: 2px solid;
   font-size: 1.5em;
   font-weight: 600;
-  padding-left: 10px;
   color: #61082B;
-  border-left: 2px solid;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .text-hghlt {
     margin: 0px 0px 0px -100px;
   }
+}
+
+.manifesto-footer {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #61082B;
+  text-align: center;
+}
+
+.indent {
+  text-indent: 1.2em;
+}
+
+.indent p {
+  margin: none;
 }
 
 section.code-of-work {

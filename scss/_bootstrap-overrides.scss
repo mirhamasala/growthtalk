@@ -81,14 +81,24 @@
 
 .manifesto-top {
   display: flex;
-  flex-direction: row;
-  padding-bottom: 50px;
-  margin: 30px 30px;
+  flex-direction: column;
+  margin: 30px 30px 0px 30px;
   justify-content: space-around;
+
+  @media (min-width: 992px) {
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: 574px) {
+    flex-direction: row;
+    margin: 30px 30px;
+    justify-content: space-around;
+  }
 }
 
 .manifesto-img img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .manifesto-img {
@@ -103,26 +113,69 @@
 
 .manifesto-title h1{
   color: $purple;
-  font-size: 600%;
+  font-size: 180%;
+  margin-top: 50px;
+  text-align: center;
+
+  @media (min-width: 574px) {
+    margin-top: 0px;
+    font-size: 220%;
+    padding-left: 30px;
+    padding-top: 40px;
+    text-align: initial;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 450%;
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 600%;
+    padding-left: 30px;
+    padding-top: 80px;
+  }
 }
 
 .manifesto-text {
   margin: none;
-  text-align: justify;
 
-  @media (min-width: 992px) {
-    margin: 0px 200px;
+  @media (min-width: 1200px) {
+    margin: 0px 220px;
+    text-align: justify;
   }
 }
 
+.text-normal {
+  color: black;
+  font-size: 18px;
+}
+
 .text-hghlt {
+  padding-left: 10px;
+  border-left: 2px solid;
   font-size: 1.5em;
   font-weight: 600;
-  padding-left: 10px;
   color: $purple;
-  border-left: 2px solid;
 
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     margin: 0px 0px 0px -100px;
   }
+}
+
+.manifesto-footer {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: $purple;
+  text-align: center;
+
+}
+
+.indent {
+  text-indent: 1.2em;
+}
+
+.indent p {
+  margin: none;
 }
