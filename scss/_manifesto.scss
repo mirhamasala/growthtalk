@@ -1,46 +1,19 @@
 // Styling for the download section
-section.download {
+section.manifesto {
     position: relative;
     // padding: 150px 0;
     h2 {
         font-size: 50px;
         margin-top: 0;
     }
-    // .badges {
-    //     .badge-link {
-    //         display: block;
-    //         margin-bottom: 25px;
-    //         &:last-child {
-    //             margin-bottom: 0;
-    //         }
-    //         img {
-    //             height: 60px;
-    //         }
-    //         @media(min-width: 768px) {
-    //             display: inline-block;
-    //             margin-bottom: 0;
-    //         }
-    //     }
-    // }
 
     .section-heading{
       margin-bottom: 7rem!important;
     }
 
-    .btn-white{
-      border: solid 1px $blue;
-      background: transparent;
-      color: $blue;
-      &:hover,
-      &:focus,
-      &:active,
-      &.active {
-        color: white;
-        // border-color: $light-yellow;
-        background-color: $blue;
-        opacity: 1;
-        }
-      }
+    .dark-gray {
+      color: $dark-gray;
+    }
 
     @media (min-width: 768px) {
       .modal-xl {

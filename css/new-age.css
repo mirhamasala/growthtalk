@@ -226,40 +226,32 @@ header.masthead .mb-6 {
   }
 }
 
-section.download {
+section.manifesto {
   position: relative;
 }
 
-section.download h2 {
+section.manifesto h2 {
   font-size: 50px;
   margin-top: 0;
 }
 
-section.download .section-heading {
+section.manifesto .section-heading {
   margin-bottom: 7rem !important;
 }
 
-section.download .btn-white {
-  border: solid 1px #4c8492;
-  background: transparent;
-  color: #4c8492;
-}
-
-section.download .btn-white:hover, section.download .btn-white:focus, section.download .btn-white:active, section.download .btn-white.active {
-  color: white;
-  background-color: #4c8492;
-  opacity: 1;
+section.manifesto .dark-gray {
+  color: #5a6175;
 }
 
 @media (min-width: 768px) {
-  section.download .modal-xl {
+  section.manifesto .modal-xl {
     width: 90%;
     max-width: 1200px;
   }
 }
 
 @media (min-width: 768px) {
-  section.download h2 {
+  section.manifesto h2 {
     font-size: 70px;
   }
 }
@@ -384,12 +376,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   justify-content: space-around;
 }
 
-@media (min-width: 992px) {
-  .manifesto-top {
-    padding-bottom: 50px;
-  }
-}
-
 @media (min-width: 574px) {
   .manifesto-top {
     -webkit-box-orient: horizontal;
@@ -399,6 +385,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     margin: 30px 30px;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+  }
+}
+
+@media (min-width: 992px) {
+  .manifesto-top {
+    padding-bottom: 50px;
+    margin: 30px 50px;
   }
 }
 
@@ -412,8 +405,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .manifesto-title h1 {
-  color: #61082B;
-  font-size: 180%;
+  color: #f09c67;
+  font-size: 230%;
   margin-top: 50px;
   text-align: center;
 }
@@ -450,14 +443,14 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 @media (min-width: 1200px) {
   .manifesto-text {
-    margin: 0px 220px;
-    text-align: justify;
+    margin: 0px 80px 0px 260px;
   }
 }
 
 .text-normal {
-  color: black;
+  color: #5a6175;
   font-size: 18px;
+  margin: 0px;
 }
 
 .text-hghlt {
@@ -465,28 +458,27 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   border-left: 2px solid;
   font-size: 1.5em;
   font-weight: 600;
-  color: #61082B;
+  color: #f09c67;
 }
 
 @media (min-width: 1200px) {
   .text-hghlt {
-    margin: 0px 0px 0px -100px;
+    margin: 0px 0px 0px -140px;
   }
 }
 
 .manifesto-footer {
   font-size: 1.5em;
   font-weight: 600;
-  color: #61082B;
+  color: #f09c67;
   text-align: center;
 }
 
 .indent {
   text-indent: 1.2em;
-}
-
-.indent p {
-  margin: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background-color: rgba(90, 97, 117, 0.1);
 }
 
 section.code-of-work {
@@ -522,12 +514,6 @@ section.code-of-work .text-vertically-centered {
 section.code-of-work .subtitle {
   padding: 30px;
   text-align: center;
-}
-
-section.code-of-work .subtitle h4 {
-  width: 100%;
-  height: 50%;
-  background-color: #f09c67;
 }
 
 section.code-of-work .line-height {
@@ -659,6 +645,7 @@ section.packages .text-justify {
   position: relative;
   padding: 0 .5em;
   font-size: 20px;
+  color: #f09c67 !important;
 }
 
 .button-hghlt a:after {

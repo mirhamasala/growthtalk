@@ -85,14 +85,15 @@
   margin: 30px 30px 0px 30px;
   justify-content: space-around;
 
-  @media (min-width: 992px) {
-    padding-bottom: 50px;
-  }
-
   @media (min-width: 574px) {
     flex-direction: row;
     margin: 30px 30px;
     justify-content: space-around;
+  }
+
+  @media (min-width: 992px) {
+    padding-bottom: 50px;
+    margin: 30px 50px;
   }
 }
 
@@ -112,8 +113,8 @@
 }
 
 .manifesto-title h1{
-  color: $purple;
-  font-size: 180%;
+  color: $orange;
+  font-size: 230%;
   margin-top: 50px;
   text-align: center;
 
@@ -142,14 +143,15 @@
   margin: none;
 
   @media (min-width: 1200px) {
-    margin: 0px 220px;
-    text-align: justify;
+    margin: 0px 80px 0px 260px;
+    // text-align: justify;
   }
 }
 
 .text-normal {
-  color: black;
+  color: $dark-gray;
   font-size: 18px;
+  margin: 0px;
 }
 
 .text-hghlt {
@@ -157,25 +159,25 @@
   border-left: 2px solid;
   font-size: 1.5em;
   font-weight: 600;
-  color: $purple;
+  color: $orange;
 
   @media (min-width: 1200px) {
-    margin: 0px 0px 0px -100px;
+    margin: 0px 0px 0px -140px;
   }
 }
 
 .manifesto-footer {
   font-size: 1.5em;
   font-weight: 600;
-  color: $purple;
+  color: $orange;
   text-align: center;
 
 }
 
 .indent {
   text-indent: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background-color: rgba(90,97,117,.1);
 }
 
-.indent p {
-  margin: none;
-}
