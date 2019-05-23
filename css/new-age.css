@@ -360,17 +360,67 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .text-styling {
-  margin: 0px 150px;
+  margin-top: 30px;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.manifesto-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 50px;
+  margin: 30px 30px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.manifesto-img img {
+  max-width: 100%;
+}
+
+.manifesto-title {
+  padding-left: 30px;
+}
+
+.manifesto-title h1 {
+  color: #61082B;
+  font-size: 600%;
+}
+
+.manifesto-text {
+  margin: none;
   text-align: justify;
-  line-height: 1.5;
 }
 
-#manifesto-title {
-  text-align: center;
+@media (min-width: 992px) {
+  .manifesto-text {
+    margin: 0px 200px;
+  }
 }
 
-.manifesto-list {
-  line-height: 1.5;
+.text-hghlt {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-left: 10px;
+  color: #61082B;
+  border-left: 2px solid;
+}
+
+@media (min-width: 992px) {
+  .text-hghlt {
+    margin: 0px 0px 0px -100px;
+  }
 }
 
 section.code-of-work {
