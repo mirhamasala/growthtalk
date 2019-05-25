@@ -481,6 +481,10 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   background-color: rgba(90, 97, 117, 0.1);
 }
 
+#cta-curious {
+  max-width: 100%;
+}
+
 section.code-of-work {
   padding: 150px 0;
 }
