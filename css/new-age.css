@@ -674,14 +674,31 @@ section.packages .text-justify {
   background-color: rgba(76, 132, 146, 0.6);
 }
 
-#process-svg {
-  left: 50%;
-  overflow: visible;
+#rules {
+  margin-top: 50px;
+  width: auto;
+  height: 810px;
 }
 
-.dashed {
-  stroke-dasharray: 3,8;
+.st0 {
+  fill: none;
+  stroke: #D0D2D3;
+  stroke-width: 11;
   stroke-linecap: round;
-  stroke-width: 1.2px;
-  stroke: #aaa;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: #293472;
+}
+
+.st2 {
+  fill: #FFFFFF;
+}
+
+.st3 {
+  fill: none;
+  stroke: #D0D2D3;
+  stroke-width: 11;
+  stroke-miterlimit: 10;
 }
