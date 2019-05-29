@@ -673,3 +673,15 @@ section.packages .text-justify {
 .button-hghlt a:hover:after {
   background-color: rgba(76, 132, 146, 0.6);
 }
+
+#process-svg {
+  left: 50%;
+  overflow: visible;
+}
+
+.dashed {
+  stroke-dasharray: 3,8;
+  stroke-linecap: round;
+  stroke-width: 1.2px;
+  stroke: #aaa;
+}
