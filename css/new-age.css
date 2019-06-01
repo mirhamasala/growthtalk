@@ -675,6 +675,7 @@ section.packages .text-justify {
 }
 
 #rules {
+  position: relative;
   margin-top: 50px;
   width: auto;
   height: 810px;
