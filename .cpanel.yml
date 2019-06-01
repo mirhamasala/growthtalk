@@ -4,5 +4,8 @@ deployment:
 # Next line defines a DEPLOYPATH with the path to the document root of your website so that you will not have to enter it in each command manually:
     - export DEPLOYPATH=/home/growiaud/repositories/growthtalk
 
+# This line copies the index.php file to deploy path - the document root of your website:
+    - cp index.html $DEPLOYPATH
+
 #copy all from the root (note that this command will not copy hidden files or folders located in the root folder, such as ".git" or ".htaccess"):
-    - cp -r * $DEPLOYPATH
+    # - cp -r * $DEPLOYPATH
