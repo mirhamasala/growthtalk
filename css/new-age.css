@@ -674,32 +674,135 @@ section.packages .text-justify {
   background-color: rgba(76, 132, 146, 0.6);
 }
 
-#rules {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.timeline {
   position: relative;
-  margin-top: 50px;
-  width: auto;
-  height: 810px;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 1000px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.st0 {
-  fill: none;
-  stroke: #D0D2D3;
-  stroke-width: 11;
-  stroke-linecap: round;
-  stroke-miterlimit: 10;
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #c5c5c5;
 }
 
-.st1 {
-  fill: #293472;
+.timeline ul {
+  margin: 0;
+  padding: 0;
 }
 
-.st2 {
-  fill: #FFFFFF;
+.timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.st3 {
-  fill: none;
-  stroke: #D0D2D3;
-  stroke-width: 11;
-  stroke-miterlimit: 10;
+.timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.content {
+  padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd):before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: #e92163;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+.timeline ul li:nth-child(even):before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: #e92163;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+.timeline ul li h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color: #e92163;
+}
+
+.timeline ul li p {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.timeline ul li .time h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+  .timeline {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .timeline {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .timeline:before {
+    left: 20px;
+  }
+  .timeline li:nth-child(odd),
+  .timeline li:nth-child(even) {
+    width: 100%;
+    text-align: left !important;
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+  .timeline li:nth-child(odd):before,
+  .timeline li:nth-child(even):before {
+    top: -18px;
+    left: 16px !important;
+  }
 }
