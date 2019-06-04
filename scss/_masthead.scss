@@ -7,7 +7,7 @@ header.masthead {
     padding-bottom: 100px;
 
     color: white;
-    background-color: $light-yellow;
+    background-color: white;
     // -webkit-transform: skewY(-8deg);
 
     .header-content {
@@ -23,7 +23,7 @@ header.masthead {
     .device-container {
         max-width: 325px;
         margin-right: auto;
-        margin-left: auto;
+        // margin-left: auto;
         .screen img {
             border-radius: 3px;
         }
@@ -32,6 +32,74 @@ header.masthead {
     .mb-6 {
       margin-bottom: 5rem!important;
       line-height: 1.5em;
+    }
+
+    .img-fluid {
+      // Part 1: Set a maximum relative to the parent
+      max-width: 110%;
+      // Part 2: Override the height to auto, otherwise images will be stretched
+      // when setting a width and height attribute on the img element.
+      height: auto;
+    }
+
+    @media (min-width: 400px) {
+      .img-fluid {
+        // Part 1: Set a maximum relative to the parent
+        max-width: 120%;
+        // Part 2: Override the height to auto, otherwise images will be stretched
+        // when setting a width and height attribute on the img element.
+        height: auto;
+      }
+    }
+
+    @media (min-width: 429px) {
+      .img-fluid {
+        // Part 1: Set a maximum relative to the parent
+        max-width: 130%;
+        // Part 2: Override the height to auto, otherwise images will be stretched
+        // when setting a width and height attribute on the img element.
+        height: auto;
+      }
+    }
+
+    @media (min-width: 484px) {
+      .img-fluid {
+        // Part 1: Set a maximum relative to the parent
+        max-width: 140%;
+        // Part 2: Override the height to auto, otherwise images will be stretched
+        // when setting a width and height attribute on the img element.
+        height: auto;
+      }
+    }
+
+    @media (min-width: 525px) {
+      .img-fluid {
+        // Part 1: Set a maximum relative to the parent
+        max-width: 160%;
+        // Part 2: Override the height to auto, otherwise images will be stretched
+        // when setting a width and height attribute on the img element.
+        height: auto;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .img-fluid {
+        // Part 1: Set a maximum relative to the parent
+        max-width: 200%;
+        // Part 2: Override the height to auto, otherwise images will be stretched
+        // when setting a width and height attribute on the img element.
+        height: auto;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .img-fluid {
+        // Part 1: Set a maximum relative to the parent
+        max-width: 180%;
+        // Part 2: Override the height to auto, otherwise images will be stretched
+        // when setting a width and height attribute on the img element.
+        height: auto;
+      }
     }
 
     @media (min-width: 1200px) {
@@ -58,3 +126,4 @@ header.masthead {
         }
     }
 }
+
