@@ -486,7 +486,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 section.code-of-work {
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 section.code-of-work .inline-icon-text {
@@ -801,7 +801,6 @@ h1 {
 }
 
 .cards-team {
-  width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -818,6 +817,7 @@ h1 {
   background: #000;
   -webkit-box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
 }
 
 .card-team .img-box {
