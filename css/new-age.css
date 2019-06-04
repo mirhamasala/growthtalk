@@ -179,7 +179,7 @@ header.masthead .header-content {
   max-width: 500px;
   margin-bottom: 100px;
   margin-right: 0px;
-  text-align: center;
+  text-align: left;
 }
 
 header.masthead .header-content h1 {
@@ -241,6 +241,13 @@ header.masthead .img-fluid {
 }
 
 @media (min-width: 992px) {
+  header.masthead .img-fluid {
+    max-width: 160%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1160px) {
   header.masthead .img-fluid {
     max-width: 180%;
     height: auto;
@@ -522,6 +529,16 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 #cta-curious {
   max-width: 100%;
+}
+
+.section-heading {
+  padding-bottom: 30px !important;
+}
+
+@media (min-width: 992px) {
+  .header-content h1 {
+    text-align: left;
+  }
 }
 
 section.code-of-work {
