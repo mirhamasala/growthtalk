@@ -39,7 +39,6 @@ h1 {
   font-family: 'PT Serif', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
-  color: #f09c67;
 }
 
 h2,
@@ -74,7 +73,6 @@ section h2 {
   font-family: 'PT Serif', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
-  color: #f09c67;
 }
 
 #mainNav .navbar-brand {
@@ -82,7 +80,6 @@ section h2 {
   font-family: 'PT Serif', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
-  color: #f09c67;
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
@@ -198,6 +195,11 @@ header.masthead .device-container .screen img {
 header.masthead .mb-6 {
   margin-bottom: 5rem !important;
   line-height: 1.5em;
+}
+
+header.masthead .dark-purple-font {
+  color: #ECCFD6;
+  font-weight: 700;
 }
 
 header.masthead .img-fluid {
@@ -355,9 +357,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-shadow: 0 4px 20px #4c8492;
-  box-shadow: 0 4px 20px #4c8492;
-  background-color: #4c8492;
+  -webkit-box-shadow: 0 4px 20px #F36B7F;
+  box-shadow: 0 4px 20px #F36B7F;
+  background-color: #F36B7F;
   opacity: 1;
 }
 
@@ -365,8 +367,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   color: white;
   opacity: .9;
   outline: 0;
-  -webkit-box-shadow: 0 4px 14px #4c8492;
-  box-shadow: 0 4px 14px #4c8492;
+  -webkit-box-shadow: 0 4px 14px #F36B7F;
+  box-shadow: 0 4px 14px #F36B7F;
 }
 
 .button-centered {
