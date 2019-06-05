@@ -1,17 +1,16 @@
 // Bootstrap overrides for this template
-.bg-primary {
-    background: $light-yellow;
-    background: -webkit-linear-gradient($light-yellow, darken($light-yellow, 5%));
-    background: linear-gradient($light-yellow, darken($light-yellow, 5%));
-}
-
-.text-primary {
-    color: $light-yellow;
-}
-
 .no-gutter > [class*='col-'] {
     padding-right: 0;
     padding-left: 0;
+}
+
+.blue-bg {
+  background-color: $light-blue-img;
+  padding-bottom: 0px !important
+}
+
+.beige-font {
+  color: $beige-img;
 }
 
 .btn-outline {
@@ -34,7 +33,7 @@
     }
 }
 
-.button-centered{
+.button-centered {
   text-align: center;
 }
 
@@ -161,7 +160,6 @@
   font-weight: 600;
   color: $orange;
   text-align: center;
-
 }
 
 .indent {
