@@ -7,7 +7,7 @@
     position: relative;
     padding: 0 .5em;
     font-size: 20px;
-    color: $dark-gray !important;
+    color: black;
     &:after {
       content: "";
       position: absolute;
@@ -28,4 +28,13 @@
       }
     }
   }
+}
+
+.spec a {
+  color: $beige-img !important;
+}
+
+.dark-gray a {
+  color: $dark-gray !important;
+  font-weight: none !important;
 }
