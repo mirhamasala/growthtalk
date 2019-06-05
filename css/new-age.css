@@ -551,6 +551,11 @@ section.code-of-work .line-height {
   line-height: 1.5;
 }
 
+section.packages {
+  background: #83B5A5;
+  padding-bottom: 0 !important;
+}
+
 section.packages .text-justify {
   text-align: justify;
   line-height: 1.5;
@@ -676,7 +681,7 @@ section.packages .text-justify {
   position: relative;
   padding: 0 .5em;
   font-size: 20px;
-  color: black;
+  color: #FCF0E2 !important;
 }
 
 .button-hghlt a:after {
@@ -698,10 +703,6 @@ section.packages .text-justify {
 
 .button-hghlt a:hover:after {
   background-color: rgba(243, 107, 127, 0.6);
-}
-
-.spec a {
-  color: #FCF0E2 !important;
 }
 
 .dark-gray a {
