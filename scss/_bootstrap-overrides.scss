@@ -68,64 +68,71 @@
   flex-direction: column;
 }
 
-.manifesto-top {
-  display: flex;
-  flex-direction: column;
-  margin: 30px 30px 0px 30px;
-  justify-content: space-around;
+// .manifesto-top {
+//   display: flex;
+//   flex-direction: column;
+//   margin: 30px 30px 0px 30px;
+//   justify-content: space-around;
 
-  @media (min-width: 574px) {
-    flex-direction: row;
-    margin: 30px 30px;
-    justify-content: space-around;
-  }
+//   @media (min-width: 574px) {
+//     flex-direction: row;
+//     margin: 30px 30px;
+//     justify-content: space-around;
+//   }
 
-  @media (min-width: 992px) {
-    padding-bottom: 50px;
-    margin: 30px 50px;
-  }
-}
+//   @media (min-width: 992px) {
+//     padding-bottom: 50px;
+//     margin: 30px 50px;
+//   }
+// }
 
-.manifesto-img img {
-  width: 100%;
-  height: auto;
-}
+// .manifesto-img img {
+//   width: 100%;
+//   height: auto;
+// }
 
-.manifesto-img {
-  // flex-grow: 1;
-}
+// .manifesto-img {
+//   // flex-grow: 1;
+// }
 
-.manifesto-title {
-  padding-left: 30px;
-  // flex-grow: 2;
+// .manifesto-title {
+//   padding-left: 30px;
+//   // flex-grow: 2;
 
-}
+// }
 
-.manifesto-title h1{
-  color: $orange;
-  font-size: 230%;
-  margin-top: 50px;
-  text-align: center;
+// .manifesto-title h1{
+//   color: $orange;
+//   font-size: 230%;
+//   margin-top: 50px;
+//   text-align: center;
 
-  @media (min-width: 574px) {
-    margin-top: 0px;
-    font-size: 220%;
-    padding-left: 30px;
-    padding-top: 40px;
-    text-align: initial;
-  }
+//   @media (min-width: 574px) {
+//     margin-top: 0px;
+//     font-size: 220%;
+//     padding-left: 30px;
+//     padding-top: 40px;
+//     text-align: initial;
+//   }
 
-  @media (min-width: 992px) {
-    font-size: 450%;
-    padding-left: 30px;
-    padding-top: 40px;
-  }
+//   @media (min-width: 992px) {
+//     font-size: 450%;
+//     padding-left: 30px;
+//     padding-top: 40px;
+//   }
 
-  @media (min-width: 1200px) {
-    font-size: 600%;
-    padding-left: 30px;
-    padding-top: 80px;
-  }
+//   @media (min-width: 1200px) {
+//     font-size: 600%;
+//     padding-left: 30px;
+//     padding-top: 80px;
+//   }
+// }
+
+.img-background {
+  background:url(../img/blob-shape.svg) no-repeat;
+  // background-size: 100%;
+  // opacity: .4;
+  position: relative;
 }
 
 .manifesto-text {
@@ -137,8 +144,15 @@
   }
 }
 
+#manifesto-title {
+  padding: 160px 0 80px 0;
+  text-align: left !important;
+  color: $dark-blue-img !important;
+  font-weight: bold;
+}
+
 .text-normal {
-  color: $dark-gray;
+  color: black;
   font-size: 18px;
   margin: 0px;
 }
@@ -148,7 +162,7 @@
   border-left: 2px solid;
   font-size: 1.5em;
   font-weight: 600;
-  color: $orange;
+  color: $dark-blue-img;
 
   @media (min-width: 1200px) {
     margin: 0px 0px 0px -140px;
@@ -158,7 +172,7 @@
 .manifesto-footer {
   font-size: 1.5em;
   font-weight: 600;
-  color: $orange;
+  color: $dark-blue-img;
   text-align: center;
 }
 
@@ -166,7 +180,7 @@
   text-indent: 1.2em;
   font-weight: bold;
   margin-bottom: 20px;
-  background-color: rgba(90,97,117,.1);
+  background-color: rgba(159,190,255,.3);
 }
 
 #cta-curious {

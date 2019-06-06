@@ -47,14 +47,14 @@ h4,
 h5,
 h6 {
   font-family: 'PT Serif', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-  color: #5a6175;
+  color: black;
 }
 
 p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
-  color: #5a6175;
+  color: black;
 }
 
 section {
@@ -375,78 +375,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   flex-direction: column;
 }
 
-.manifesto-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 30px 30px 0px 30px;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
-
-@media (min-width: 574px) {
-  .manifesto-top {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin: 30px 30px;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-}
-
-@media (min-width: 992px) {
-  .manifesto-top {
-    padding-bottom: 50px;
-    margin: 30px 50px;
-  }
-}
-
-.manifesto-img img {
-  width: 100%;
-  height: auto;
-}
-
-.manifesto-title {
-  padding-left: 30px;
-}
-
-.manifesto-title h1 {
-  color: #f09c67;
-  font-size: 230%;
-  margin-top: 50px;
-  text-align: center;
-}
-
-@media (min-width: 574px) {
-  .manifesto-title h1 {
-    margin-top: 0px;
-    font-size: 220%;
-    padding-left: 30px;
-    padding-top: 40px;
-    text-align: initial;
-  }
-}
-
-@media (min-width: 992px) {
-  .manifesto-title h1 {
-    font-size: 450%;
-    padding-left: 30px;
-    padding-top: 40px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .manifesto-title h1 {
-    font-size: 600%;
-    padding-left: 30px;
-    padding-top: 80px;
-  }
+.img-background {
+  background: url(../img/blob-shape.svg) no-repeat;
+  position: relative;
 }
 
 .manifesto-text {
@@ -459,8 +390,15 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   }
 }
 
+#manifesto-title {
+  padding: 160px 0 80px 0;
+  text-align: left !important;
+  color: #3040C4 !important;
+  font-weight: bold;
+}
+
 .text-normal {
-  color: #5a6175;
+  color: black;
   font-size: 18px;
   margin: 0px;
 }
@@ -470,7 +408,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   border-left: 2px solid;
   font-size: 1.5em;
   font-weight: 600;
-  color: #f09c67;
+  color: #3040C4;
 }
 
 @media (min-width: 1200px) {
@@ -482,7 +420,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .manifesto-footer {
   font-size: 1.5em;
   font-weight: 600;
-  color: #f09c67;
+  color: #3040C4;
   text-align: center;
 }
 
@@ -490,7 +428,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   text-indent: 1.2em;
   font-weight: bold;
   margin-bottom: 20px;
-  background-color: rgba(90, 97, 117, 0.1);
+  background-color: rgba(159, 190, 255, 0.3);
 }
 
 #cta-curious {
@@ -650,12 +588,12 @@ section.packages .text-justify {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #4c8492;
-  color: white;
+  background-color: white;
 }
 
 .flip-card-front p {
   font-size: 40px;
+  color: #FCF0E2 !important;
 }
 
 /* Style the back side */
