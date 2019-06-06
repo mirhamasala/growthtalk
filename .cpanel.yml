@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/growiaud/growthtalk
+    - export DEPLOYPATH=/home/growiaud/repositories/growthtalk
     - /bin/cp -r * $DEPLOYPATH
