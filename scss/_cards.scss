@@ -3,9 +3,8 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  // grid-gap: 16px;
-  grid-gap: 50px;
-  padding: 20px 120px;
+  grid-gap: 16px;
+  padding: 15px;
 }
 
 // Smallest device
@@ -19,6 +18,8 @@
 @media (min-width: 576px) {
   .cards {
     grid-template-columns: 1fr;
+    grid-gap: 50px;
+    padding: 20px 120px;
   }
 }
 
@@ -26,6 +27,8 @@
 @media (min-width: 768px) {
   .cards {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    padding: 20px 120px;
   }
 }
 
@@ -33,6 +36,8 @@
 @media (min-width: 992px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    padding: 20px 120px;
   }
 }
 
@@ -40,6 +45,8 @@
 @media (min-width: 1200px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    padding: 20px 120px;
   }
 }
 
