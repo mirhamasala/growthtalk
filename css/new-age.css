@@ -321,8 +321,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-shadow: 0 4px 20px #F36B7F;
-  box-shadow: 0 4px 20px #F36B7F;
+  -webkit-box-shadow: 0 4px 10px #F36B7F;
+  box-shadow: 0 4px 10px #F36B7F;
   background-color: #F36B7F;
   opacity: 1;
 }
@@ -331,8 +331,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   color: white;
   opacity: .9;
   outline: 0;
-  -webkit-box-shadow: 0 4px 14px #F36B7F;
-  box-shadow: 0 4px 14px #F36B7F;
+  -webkit-box-shadow: 0 4px 6px #F36B7F;
+  box-shadow: 0 4px 6px #F36B7F;
 }
 
 .button-centered {
@@ -446,6 +446,11 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .dark-purple-font {
   color: #ECCFD6;
+  font-weight: 700;
+}
+
+.green-font {
+  color: #83B5A5;
   font-weight: 700;
 }
 

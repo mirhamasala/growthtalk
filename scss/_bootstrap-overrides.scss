@@ -19,7 +19,7 @@
     display: inline-flex;
     // border: 1px solid;
     // border-color: white;
-    box-shadow: 0 4px 20px $pink-img;
+    box-shadow: 0 4px 10px $pink-img;
     background-color: $pink-img;
     opacity: 1;
     &:hover,
@@ -29,7 +29,7 @@
       color: white;
       opacity: .9;
       outline: 0;
-      box-shadow: 0 4px 14px $pink-img;
+      box-shadow: 0 4px 6px $pink-img;
     }
 }
 
@@ -199,6 +199,11 @@
 
 .dark-purple-font{
   color: $dark-purple-img;
+  font-weight: 700;
+}
+
+.green-font{
+  color: $green-img;
   font-weight: 700;
 }
 
