@@ -3,7 +3,9 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  // grid-gap: 16px;
+  grid-gap: 50px;
+  padding: 20px 120px;
 }
 
 // Smallest device

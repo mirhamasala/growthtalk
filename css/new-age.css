@@ -502,7 +502,8 @@ section.packages .text-justify {
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 50px;
+  padding: 20px 120px;
 }
 
 @media (min-width: 100px) and (max-width: 575px) {
@@ -865,21 +866,41 @@ h1 {
   height: 500px;
   margin: 5px;
   border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 3px 0px #ccc;
+  box-shadow: 0px 3px 3px 0px #ccc;
 }
 
 .card-articles:hover {
-  -webkit-box-shadow: 0px 3px 3px 0px #ccc;
-  box-shadow: 0px 3px 3px 0px #ccc;
+  -webkit-box-shadow: 0px 5px 5px 0px #ccc;
+  box-shadow: 0px 5px 5px 0px #ccc;
 }
 
 .card-articles:hover .img_cover {
   opacity: .85;
 }
 
+.avatar-bordered {
+  width: 40px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border: white 1px solid;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card-img {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
 .card-img .img_cover {
   height: 200px;
   width: 100%;
   opacity: .75;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .card-details {
@@ -888,7 +909,7 @@ h1 {
 }
 
 .card-title {
-  padding: 5px 15px 0px 15px;
+  padding: 15px;
   margin: 0px;
 }
 
