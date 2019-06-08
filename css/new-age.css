@@ -860,3 +860,90 @@ h1 {
   -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
+
+.card-articles {
+  height: 500px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.card-articles:hover {
+  -webkit-box-shadow: 0px 3px 3px 0px #ccc;
+  box-shadow: 0px 3px 3px 0px #ccc;
+}
+
+.card-articles:hover .img_cover {
+  opacity: .85;
+}
+
+.card-img .img_cover {
+  height: 200px;
+  width: 100%;
+  opacity: .75;
+}
+
+.card-details {
+  height: 100px;
+  background-color: white;
+}
+
+.card-title {
+  padding: 5px 15px 0px 15px;
+  margin: 0px;
+}
+
+.card-title h3 {
+  font-size: 1.2rem;
+}
+
+.card-title a:link, a:hover, a:active, a:visited {
+  text-decoration: none;
+}
+
+h3 {
+  color: black;
+}
+
+h3:hover {
+  color: black;
+}
+
+a {
+  color: #534e55;
+}
+
+a:hover {
+  color: #534e55;
+}
+
+.card-description {
+  padding: 0px 15px 15px 15px;
+  height: 150px;
+}
+
+.card-description p {
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+.card-published {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.time-publication i {
+  font-size: 0.8rem;
+}
+
+.img_logo {
+  width: 30px;
+}
