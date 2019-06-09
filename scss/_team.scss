@@ -1,0 +1,17 @@
+section.team {
+  .full-profile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-media {
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .social-media-icon {
+    margin: 0px 15px;
+  }
+}

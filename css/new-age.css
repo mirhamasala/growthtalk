@@ -4,6 +4,13 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
  */
 
+@font-face {
+  font-family: 'apercuregular';
+  src: url("css/fonts/apercu-webfont.woff2") format("woff2"), url("css/fonts/apercu-webfont.woff") format("woff"), url("css/fonts/apercu.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   width: 100%;
@@ -18,10 +25,6 @@ a {
   color: #faf8f3;
   -webkit-transition: all .35s;
   transition: all .35s;
-}
-
-a:hover, a:focus {
-  color: #ebe3cf;
 }
 
 hr {
@@ -454,6 +457,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-weight: 700;
 }
 
+@media (min-width: 768px) {
+  .modal-xxl {
+    width: 90%;
+    max-width: 1200px;
+  }
+}
+
 section.code-of-work {
   padding: 100px 0;
 }
@@ -549,77 +559,40 @@ section.packages .text-justify {
   }
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  height: 300px;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  /* Remove this if you don't want the 3D effect */
+.card-package {
+  height: 450px;
+  margin: 5px;
+  background-color: #83B5A5;
+  border-radius: 10px;
+  overflow: auto;
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.card-package:hover {
+  opacity: .95;
+}
+
+.card-package-header {
+  height: 150px;
   text-align: center;
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+  padding: 10px;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+.card-header-icon {
+  color: #FCF0E2;
+  font-size: 30px;
+  padding-bottom: 5px;
 }
 
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  border-radius: 5px;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: white;
-}
-
-.flip-card-front p {
-  font-size: 40px;
+.card-header-title h3 {
   color: #FCF0E2 !important;
 }
 
-/* Style the back side */
-.flip-card-back {
-  background-color: white;
-  color: black;
-  border: solid 2px #4c8492;
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  padding: 15px;
+.package-content p {
+  color: #FCF0E2 !important;
 }
 
-.flip-card-back p {
+.package-content {
+  padding: 10px;
   text-align: justify;
 }
 
@@ -642,7 +615,7 @@ section.packages .text-justify {
   left: 0;
   width: 100%;
   height: 25%;
-  background-color: rgba(243, 107, 127, 0.4);
+  background-color: rgba(243, 107, 127, 0.3);
   -webkit-transition: all .1s linear;
   transition: all .1s linear;
   opacity: .9;
@@ -787,6 +760,27 @@ h1 {
   }
 }
 
+section.team .full-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+section.team .social-media {
+  display: inline-block;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+section.team .social-media-icon {
+  margin: 0px 15px;
+}
+
 .cards-team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -801,9 +795,9 @@ h1 {
   position: relative;
   width: 400px;
   height: 500px;
-  background: #000;
-  -webkit-box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 3px 0px #ccc;
+  box-shadow: 0px 3px 3px 0px #ccc;
   margin-bottom: 40px;
 }
 
@@ -825,6 +819,7 @@ h1 {
   object-fit: cover;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border-radius: 10px;
 }
 
 .card-team:hover .img-box img {
@@ -844,6 +839,7 @@ h1 {
   padding: 15px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .card-team:hover .details {
@@ -851,6 +847,7 @@ h1 {
   height: 100%;
   bottom: 0;
   left: 0;
+  border-radius: 10px;
 }
 
 .card-team .details h3 {
@@ -878,7 +875,7 @@ h1 {
 .card-articles {
   height: 500px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-box-shadow: 0px 3px 3px 0px #ccc;
   box-shadow: 0px 3px 3px 0px #ccc;
 }
@@ -907,13 +904,14 @@ h1 {
   position: relative;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  border-radius: 10px;
 }
 
 .card-img .img_cover {
   height: 200px;
   width: 100%;
   opacity: .75;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .card-details {
@@ -1033,4 +1031,40 @@ a:hover {
 
 #hideArticles:hover {
   opacity: 1;
+}
+
+.cards-package {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards-package {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) {
+  .cards-package {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .cards-package {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .cards-package {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards-package {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
