@@ -1,139 +1,45 @@
 // Styling for the masthead
 header.masthead {
-    position: relative;
 
-    width: 100%;
-    padding-top: 150px;
-    padding-bottom: 100px;
+  padding-top: 150px;
+  padding-bottom: 100px;
 
-    color: white;
-    background-color: white;
-    // -webkit-transform: skewY(-8deg);
+  .header-content {
+    margin-bottom: 70px;
+    text-align: center;
+  }
 
+  .device-container {
+    max-width: 100%;
+  }
+
+  .mb-6 {
+    margin-bottom: 4rem!important;
+    line-height: 1.5em;
+  }
+
+  @media (min-width: 1200px) {
+    .container{
+      max-width: 1350px;
+    }
+  }
+
+  @media (min-width: 1229px) {
     .header-content {
-        max-width: 500px;
-        margin-bottom: 100px;
-        margin-right: 0px;
-
-        text-align: left;
-        h1 {
-            font-size: 30px;
-        }
+      text-align: left;
     }
-    .device-container {
-        max-width: 325px;
-        margin-right: auto;
-        // margin-left: auto;
-        .screen img {
-            border-radius: 3px;
-        }
+    & .mb-5 {
+      text-align: left !important;
     }
+  }
 
-    .mb-6 {
-      margin-bottom: 5rem!important;
-      line-height: 1.5em;
+  @media (min-width: 992px) {
+    height: 100vh;
+    min-height: 775px;
+    padding-top: 0;
+    padding-bottom: 0;
+    .header-content {
+      margin-bottom: 0;
     }
-
-    .img-fluid {
-      // Part 1: Set a maximum relative to the parent
-      max-width: 110%;
-      // Part 2: Override the height to auto, otherwise images will be stretched
-      // when setting a width and height attribute on the img element.
-      height: auto;
-    }
-
-    @media (min-width: 400px) {
-      .img-fluid {
-        // Part 1: Set a maximum relative to the parent
-        max-width: 120%;
-        // Part 2: Override the height to auto, otherwise images will be stretched
-        // when setting a width and height attribute on the img element.
-        height: auto;
-      }
-    }
-
-    @media (min-width: 429px) {
-      .img-fluid {
-        // Part 1: Set a maximum relative to the parent
-        max-width: 130%;
-        // Part 2: Override the height to auto, otherwise images will be stretched
-        // when setting a width and height attribute on the img element.
-        height: auto;
-      }
-    }
-
-    @media (min-width: 484px) {
-      .img-fluid {
-        // Part 1: Set a maximum relative to the parent
-        max-width: 140%;
-        // Part 2: Override the height to auto, otherwise images will be stretched
-        // when setting a width and height attribute on the img element.
-        height: auto;
-      }
-    }
-
-    @media (min-width: 525px) {
-      .img-fluid {
-        // Part 1: Set a maximum relative to the parent
-        max-width: 160%;
-        // Part 2: Override the height to auto, otherwise images will be stretched
-        // when setting a width and height attribute on the img element.
-        height: auto;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .img-fluid {
-        // Part 1: Set a maximum relative to the parent
-        max-width: 200%;
-        // Part 2: Override the height to auto, otherwise images will be stretched
-        // when setting a width and height attribute on the img element.
-        height: auto;
-      }
-    }
-
-    @media (min-width: 992px) {
-      .img-fluid {
-        // Part 1: Set a maximum relative to the parent
-        max-width: 160%;
-        // Part 2: Override the height to auto, otherwise images will be stretched
-        // when setting a width and height attribute on the img element.
-        height: auto;
-      }
-    }
-
-    @media (min-width: 1160px) {
-      .img-fluid {
-        // Part 1: Set a maximum relative to the parent
-        max-width: 180%;
-        // Part 2: Override the height to auto, otherwise images will be stretched
-        // when setting a width and height attribute on the img element.
-        height: auto;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      .container{
-        max-width: 1350px;
-      }
-    }
-
-    @media (min-width: 992px) {
-        height: 100vh;
-        min-height: 775px;
-        padding-top: 0;
-        padding-bottom: 0;
-        .header-content {
-            margin-bottom: 0;
-
-            text-align: left;
-            h1 {
-                font-size: 44px;
-            }
-        }
-        .device-container {
-            max-width: 325px;
-        }
-    }
+  }
 }
-
