@@ -1,5 +1,5 @@
 .card-package {
-  height: 450px;
+  height: 380px;
   margin: 5px;
   background-color: $green-img;
   border-radius: 10px;
@@ -34,4 +34,10 @@
 .package-content {
   padding: 10px;
   text-align: justify;
+}
+
+@media (min-width: 1200px) {
+  .card-package {
+    height: 450px;
+  }
 }
