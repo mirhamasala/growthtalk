@@ -141,9 +141,18 @@
   font-weight: 700;
 }
 
+.black-font{
+  color: black;
+  font-weight: 700;
+}
+
 @media (min-width: 768px) {
   .modal-xxl {
     width: 90%;
    max-width:1200px;
   }
+}
+
+.highlight-light-purple {
+  background-color: rgba(249,216,235,.8);
 }
