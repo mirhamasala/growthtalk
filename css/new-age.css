@@ -194,8 +194,12 @@ header.masthead .mb-6 {
 @media (min-width: 1229px) {
   header.masthead .header-content {
     text-align: left;
+    padding-left: 40px;
   }
   header.masthead .mb-5 {
+    text-align: left !important;
+  }
+  header.masthead .button-centered {
     text-align: left !important;
   }
 }
@@ -374,6 +378,10 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding-bottom: 30px !important;
 }
 
+.section-heading-two {
+  padding-bottom: 40px !important;
+}
+
 .dark-purple-font {
   color: #ECCFD6;
   font-weight: 700;
@@ -386,7 +394,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .black-font {
   color: black;
-  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -397,7 +404,17 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .highlight-light-purple {
-  background-color: rgba(249, 216, 235, 0.8);
+  background-color: rgba(249, 216, 235, 0.7);
+  padding: 8px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.card-font {
+  font-weight: lighter;
+  font-size: 0.9rem;
 }
 
 section.code-of-work {
@@ -588,7 +605,6 @@ h1 {
 .timeline {
   position: relative;
   margin: 50px auto;
-  padding: 40px 0 0 0;
   width: 1000px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -700,6 +716,10 @@ h1 {
     top: -18px;
     left: 16px !important;
   }
+}
+
+section.team {
+  padding: 100px 0 0 0;
 }
 
 section.team .full-profile {
@@ -844,9 +864,7 @@ section.team .social-media-icon {
 
 .card-img {
   position: relative;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 
 .card-img .img_cover {
@@ -894,11 +912,6 @@ a:hover {
   padding: 0px 15px 15px 15px;
   height: 150px;
   overflow: hidden;
-}
-
-.card-description p {
-  font-weight: lighter;
-  font-size: 0.9rem;
 }
 
 .card-published {

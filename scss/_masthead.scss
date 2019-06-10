@@ -27,8 +27,12 @@ header.masthead {
   @media (min-width: 1229px) {
     .header-content {
       text-align: left;
+      padding-left: 40px;
     }
-    & .mb-5 {
+    .mb-5 {
+      text-align: left !important;
+    }
+    .button-centered {
       text-align: left !important;
     }
   }

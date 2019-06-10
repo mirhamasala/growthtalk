@@ -131,6 +131,10 @@
   padding-bottom: 30px !important;
 }
 
+.section-heading-two{
+  padding-bottom: 40px !important;
+}
+
 .dark-purple-font{
   color: $dark-purple-img;
   font-weight: 700;
@@ -143,7 +147,7 @@
 
 .black-font{
   color: black;
-  font-weight: 700;
+  // font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -154,5 +158,21 @@
 }
 
 .highlight-light-purple {
-  background-color: rgba(249,216,235,.8);
+  background-color: rgba(249,216,235,.7);
+  padding: 8px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.card-font {
+  font-weight: lighter;
+  font-size: 0.9rem;
+  // max-width: 350px;
+  // display: -webkit-box;
+  // overflow : hidden;
+  // text-overflow: ellipsis;
+  // -webkit-line-clamp: 5;
+  // -webkit-box-orient: vertical;
 }
