@@ -433,6 +433,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding: 8px;
 }
 
+@media (min-width: 100px) and (max-width: 991px) {
+  .highlight-light-purple {
+    line-height: 2.27;
+  }
+}
+
 .text-align-center {
   text-align: center;
 }
@@ -582,10 +588,12 @@ section.packages .text-justify {
 
 .button-hghlt {
   display: inline-block;
+  cursor: pointer;
 }
 
 .button-hghlt a {
   font-weight: 1000;
+  cursor: pointer;
   position: relative;
   padding: 0 .5em;
   font-size: 20px;
@@ -611,11 +619,6 @@ section.packages .text-justify {
 
 .button-hghlt a:hover:after {
   background-color: rgba(243, 107, 127, 0.6);
-}
-
-.dark-gray a {
-  color: #5a6175 !important;
-  font-weight: none !important;
 }
 
 body {

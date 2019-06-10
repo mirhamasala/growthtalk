@@ -160,6 +160,10 @@
 .highlight-light-purple {
   background-color: rgba(249,216,235,.7);
   padding: 8px;
+
+  @media (min-width: 100px) and (max-width: 991px) {
+  line-height: 2.27;
+  }
 }
 
 .text-align-center {

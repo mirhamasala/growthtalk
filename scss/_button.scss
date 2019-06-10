@@ -1,9 +1,11 @@
 .button-hghlt{
   display: inline-block;
+  cursor: pointer;
 
   & a {
     font-weight: 1000;
     // font-weight: bold;
+    cursor: pointer;
     position: relative;
     padding: 0 .5em;
     font-size: 20px;
@@ -34,7 +36,7 @@
 //   color: $beige-img !important;
 // }
 
-.dark-gray a {
-  color: $dark-gray !important;
-  font-weight: none !important;
-}
+// .dark-gray a {
+//   color: $dark-gray !important;
+//   font-weight: none !important;
+// }
