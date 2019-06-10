@@ -1,14 +1,4 @@
 // Global styling for this template
-@font-face {
-  font-family: 'apercuregular';
-  src: url('css/fonts/apercu-webfont.woff2') format('woff2'),
-       url('css/fonts/apercu-webfont.woff') format('woff'),
-       url('css/fonts/apercu.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
 html,
 body {
     width: 100%;
@@ -22,10 +12,6 @@ body {
 a {
     color: $light-yellow;
     @include transition-all;
-    // &:hover,
-    // &:focus {
-    //     color: darken($light-yellow, 10%);
-    // }
 }
 
 hr {
@@ -62,7 +48,4 @@ p {
 
 section {
     padding: 100px 0;
-    h2 {
-        font-size: 50px;
-    }
 }
