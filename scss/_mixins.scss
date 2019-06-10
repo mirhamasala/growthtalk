@@ -6,18 +6,18 @@
 }
 
 @mixin h1-font {
-    font-family: 'PT Serif', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-family:'Halant', serif;
     font-weight: 200;
     letter-spacing: 1px;
 }
 
 @mixin heading-font {
-    font-family: 'PT Serif', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: 'Halant', serif;
     color: black;
 }
 
 @mixin body-font {
-    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 @mixin alt-font {
