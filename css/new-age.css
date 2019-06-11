@@ -777,19 +777,8 @@ section.team .social-media-icon {
   margin: 0px 15px;
 }
 
-.cards-team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
-
 .card-team {
   position: relative;
-  width: 400px;
   height: 500px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 3px 3px 0px #ccc;
@@ -1055,5 +1044,43 @@ a:hover {
 @media (min-width: 1200px) {
   .cards-package {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.cards-team {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards-team {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) {
+  .cards-team {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .cards-team {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .cards-team {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards-team {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 100px;
+    grid-gap: 100px;
   }
 }
