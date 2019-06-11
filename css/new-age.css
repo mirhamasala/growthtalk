@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -32,7 +32,7 @@ hr.light {
 }
 
 h1 {
-  font-family: 'Halant', serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -54,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Halant', serif;
+  font-family: 'Lato', sans-serif;
   color: black;
 }
 
@@ -74,7 +74,7 @@ section {
   background-color: white;
   -webkit-transition: all .35s;
   transition: all .35s;
-  font-family: 'Halant', serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -93,7 +93,7 @@ section {
 
 #mainNav .navbar-brand {
   color: #faf8f3;
-  font-family: 'Halant', serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -278,6 +278,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .beige-font {
   color: #FCF0E2;
+  font-weight: 700;
 }
 
 .btn-outline {
@@ -419,6 +420,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .black-font {
   color: black;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
