@@ -301,6 +301,17 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   box-shadow: 0 4px 6px #F36B7F;
 }
 
+.btn-blue {
+  background-color: #9FBEFF !important;
+  -webkit-box-shadow: 0 4px 10px #9FBEFF !important;
+  box-shadow: 0 4px 10px #9FBEFF !important;
+}
+
+.btn-blue:hover, .btn-blue:focus, .btn-blue:active, .btn-blue.active {
+  -webkit-box-shadow: 0 4px 6px #9FBEFF !important;
+  box-shadow: 0 4px 6px #9FBEFF !important;
+}
+
 .button-centered {
   text-align: center;
 }
@@ -326,7 +337,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   top: 5px;
   right: 10px;
   z-index: 3;
-  color: #f09c67;
+  color: #83B5A5;
 }
 
 .text-styling {
@@ -752,7 +763,7 @@ h1 {
 }
 
 section.team {
-  padding: 100px 0 0 0;
+  padding: 100px 0 100px 0;
 }
 
 section.team .full-profile {
@@ -1095,4 +1106,9 @@ a:hover {
     margin: 0 100px;
     grid-gap: 100px;
   }
+}
+
+section.cta {
+  padding: 100px 0 0px 0;
+  background-color: #FCF0E2;
 }

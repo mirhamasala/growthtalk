@@ -34,6 +34,17 @@
     }
 }
 
+.btn-blue {
+  background-color: $light-blue-img !important;
+  box-shadow: 0 4px 10px $light-blue-img !important;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    box-shadow: 0 4px 6px $light-blue-img !important;
+  }
+}
+
 .button-centered {
   text-align: center;
 }
@@ -59,7 +70,7 @@
   top: 5px;
   right: 10px;
   z-index: 3;
-  color: $orange;
+  color: $green-img;
 }
 
 .text-styling {
