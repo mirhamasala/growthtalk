@@ -69,11 +69,11 @@
   flex-direction: column;
 }
 
-.img-background {
+#img-background-manifesto {
   background:url(../img/blob-shape.svg) no-repeat;
   // background-size: 100%;
   // opacity: .4;
-  position: relative;
+  // position: relative;
 }
 
 .manifesto-text {
@@ -163,7 +163,7 @@
   padding: 8px;
 
   @media (min-width: 100px) and (max-width: 991px) {
-  line-height: 2.27;
+  line-height: 2.25;
   }
 }
 

@@ -341,9 +341,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   flex-direction: column;
 }
 
-.img-background {
+#img-background-manifesto {
   background: url(../img/blob-shape.svg) no-repeat;
-  position: relative;
 }
 
 .manifesto-text {
@@ -437,7 +436,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 @media (min-width: 100px) and (max-width: 991px) {
   .highlight-light-purple {
-    line-height: 2.27;
+    line-height: 2.25;
   }
 }
 
@@ -532,8 +531,8 @@ section.packages .text-justify {
 @media (min-width: 992px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px;
-    padding: 20px 120px;
+    grid-gap: 25px;
+    padding: 20px 60px;
   }
 }
 
@@ -821,7 +820,7 @@ section.team .social-media-icon {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
-  padding: 15px;
+  padding: 25px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 10px;
@@ -833,6 +832,7 @@ section.team .social-media-icon {
   bottom: 0;
   left: 0;
   border-radius: 10px;
+  position: absolute;
 }
 
 .card-team .details h3 {
@@ -845,16 +845,24 @@ section.team .social-media-icon {
   margin: 10px 0 0;
   padding: 0;
   opacity: 0;
-  line-height: 1.2em;
+  line-height: 1.5;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-align: justify;
 }
 
 .card-team:hover .details p {
-  opacity: 1;
+  opacity: 1 !important;
   -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
+}
+
+#img-background-andreea {
+  background: url(../img/blob-3.svg) no-repeat 80% 45%;
+}
+
+#img-background-maxime {
+  background: url(../img/blob-2.svg) no-repeat 55% 55%;
 }
 
 .card-articles {
@@ -1062,18 +1070,22 @@ a:hover {
 @media (min-width: 576px) {
   .cards-team {
     grid-template-columns: 1fr;
+    margin: 0 30px;
   }
 }
 
 @media (min-width: 768px) {
   .cards-team {
     grid-template-columns: 1fr;
+    margin: 0 100px;
   }
 }
 
 @media (min-width: 992px) {
   .cards-team {
     grid-template-columns: 1fr 1fr;
+    margin: 0 30px;
+    grid-gap: 100px;
   }
 }
 

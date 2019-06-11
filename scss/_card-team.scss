@@ -49,7 +49,7 @@
   background: #fff;
   transition: 0.5s;
   overflow: hidden;
-  padding: 15px;
+  padding: 25px;
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -60,6 +60,7 @@
   bottom: 0;
   left: 0;
   border-radius: 10px;
+  position: absolute;
 }
 
 .card-team .details h3 {
@@ -72,13 +73,21 @@
   margin: 10px 0 0;
   padding: 0;
   opacity: 0;
-  line-height: 1.2em;
+  line-height: 1.5;
   transition: 0.5s;
   text-align: justify;
 }
 
 
 .card-team:hover .details p {
-  opacity: 1;
+  opacity: 1 !important;
   transition-delay: 0.5s;
+}
+
+#img-background-andreea {
+  background:url(../img/blob-3.svg) no-repeat 80% 45%;
+}
+
+#img-background-maxime {
+  background:url(../img/blob-2.svg) no-repeat 55% 55%;
 }

@@ -17,6 +17,7 @@
 @media (min-width: 576px) {
   .cards-team {
     grid-template-columns: 1fr;
+    margin: 0 30px;
   }
 }
 
@@ -24,6 +25,7 @@
 @media (min-width: 768px) {
   .cards-team {
     grid-template-columns: 1fr;
+    margin: 0 100px;
   }
 }
 
@@ -31,6 +33,8 @@
 @media (min-width: 992px) {
   .cards-team {
     grid-template-columns: 1fr 1fr;
+    margin: 0 30px;
+    grid-gap: 100px;
   }
 }
 
