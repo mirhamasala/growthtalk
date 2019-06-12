@@ -92,7 +92,7 @@ section {
 }
 
 #mainNav .navbar-brand {
-  color: #faf8f3;
+  color: #F36B7F;
   font-family: 'Lato', sans-serif;
   font-weight: 200;
   letter-spacing: 1px;
@@ -111,7 +111,7 @@ section {
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #ebe3cf;
+  color: #ef3c56;
 }
 
 #mainNav .navbar-toggler {
@@ -128,7 +128,7 @@ section {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #faf8f3 !important;
+  color: #F36B7F !important;
   background-color: transparent;
 }
 
@@ -143,7 +143,7 @@ section {
 
 #mainNav .navbar-nav > li > a:hover,
 #mainNav .navbar-nav > li > a:focus:hover {
-  color: #faf8f3;
+  color: #F36B7F;
 }
 
 @media (min-width: 1200px) {
@@ -179,7 +179,7 @@ section {
     color: #222222;
   }
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-    color: #faf8f3;
+    color: #F36B7F;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus {
@@ -187,7 +187,7 @@ section {
   }
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-    color: #faf8f3;
+    color: #F36B7F;
   }
 }
 
@@ -352,6 +352,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   flex-direction: column;
 }
 
+.text-selection {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 #img-background-manifesto {
   background: url(../img/blob-shape.svg) no-repeat;
 }
@@ -406,10 +413,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   background-color: rgba(131, 181, 165, 0.3);
 }
 
-#cta-curious {
-  max-width: 100%;
-}
-
 .section-heading {
   padding-bottom: 30px !important;
 }
@@ -458,6 +461,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .card-font {
   font-weight: lighter;
   font-size: 0.9rem;
+}
+
+.align-items {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 section.code-of-work {

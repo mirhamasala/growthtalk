@@ -80,6 +80,13 @@
   flex-direction: column;
 }
 
+.text-selection {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 #img-background-manifesto {
   background:url(../img/blob-shape.svg) no-repeat;
   // background-size: 100%;
@@ -135,10 +142,6 @@
   background-color: rgba(131,181,165,.3);
 }
 
-#cta-curious {
-  max-width: 100%;
-}
-
 .section-heading{
   padding-bottom: 30px !important;
 }
@@ -192,3 +195,8 @@
   // -webkit-line-clamp: 5;
   // -webkit-box-orient: vertical;
 }
+
+.align-items {
+  align-items: center;
+}
+

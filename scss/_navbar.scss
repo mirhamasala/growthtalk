@@ -5,11 +5,11 @@
     @include transition-all;
     @include h1-font;
     .navbar-brand {
-        color: $light-yellow;
+        color: $pink-img;
         @include h1-font;
         &:hover,
         &:focus {
-            color: darken($light-yellow, 10%);
+            color: darken($pink-img, 10%);
         }
     }
 
@@ -24,7 +24,7 @@
                 font-size: 11px;
                 @include alt-font;
                 &.active {
-                    color: $light-yellow !important;
+                    color: $pink-img !important;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -35,7 +35,7 @@
             > a:focus {
                 color: $gray-darker;
                 &:hover {
-                    color: $light-yellow;
+                    color: $pink-img;
                 }
             }
         }
@@ -71,14 +71,14 @@
                 color: $gray-darker;
                 &:hover,
                 &:focus {
-                    color: $light-yellow;
+                    color: $pink-img;
                 }
             }
             .navbar-nav > li > a,
             .navbar-nav > li > a:focus {
                 color: $gray-darker;
                 &:hover {
-                    color: $light-yellow;
+                    color: $pink-img;
                 }
             }
         }
