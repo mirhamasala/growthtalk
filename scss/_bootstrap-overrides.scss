@@ -110,10 +110,8 @@
   font-weight: bold;
 }
 
-.text-normal {
-  color: black;
-  font-size: 16px;
-  margin: 0px;
+.text-justify {
+  text-align: justify;
 }
 
 .text-hghlt {
@@ -165,6 +163,11 @@
   font-weight: 700;
 }
 
+.blue-font{
+  color: $light-blue-img;
+  font-weight: 700;
+}
+
 @media (min-width: 768px) {
   .modal-xxl {
     width: 90%;
@@ -173,11 +176,16 @@
 }
 
 .highlight-light-purple {
-  background-color: rgba(249,216,235,.7);
+  background-color: rgba(249,216,235,.8);
+  font-weight: bold;
+}
+
+.specific-highlight-light-purple {
+  background-color: rgba(249,216,235,.8);
   padding: 8px;
 
   @media (min-width: 100px) and (max-width: 991px) {
-  line-height: 2.25;
+  line-height: 2.26;
   }
 }
 
@@ -188,12 +196,10 @@
 .card-font {
   font-weight: lighter;
   font-size: 0.9rem;
-  // max-width: 350px;
-  // display: -webkit-box;
-  // overflow : hidden;
-  // text-overflow: ellipsis;
-  // -webkit-line-clamp: 5;
-  // -webkit-box-orient: vertical;
+}
+
+.text-align-left {
+  text-align: left;
 }
 
 .align-items {
