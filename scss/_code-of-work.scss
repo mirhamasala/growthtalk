@@ -1,10 +1,20 @@
 section.code-of-work {
-  // padding: 100px 0;
+  padding: 0px 0 !important;
 
   .inline-icon-text{
     display: flex;
     flex-direction: row;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 992px) {
+      justify-content: flex-start;
+    }
+
+    & h1 {
+      padding: 0 0 !important;
+    }
   }
 
   // .inline-icon-text img {
@@ -14,8 +24,12 @@ section.code-of-work {
 
   .growth-talk-icon{
     width: auto;
-    height: 50px;
+    height: 35px;
     padding-right: 30px;
+
+    @media (min-width: 1200px) {
+      height: 50px;
+    }
   }
 
   .text-vertically-centered{
@@ -24,11 +38,21 @@ section.code-of-work {
   }
 
   .subtitle{
-    padding: 30px;
+    padding: 30px 0;
     text-align: center;
   }
 
   .line-height{
     line-height: 1.5;
+  }
+
+  @media (min-width: 1200px) {
+    #img-background-cow {
+    background:url(../img/blob-1.svg) no-repeat -34% 15%;
+    background-size: 60%;
+    overflow: hidden;
+    // opacity: .8;
+    // position: relative;
+    }
   }
 }
