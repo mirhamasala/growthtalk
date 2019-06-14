@@ -9,8 +9,18 @@
   padding-bottom: 0px !important
 }
 
+.pink-bg {
+  background-color: $pink-img;
+  padding-bottom: 0px !important
+}
+
 .beige-font {
   color: $beige-img;
+  font-weight: 700;
+}
+
+.white-font {
+  color: white;
   font-weight: 700;
 }
 
@@ -30,7 +40,9 @@
       color: white;
       opacity: .9;
       outline: 0;
+      transition: .2s;
       box-shadow: 0 4px 6px $pink-img;
+      transition: .2s;
     }
 }
 
@@ -42,6 +54,20 @@
   &:active,
   &.active {
     box-shadow: 0 4px 6px $light-blue-img !important;
+    transition: .2s;
+  }
+}
+
+.btn-yellow {
+  color: black !important;
+  background-color: $yellow-img !important;
+  box-shadow: 0 4px 10px $yellow-img !important;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    box-shadow: 0 4px 6px $yellow-img !important;
+    transition: .2s;
   }
 }
 
@@ -54,6 +80,11 @@
   // background-color: hsl(210, 97%, 63%);
   @include alt-font;
 
+}
+
+.btn-lg {
+    font-size: 11px;
+    padding: 12px 36px;
 }
 
 .btn-xl {
@@ -106,7 +137,7 @@
 #manifesto-title {
   padding: 160px 0 80px 0;
   text-align: left !important;
-  color: $green-img !important;
+  color: $pink-img !important;
   font-weight: bold;
 }
 
@@ -119,7 +150,7 @@
   border-left: 2px solid;
   font-size: 1.5em;
   font-weight: 600;
-  color: $green-img;
+  color: $pink-img;
 
   @media (min-width: 1200px) {
     margin: 0px 0px 0px -140px;
@@ -129,7 +160,7 @@
 .manifesto-footer {
   font-size: 1.5em;
   font-weight: 600;
-  color: $green-img;
+  color: $pink-img;
   // text-align: center;
 }
 
@@ -137,7 +168,7 @@
   text-indent: 1.2em;
   font-weight: bold;
   margin-bottom: 20px;
-  background-color: rgba(131,181,165,.3);
+  background-color: rgba(243,107,127,.2);
 }
 
 .section-heading{
@@ -168,6 +199,11 @@
   font-weight: 700;
 }
 
+.pink-font{
+  color: $pink-img;
+  font-weight: 700;
+}
+
 @media (min-width: 768px) {
   .modal-xxl {
     width: 90%;
@@ -182,6 +218,15 @@
 
 .specific-highlight-light-purple {
   background-color: rgba(249,216,235,.8);
+  padding: 8px;
+
+  @media (min-width: 100px) and (max-width: 991px) {
+  line-height: 2.26;
+  }
+}
+
+.specific-highlight-light-blue {
+  background-color: rgba(159,190,255,.8);
   padding: 8px;
 
   @media (min-width: 100px) and (max-width: 991px) {
