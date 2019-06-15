@@ -92,8 +92,19 @@
     padding: 15px 45px;
 }
 
+.btn-lg {
+  font-size: 11px;
+  padding: 12px 36px;
+}
+
 .navbar{
   padding: 1.5rem 1rem;
+}
+
+#nav-cta {
+  @media (min-width: 1200px) {
+    padding-left: 30px;
+  }
 }
 
 .close{
@@ -101,7 +112,7 @@
   top: 5px;
   right: 10px;
   z-index: 3;
-  color: $green-img;
+  color: $green;
 }
 
 .text-styling {
@@ -185,7 +196,12 @@
 }
 
 .green-font{
-  color: $green-img;
+  color: $green;
+  font-weight: 700;
+}
+
+.white-font{
+  color: white;
   font-weight: 700;
 }
 

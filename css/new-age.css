@@ -15,7 +15,6 @@ body {
 }
 
 a {
-  color: #faf8f3;
   -webkit-transition: all .35s;
   transition: all .35s;
 }
@@ -104,7 +103,7 @@ section {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #F36B7F !important;
+  color: #8ddbc3 !important;
   background-color: transparent;
 }
 
@@ -119,7 +118,7 @@ section {
 
 #mainNav .navbar-nav > li > a:hover,
 #mainNav .navbar-nav > li > a:focus:hover {
-  color: #F36B7F;
+  color: #8ddbc3;
 }
 
 @media (min-width: 1200px) {
@@ -151,7 +150,7 @@ section {
   }
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-    color: #F36B7F;
+    color: #8ddbc3;
   }
 }
 
@@ -326,8 +325,19 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding: 15px 45px;
 }
 
+.btn-lg {
+  font-size: 11px;
+  padding: 12px 36px;
+}
+
 .navbar {
   padding: 1.5rem 1rem;
+}
+
+@media (min-width: 1200px) {
+  #nav-cta {
+    padding-left: 30px;
+  }
 }
 
 .close {
@@ -335,7 +345,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   top: 5px;
   right: 10px;
   z-index: 3;
-  color: #83B5A5;
+  color: #8ddbc3;
 }
 
 .text-styling {
@@ -423,7 +433,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .green-font {
-  color: #83B5A5;
+  color: #8ddbc3;
+  font-weight: 700;
+}
+
+.white-font {
+  color: white;
   font-weight: 700;
 }
 
@@ -570,7 +585,7 @@ section.code-of-work .line-height {
 }
 
 section.packages {
-  background: #83B5A5;
+  background: #dce9f4;
   padding-bottom: 0 !important;
 }
 
@@ -698,8 +713,8 @@ section.packages .text-justify {
   cursor: pointer;
   position: relative;
   padding: 0 .5em;
-  font-size: 20px;
-  color: black !important;
+  font-size: 22px;
+  color: white !important;
 }
 
 .button-hghlt a:after {
@@ -1157,8 +1172,8 @@ a:hover {
 }
 
 section.cta {
-  padding: 100px 0 0px 0;
-  background-color: #9FBEFF;
+  padding: 100px 0 0 0;
+  background-color: #f7d78f;
 }
 
 #myBtn {
