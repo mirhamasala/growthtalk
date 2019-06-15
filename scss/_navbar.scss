@@ -16,7 +16,7 @@
                 font-size: 11px;
                 @include alt-font;
                 &.active {
-                    color: $green !important;
+                    color: $pink-img !important;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -27,7 +27,7 @@
             > a:focus {
                 color: black;
                 &:hover {
-                    color: $green;
+                    color: $pink-img;
                 }
             }
         }
@@ -58,7 +58,7 @@
             .navbar-nav > li > a:focus {
                 color: black;
                 &:hover {
-                    color: $green;
+                    color: $pink-img;
                 }
             }
         }

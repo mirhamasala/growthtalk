@@ -6,12 +6,12 @@
 
 .blue-bg {
   background-color: $light-blue-img;
-  padding-bottom: 0px !important
+  padding-bottom: 0px !important;
 }
 
 .pink-bg {
   background-color: $pink-img;
-  padding-bottom: 0px !important
+  padding-bottom: 0px !important;
 }
 
 .beige-font {
@@ -25,52 +25,83 @@
 }
 
 .btn-outline {
-    color: white;
-    font-weight: 700;
-    display: inline-flex;
-    // border: 1px solid;
-    // border-color: white;
-    box-shadow: 0 4px 10px $pink-img;
-    background-color: $pink-img;
-    opacity: 1;
-    &:hover,
-    &:focus,
-    &:active,
-    &.active {
-      color: white;
-      opacity: .9;
-      outline: 0;
-      transition: .2s;
-      box-shadow: 0 4px 6px $pink-img;
-      transition: .2s;
-    }
-}
-
-.btn-blue {
-  background-color: $light-blue-img !important;
-  box-shadow: 0 4px 10px $light-blue-img !important;
+  font-weight: 700;
+  display: inline-flex;
+  cursor: pointer;
+  // border: 1px solid;
+  // border-color: white;
+  opacity: 1;
   &:hover,
   &:focus,
   &:active,
   &.active {
-    box-shadow: 0 4px 6px $light-blue-img !important;
+    opacity: .9;
+    outline: 0;
+    transition: .2s;
+    transition: .2s;
+  }
+}
+
+.btn-pink {
+  color: white;
+  box-shadow: 0 4px 10px $pink-img;
+  background-color: $pink-img;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: white;
+    box-shadow: 0 4px 6px $pink-img;
+  }
+}
+
+.btn-blue {
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px white solid;
+  color: white !important;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    // box-shadow: 0 4px 6px white;
+    background-color: white;
+    color: $light-blue-img !important;
+    transition: .2s;
+  }
+}
+
+.btn-green {
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px white solid;
+  color: white !important;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    // box-shadow: 0 4px 6px white;
+    background-color: white;
+    color: $green-img !important;
     transition: .2s;
   }
 }
 
 .btn-yellow {
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px black solid;
   color: black !important;
-  background-color: $yellow-img !important;
-  box-shadow: 0 4px 10px $yellow-img !important;
   &:hover,
   &:focus,
   &:active,
   &.active {
-    box-shadow: 0 4px 6px $yellow-img !important;
+    // box-shadow: 0 4px 6px white;
+    background-color: black;
+    color: $yellow-img !important;
     transition: .2s;
   }
 }
-
 .button-centered {
   text-align: center;
 }
@@ -196,7 +227,7 @@
 }
 
 .green-font{
-  color: $green;
+  color: $green-img;
   font-weight: 700;
 }
 
