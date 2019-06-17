@@ -539,6 +539,17 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   z-index: 3000 !important;
 }
 
+body.modal-open {
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+}
+
+.modal {
+  -webkit-overflow-scrolling: auto;
+}
+
 section.code-of-work {
   padding: 0px 0 50px 0 !important;
 }

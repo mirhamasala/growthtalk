@@ -298,6 +298,18 @@
   align-items: center;
 }
 
+// Typeform on top of navbar (mobile version)
 .css-yqckb {
   z-index: 3000 !important;
+}
+
+
+body.modal-open {
+    position: fixed;
+    overflow: hidden;
+    left:0;
+    right:0;
+}
+.modal{
+    -webkit-overflow-scrolling: auto;
 }
