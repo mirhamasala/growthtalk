@@ -303,7 +303,7 @@
   z-index: 3000 !important;
 }
 
-
+// Fix issue when the modal is enabled swiping up/down will scroll the body instead of the modal
 body.modal-open {
     position: fixed;
     overflow: hidden;
@@ -311,5 +311,7 @@ body.modal-open {
     right:0;
 }
 .modal{
-    -webkit-overflow-scrolling: auto;
+    -webkit-overflow-scrolling: touch;
 }
+
+

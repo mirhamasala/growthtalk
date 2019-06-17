@@ -547,7 +547,7 @@ body.modal-open {
 }
 
 .modal {
-  -webkit-overflow-scrolling: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 section.code-of-work {
