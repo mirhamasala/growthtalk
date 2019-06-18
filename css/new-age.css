@@ -370,7 +370,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   top: 5px;
   right: 10px;
   z-index: 3;
-  color: #8ddbc3;
+  color: black;
 }
 
 .text-styling {
@@ -941,6 +941,13 @@ section.team .profile-team {
 
 section.team .profile-team img {
   max-width: 280px;
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  section.team .profile-team img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 section.team .text-team {
