@@ -1312,6 +1312,14 @@ section.cta {
   right: 20px;
 }
 
+.pricing-header h3 {
+  font-weight: 700;
+}
+
+.pricing-body h3 {
+  font-weight: 700;
+}
+
 section.pricing {
   padding: 100px 0 50px 0;
 }
