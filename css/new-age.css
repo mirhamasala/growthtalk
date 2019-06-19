@@ -1306,8 +1306,14 @@ section.cta {
   margin: 20px 0;
 }
 
+.custom {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
 section.pricing {
-  padding: 100px 0 0 0;
+  padding: 100px 0 50px 0;
 }
 
 .cards-pricing {
@@ -1343,7 +1349,7 @@ section.pricing {
   .cards-pricing {
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
-    padding: 20px 60px;
+    padding: 20px 130px;
   }
 }
 
@@ -1351,7 +1357,7 @@ section.pricing {
   .cards-pricing {
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
-    padding: 20px 100px;
+    padding: 20px 190px;
   }
 }
 
