@@ -15,6 +15,18 @@ section.team {
   .profile-team {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+  }
+
+  .social-media {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-medium {
+    color: black;
+    padding: 10px 15px 0 15px;
   }
 
   .profile-team img {

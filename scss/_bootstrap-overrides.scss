@@ -138,12 +138,23 @@
   }
 }
 
-.close{
+.close {
+
   position: absolute;
   top: 5px;
   right: 10px;
   z-index: 3;
   color: black;
+
+  @media (min-width: 575px) {
+    position: absolute;
+    padding: 8px;
+    cursor: pointer;
+    width: initial;
+    max-width: initial;
+    top: -34px;
+    right: -34px;
+  }
 }
 
 .text-styling {
