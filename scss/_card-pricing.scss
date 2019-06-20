@@ -1,6 +1,6 @@
 .card-pricing {
   position: relative;
-  height: 510px;
+  height: 470px;
   padding: 15px;
   background-color: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -15,31 +15,34 @@
 }
 
 .card-cons {
-  border: 5px solid $green-img;
+  border: 2px solid $green-img;
 }
 
 .card-corp {
-  border: 5px solid $yellow-img;
+  border: 2px solid $yellow-img;
 }
 
 .green-line {
-  text-align: center;
-  height: 0;
-  width: 300px;
-  border-bottom: 4px solid $green-img;
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: .5px solid $green-img;
   border-radius: 10px;
 }
 
 .yellow-line {
-  text-align: center;
-  height: 0;
-  width: 300px;
-  border-bottom: 4px solid $yellow-img;
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: .5px solid $yellow-img;
   border-radius: 10px;
 }
 
 .margin-h3 {
   margin: 20px 0;
+  text-align: center;
+}
+
+.margin-p {
+  margin: 10px 0;
 }
 
 .custom {
@@ -48,10 +51,6 @@
   right: 20px;
 }
 
-.pricing-header h3 {
-  font-weight: 700;
-}
-
-.pricing-body h3 {
-  font-weight: 700;
+.indent-card {
+  padding-left: 10px;
 }
