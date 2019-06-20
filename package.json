@@ -31,15 +31,17 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.8.1",
         "aos": "^2.3.4",
+        "bodymovin": "^4.13.0",
         "bootstrap": "4.3.1",
         "codyhouse-framework": "^1.1.2",
-        "jquery": "3.3.1",
+        "jquery": "^3.4.1",
         "jquery.easing": "^1.4.1",
+        "lottie-web": "^5.5.5",
         "simple-line-icons": "2.4.1",
         "timeline": "^3.4.1"
     },
     "devDependencies": {
-        "browser-sync": "2.26.3",
+        "browser-sync": "^2.26.7",
         "del": "4.0.0",
         "gulp": "4.0.0",
         "gulp-autoprefixer": "6.0.0",
