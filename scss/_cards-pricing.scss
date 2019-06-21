@@ -11,6 +11,7 @@
 @media (min-width: 100px) and (max-width: 575px) {
   .cards-pricing {
     grid-template-columns: 1fr;
+    grid-gap: 50px;
   }
 }
 
