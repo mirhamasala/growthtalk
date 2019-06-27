@@ -332,4 +332,18 @@ body.modal-open {
     -webkit-overflow-scrolling: touch;
 }
 
+// ------------ Form
 
+#cf-context {
+  width: 100vh;
+  height: 100vh;
+}
+
+#form {
+  height: 0px !important;
+  overflow: hidden;
+}
+
+#cf-context {
+  display: none;
+}
