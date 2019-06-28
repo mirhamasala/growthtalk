@@ -9,7 +9,7 @@ window.onload = function() {
 };
 
 $(document).ready(function() {
-  $(".btn-outline").click(function() {
+  $(".btn-outline").on('click', function() {
     $("#cf-context").toggle();
   });
 });

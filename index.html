@@ -72,8 +72,12 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo-gt.png" width="180" height="auto" class="d-inline-block align-top" alt="growthtalk-logo"></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <!-- <span class="navbar-toggler-icon"></span> -->
       </button>
+      <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="animated-icon3"><span></span><span></span><span></span></div>
+        </button>
 
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto align-items">
@@ -117,7 +121,7 @@
               <!-- <a href="https://maxime434696.typeform.com/to/kR7B0J" class="typeform-share btn btn-outline btn-pink btn-xl" data-mode="popup" target="_blank">I'm curious!</a> -->
 
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-outline btn-pink btn-xl" data-toggle="modal">
+              <button type="button" class="btn btn-outline btn-pink btn-xl" data-toggle="modal" data-target=".bd-form-modal-lg">
                 I'm curious!
               </button>
 
@@ -133,79 +137,6 @@
     </div>
   </header>
 
-  <div id="cf-context" role="cf-context" cf-context></div>
-  <form name="submit-to-google-sheet" id="form">
-
-    <fieldset>
-        <label for="name">What's your name?</label>
-        <input required cf-questions="Hi there! What's your name? 😊" type="text" class="form-control" name="name" id="name" />
-      </fieldset>
-
-      <fieldset>
-        <label for="occupation">Occupation</label>
-        <div class="radio">
-          <label>
-            <input cf-questions="Great to meet you, {previous-answer}! I'm a web form, what do you do?|Awesome, {previous-answer}! And what do you do?" type="radio" name="occupation" id="occupation-1" value="developer">
-            Developer
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="occupation" id="occupation-2" value="designer">
-            Designer
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="occupation" id="occupation-3" value="curious-mind">
-            Curious mind
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="occupation" id="occupation-2" value="lost">
-            Lost cause
-          </label>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <label for="company">Company</label>
-        <input cf-questions="Which company are you with?" type="text" class="form-control" name="company" id="company">
-      </fieldset>
-
-      <fieldset>
-        <label for="opinion">Will conversational interfaces be everywhere?</label>
-        <select cf-questions="Do you think conversational forms will replace web forms in the future?" name="opinion" id="opinion" class="form-control">
-          <option></option>
-          <option>Definitely</option>
-          <option>Maybe</option>
-          <option>No</option>
-        </select>
-      </fieldset>
-
-      <fieldset>
-        <label for="email">Email</label>
-        <input pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="If you want to stay updated on conversational interfaces from SPACE10, please give me your email." type="email" class="form-control" name="email" id="your-email">
-      </fieldset>
-
-  </form>
-
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxnGxxNrxHVOsIcIA_FojM_CA3TBqLVjQmNy9IzUqfRxn7W8_9g/exec'
-    const form = document.forms['submit-to-google-sheet']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
-  <!-- Conversational Form -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/space10-community/conversational-form@0.9.90/dist/conversational-form.min.js" crossorigin></script>
-
   <!-- Modal GT_Personal_Form -->
   <div class="modal fade bd-form-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -215,7 +146,78 @@
             <span aria-hidden="true"><img src="img/cancel.svg" alt="close"></span>
           </button>
 
+          <div id="cf-context" role="cf-context" cf-context></div>
+          <form name="submit-to-google-sheet" id="form">
 
+            <fieldset>
+                <label for="name">What's your name?</label>
+                <input required cf-questions="Hi there! What's your name? 😊" type="text" class="form-control" name="name" id="name" />
+              </fieldset>
+
+              <fieldset>
+                <label for="occupation">Occupation</label>
+                <div class="radio">
+                  <label>
+                    <input cf-questions="Great to meet you, {previous-answer}! I'm a web form, what do you do?|Awesome, {previous-answer}! And what do you do?" type="radio" name="occupation" id="occupation-1" value="developer">
+                    Developer
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="occupation" id="occupation-2" value="designer">
+                    Designer
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="occupation" id="occupation-3" value="curious-mind">
+                    Curious mind
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="occupation" id="occupation-2" value="lost">
+                    Lost cause
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <label for="company">Company</label>
+                <input cf-questions="Which company are you with?" type="text" class="form-control" name="company" id="company">
+              </fieldset>
+
+              <fieldset>
+                <label for="opinion">Will conversational interfaces be everywhere?</label>
+                <select cf-questions="Do you think conversational forms will replace web forms in the future?" name="opinion" id="opinion" class="form-control">
+                  <option></option>
+                  <option>Definitely</option>
+                  <option>Maybe</option>
+                  <option>No</option>
+                </select>
+              </fieldset>
+
+              <fieldset>
+                <label for="email">Email</label>
+                <input pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="If you want to stay updated on conversational interfaces from SPACE10, please give me your email." type="email" class="form-control" name="email" id="your-email">
+              </fieldset>
+
+          </form>
+
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxnGxxNrxHVOsIcIA_FojM_CA3TBqLVjQmNy9IzUqfRxn7W8_9g/exec'
+            const form = document.forms['submit-to-google-sheet']
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+          <!-- Conversational Form -->
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/space10-community/conversational-form@0.9.90/dist/conversational-form.min.js" crossorigin></script>
 
         </div>
       </div>
@@ -882,6 +884,9 @@
 
   <!-- Script conversation-form -->
   <script type="text/javascript" src="js/conversational-form.min.js"></script>
+
+  <!-- Script icon toggle navbar -->
+  <script type="text/javascript" src="js/icon-toggler-navbar.min.js"></script>
 
   <!-- Bodymovin - Lottie Animation -->
   <script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript"></script>

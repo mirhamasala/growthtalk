@@ -38,29 +38,4 @@
         max-width: 1350px;
       }
     }
-
-    @media (min-width: 992px) {
-        border-color: transparent;
-        background-color: transparent;
-
-        .navbar-nav > li > a,
-        .navbar-nav > li > a:focus {
-            color: fade-out(white, .3);
-            &:hover {
-                color: white;
-            }
-        }
-        &.navbar-shrink {
-            border-color: fade-out(black, .9);
-            background-color: white;
-
-            .navbar-nav > li > a,
-            .navbar-nav > li > a:focus {
-                color: black;
-                &:hover {
-                    color: $pink-img;
-                }
-            }
-        }
-    }
 }
