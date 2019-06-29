@@ -145,51 +145,63 @@
       </fieldset>
 
       <fieldset>
-        <label for="occupation">Occupation</label>
-        <div class="radio">
+        <label for="knowledge_topics">Knowledge Topics</label>
+        <div class="checkbox">
           <label>
-            <input cf-questions="Great to meet you, {previous-answer}! I'm a web form, what do you do?|Awesome, {previous-answer}! And what do you do?" type="radio" name="occupation" id="occupation-1" value="developer">
-            Developer
+            <input cf-questions="Great to meet you, {previous-answer}! What knowledge topic(s) are you interested to share with us?|Awesome, {previous-answer}! What knowledge topic(s) are you interested to share with us?" type="checkbox" name="knowledge_topics" id="knowledge_topics-1" value="growth">
+            Growth
           </label>
         </div>
-        <div class="radio">
+        <div class="checkbox">
           <label>
-            <input type="radio" name="occupation" id="occupation-2" value="designer">
-            Designer
+            <input type="checkbox" name="knowledge_topics" id="knowledge_topics-2" value="product">
+            Product
           </label>
         </div>
-        <div class="radio">
+        <div class="checkbox">
           <label>
-            <input type="radio" name="occupation" id="occupation-3" value="curious-mind">
-            Curious mind
+            <input type="checkbox" name="knowledge_topics" id="knowledge_topics-3" value="culture">
+            Culture
           </label>
         </div>
-        <div class="radio">
+        <div class="checkbox">
           <label>
-            <input type="radio" name="occupation" id="occupation-2" value="lost">
-            Lost cause
+            <input type="checkbox" name="knowledge_topics" id="knowledge_topics-4" value="strategy">
+            Strategy
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="knowledge_topics" id="knowledge_topics-5" value="hiring & talent management">
+            Hiring & Talent Management
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="knowledge_topics" id="knowledge_topics-6" value="decision-making">
+            Decision-Making
           </label>
         </div>
       </fieldset>
 
       <fieldset>
-        <label for="company">Company</label>
-        <input cf-questions="Which company are you with?" type="text" class="form-control" name="company" id="company">
-      </fieldset>
-
-      <fieldset>
-        <label for="opinion">Will conversational interfaces be everywhere?</label>
-        <select cf-questions="Do you think conversational forms will replace web forms in the future?" name="opinion" id="opinion" class="form-control">
-          <option></option>
-          <option>Definitely</option>
-          <option>Maybe</option>
-          <option>No</option>
-        </select>
+        <label for="article_brief">Article Brief</label>
+        <input cf-questions="To better understand what kind of article we will work on, could you share a quick article brief? (e.g. just one line describing your ideas and what you would like to achieve with the story)." type="text" class="form-control" name="article_brief" id="article_brief">
       </fieldset>
 
       <fieldset>
         <label for="email">Email</label>
-        <input pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="If you want to stay updated on conversational interfaces from SPACE10, please give me your email." type="email" class="form-control" name="email" id="your-email">
+        <input pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="Great. Now can you please share your email?" type="email" class="form-control" name="email" id="your-email">
+      </fieldset>
+
+      <fieldset>
+        <label for="company">Company</label>
+        <input cf-questions="Not to be too nosy, but what company are you working for?" type="text" class="form-control" name="company" id="company">
+      </fieldset>
+
+      <fieldset>
+        <label for="position">Article Brief</label>
+        <input cf-questions="Last question. What is your position?" type="text" class="form-control" name="position" id="position">
       </fieldset>
 
   </form>
