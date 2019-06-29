@@ -3,6 +3,7 @@ window.onload = function() {
     formEl: document.getElementById("form"),
     context: document.getElementById("cf-context"),
     userImage: "text:🧑",
+    preventAutoFocus: true,
     hideUserInputOnNoneTextInput: true
   });
 };
