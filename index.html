@@ -17,6 +17,7 @@
   <meta property="og:site_name" content="GrowthTalk">
   <meta name="twitter:image:alt" content="zero-waste knowledge revolution">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"/>
 
   <title>GrowthTalk - Starting the zero-waste knowledge revolution!</title>
 
@@ -137,7 +138,7 @@
     </div>
   </header>
 
-  <form name="submit-to-google-sheet" id="form" cf-prevent-autofocus>
+  <form name="submit-to-google-sheet" id="form">
 
     <fieldset>
         <label for="name">What's your name?</label>
@@ -148,7 +149,7 @@
         <label for="knowledge_topics">Knowledge Topics</label>
         <div class="checkbox">
           <label>
-            <input cf-questions="Great to meet you, {previous-answer}! What knowledge topic(s) are you interested to share with us?|Awesome, {previous-answer}! What knowledge topic(s) are you interested to share with us?" type="checkbox" name="knowledge_topics" id="knowledge_topics-1" value="growth">
+            <input required cf-questions="Great to meet you, {previous-answer}! What knowledge topic(s) are you interested to share with us?|Awesome, {previous-answer}! What knowledge topic(s) are you interested to share with us?" type="checkbox" name="knowledge_topics" id="knowledge_topics-1" value="growth">
             Growth
           </label>
         </div>
@@ -186,22 +187,22 @@
 
       <fieldset>
         <label for="article_brief">Article Brief</label>
-        <input cf-questions="To better understand what kind of article we will work on, could you share a quick article brief? (e.g. just one line describing your ideas and what you would like to achieve with the story)." type="text" class="form-control" name="article_brief" id="article_brief">
+        <input required cf-questions="To better understand what kind of article we will work on, could you share a quick article brief? (e.g. just one line describing your ideas and what you would like to achieve with the story)." type="text" class="form-control" name="article_brief" id="article_brief">
       </fieldset>
 
       <fieldset>
         <label for="email">Email</label>
-        <input pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="Great. Now can you please share your email?" type="email" class="form-control" name="email" id="your-email">
+        <input required pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="Great. Now can you please share your email?" type="email" class="form-control" name="email" id="your-email">
       </fieldset>
 
       <fieldset>
         <label for="company">Company</label>
-        <input cf-questions="Not to be too nosy, but what company are you working for?" type="text" class="form-control" name="company" id="company">
+        <input required cf-questions="Not to be too nosy, but what company are you working for?" type="text" class="form-control" name="company" id="company">
       </fieldset>
 
       <fieldset>
         <label for="position">Article Brief</label>
-        <input cf-questions="Last question. What is your position?" type="text" class="form-control" name="position" id="position">
+        <input required cf-questions="Last question. What is your position?" type="text" class="form-control" name="position" id="position">
       </fieldset>
 
   </form>
@@ -215,7 +216,7 @@
             <span aria-hidden="true"><img src="img/cancel.svg" alt="close"></span>
           </button>
 
-          <div class="embed-responsive embed-responsive-1by1" id="cf-context" role="cf-context" cf-context cf-prevent-autofocus></div>
+          <div class="embed-responsive embed-responsive-1by1" id="cf-context" role="cf-context" cf-context></div>
 
         </div>
       </div>
