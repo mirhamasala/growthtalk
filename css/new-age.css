@@ -547,6 +547,10 @@ body.modal-open {
   overflow: hidden;
 }
 
+.conversational-form .user span {
+  font-size: 23px;
+}
+
 section.code-of-work {
   padding: 100px 0 0 0;
   background-color: #F9D8EB;

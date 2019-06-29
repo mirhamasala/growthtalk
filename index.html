@@ -138,7 +138,7 @@
     </div>
   </header>
 
-  <form name="submit-to-google-sheet" id="form">
+  <form id="form" action="https://formspree.io/admin@growthtalk.co" method="POST">
 
     <fieldset>
         <label for="name">What's your name?</label>
@@ -208,17 +208,23 @@
   </form>
 
   <!-- Modal GT_Personal_Form -->
-  <div class="modal fade bd-form-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade bd-form-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
-        <div class="modal-body">
+
+        <div>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true"><img src="img/cancel.svg" alt="close"></span>
           </button>
-
-          <div class="embed-responsive embed-responsive-1by1" id="cf-context" role="cf-context" cf-context></div>
-
         </div>
+
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-4by3">
+            <div class="embed-responsive embed-responsive-item" id="cf-context" role="cf-context" cf-context>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -886,18 +892,6 @@
 
   <!-- Script icon toggle navbar -->
   <script type="text/javascript" src="js/icon-toggler-navbar.min.js"></script>
-
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxnGxxNrxHVOsIcIA_FojM_CA3TBqLVjQmNy9IzUqfRxn7W8_9g/exec'
-    const form = document.forms['submit-to-google-sheet']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 
   <!-- Conversational Form -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/space10-community/conversational-form@0.9.90/dist/conversational-form.min.js" crossorigin></script>

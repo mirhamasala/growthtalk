@@ -332,13 +332,13 @@ body.modal-open {
     -webkit-overflow-scrolling: touch;
 }
 
-// ------------ Form
+// Conversational Form
 
 #form {
   height: 0px !important;
   overflow: hidden;
 }
 
-// #cf-context {
-//   display: none;
-// }
+.conversational-form .user span {
+  font-size: 23px;
+}
