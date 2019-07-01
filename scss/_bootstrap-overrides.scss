@@ -342,3 +342,9 @@ body.modal-open {
 .conversational-form .user span {
   font-size: 23px;
 }
+
+@media (min-width: 100px) and (max-width: 991px) {
+  .embed-mobile {
+    height: 90vh;
+  }
+}
