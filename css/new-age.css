@@ -340,8 +340,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .close {
   position: absolute;
-  top: 20px;
-  right: 10px;
+  top: 7px;
+  right: -9px;
   z-index: 1000;
   color: black;
   cursor: pointer;
