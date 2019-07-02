@@ -104,7 +104,11 @@
             <a class="nav-link js-scroll-trigger" href="#pricing">Pricing</a>
           </li>
           <li class="nav-item" id="nav-cta">
-            <a href="https://maxime434696.typeform.com/to/kR7B0J" class="typeform-share btn btn-outline btn-pink btn-lg" data-mode="drawer_right" target="_blank" id="cta-curious" style="color: white !important;">I'm curious!</a>
+            <!-- <a href="https://maxime434696.typeform.com/to/kR7B0J" class="typeform-share btn btn-outline btn-pink btn-lg" data-mode="drawer_right" target="_blank" id="cta-curious" style="color: white !important;">I'm curious!</a> -->
+            <!-- Button trigger modal -->
+            <button id="cta-curious" type="button" class="btn btn-outline btn-pink btn-lg" data-toggle="modal" data-target=".bd-form-modal-lg">
+              I'm curious!
+            </button>
           </li>
         </ul>
       </div>
@@ -138,7 +142,7 @@
     </div>
   </header>
 
-  <form id="form" action="https://formspree.io/admin@growthtalk.co" method="POST">
+  <form id="form" action="http://www.mailzen.io/5d1bc4326c88f800136fdb3a" method="POST">
 
     <fieldset>
         <label for="name">What's your name?</label>
@@ -205,8 +209,6 @@
         <input required cf-questions="Last question. What is your position?" type="text" class="form-control" name="position" id="position">
       </fieldset>
 
-      <cf-robot-message cf-questions="Thanks! My partners-in-crime Andreea and Maxime will get back to you asap!"></cf-robot-message>
-
   </form>
 
   <!-- Modal GT_Personal_Form -->
@@ -236,7 +238,7 @@
       <div class="row">
         <div class="col-md-8 mx-auto">
           <h1 class="section-heading white-font">We believe that knowledge-sharing should be as resilient as water flowing.</h1>
-          <a data-toggle="modal" data-target=".bd-manifesto-modal-lg" class="btn btn-outline btn-blue btn-xl">Read our manifesto</a>
+          <button type="button" data-toggle="modal" data-target=".bd-manifesto-modal-lg" class="btn btn-outline btn-blue btn-xl">Read our manifesto</button>
         </div>
       </div>
     </div>
@@ -332,7 +334,8 @@
           <li>
             <div class="content">
               <img src="img/01.png" alt="light" class="abs-illust">
-              <p>Welcome! We’d like to get to know you (first, through a quick <span class="button-hghlt"><a href="https://maxime434696.typeform.com/to/kR7B0J" data-mode="popup" target="_blank" class="typeform-share" style="text-decoration: none; color: black !important">form</a></span>).</p>
+              <p>Welcome! We’d like to get to know you (first, through a quick <span class="button-hghlt"><a data-toggle="modal" data-target=".bd-form-modal-lg" style="text-decoration: none; color: black !important">form</a>
+              </span>).</p>
             </div>
           </li>
           <li>
@@ -389,7 +392,7 @@
             </p>
           </div>
           <div class="button-centered">
-            <a data-toggle="modal" data-target=".bd-packages-modal-lg" class="btn btn-outline btn-green btn-xl">Topics we love</a>
+            <button type="button" data-toggle="modal" data-target=".bd-packages-modal-lg" class="btn btn-outline btn-green btn-xl">Topics we love</button>
           </div>
         </div>
       </div>
@@ -535,7 +538,9 @@
             </p>
           </div>
           <div class="button-centered">
-            <a href="https://maxime434696.typeform.com/to/kR7B0J" class="typeform-share btn btn-outline btn-xl btn-yellow" data-mode="popup" target="_blank">Share knowledge</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline btn-yellow btn-xl" data-toggle="modal" data-target=".bd-form-modal-lg">Share knowledge
+            </button>
           </div>
         </div>
       </div>
