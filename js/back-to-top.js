@@ -1,6 +1,6 @@
 // Back to Top button behaviour
 $(document).ready(function () {
-  var pxShow = 600;
+  var pxShow = 450;
   var scrollSpeed = 500;
   $(window).on('scroll', function() {
     if ($(window).scrollTop() >= pxShow) {
