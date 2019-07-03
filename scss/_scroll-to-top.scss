@@ -11,14 +11,14 @@
     transition: all 0.5s;
 }
 
-#backtotop.visible {
+#backtotop.visibility {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
 
 }
 
-#backtotop.visible a:hover {
+#backtotop.visibility a:hover {
     outline: none;
     opacity: 0.9;
     background: $pink-img;
@@ -48,5 +48,9 @@ body #backtotop a {
     position: absolute;
     top: 9px;
     right: 14.5px;
+}
+
+.display {
+  display: none;
 }
 
