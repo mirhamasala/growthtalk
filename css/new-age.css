@@ -238,7 +238,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   opacity: .9;
-  outline: 0;
   -webkit-transition: .2s;
   transition: .2s;
   transition: .2s;
@@ -251,7 +250,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   background-color: #F36B7F;
 }
 
-.btn-pink:hover, .btn-pink:focus, .btn-pink:active, .btn-pink.active {
+.btn-pink:hover {
   color: white;
   -webkit-box-shadow: 0 4px 6px #F36B7F;
   box-shadow: 0 4px 6px #F36B7F;
@@ -265,7 +264,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   color: white !important;
 }
 
-.btn-blue:hover, .btn-blue:focus, .btn-blue:active, .btn-blue.active {
+.btn-blue:hover {
   background-color: white;
   color: #9FBEFF !important;
   -webkit-transition: .2s;
@@ -280,7 +279,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   color: white !important;
 }
 
-.btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active {
+.btn-green:hover {
   background-color: white;
   color: #83B5A5 !important;
   -webkit-transition: .2s;
@@ -295,7 +294,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   color: black !important;
 }
 
-.btn-yellow:hover, .btn-yellow:focus, .btn-yellow:active, .btn-yellow.active {
+.btn-yellow:hover {
   background-color: black;
   color: #F8CF62 !important;
   -webkit-transition: .2s;
@@ -311,6 +310,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.btn:focus, .btn.focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .btn-lg {
@@ -359,10 +364,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .close img {
   width: 50%;
-}
-
-button:focus {
-  outline: none;
 }
 
 .text-styling {

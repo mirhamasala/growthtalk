@@ -36,7 +36,6 @@
   &:active,
   &.active {
     opacity: .9;
-    outline: 0;
     transition: .2s;
     transition: .2s;
   }
@@ -47,9 +46,7 @@
   box-shadow: 0 4px 10px $pink-img;
   background-color: $pink-img;
   &:hover,
-  &:focus,
-  &:active,
-  &.active {
+   {
     color: white;
     box-shadow: 0 4px 6px $pink-img;
   }
@@ -61,9 +58,7 @@
   border: 1px white solid;
   color: white !important;
   &:hover,
-  &:focus,
-  &:active,
-  &.active {
+   {
     // box-shadow: 0 4px 6px white;
     background-color: white;
     color: $light-blue-img !important;
@@ -77,9 +72,7 @@
   border: 1px white solid;
   color: white !important;
   &:hover,
-  &:focus,
-  &:active,
-  &.active {
+   {
     // box-shadow: 0 4px 6px white;
     background-color: white;
     color: $green-img !important;
@@ -93,9 +86,7 @@
   border: 1px black solid;
   color: black !important;
   &:hover,
-  &:focus,
-  &:active,
-  &.active {
+   {
     // box-shadow: 0 4px 6px white;
     background-color: black;
     color: $yellow-img !important;
@@ -112,6 +103,11 @@
   // background-color: hsl(210, 97%, 63%);
   @include alt-font;
 
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: none;
+  }
 }
 
 .btn-lg {
@@ -158,10 +154,6 @@
 
 .close img {
   width: 50%;
-}
-
-button:focus {
-  outline: none;
 }
 
 .text-styling {
@@ -272,7 +264,7 @@ button:focus {
 @media (min-width: 768px) {
   .modal-xxl {
     width: 90%;
-   max-width:1200px;
+    max-width:1200px;
   }
 }
 
