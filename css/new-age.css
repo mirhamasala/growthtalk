@@ -1255,8 +1255,8 @@ section.cta {
   height: 470px;
   padding: 15px;
   background-color: white;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -1268,11 +1268,7 @@ section.cta {
 }
 
 .card-cons {
-  border: 2px solid #83B5A5;
-}
-
-.card-corp {
-  border: 2px solid #F8CF62;
+  border: 1px solid #83B5A5;
 }
 
 .green-line {
@@ -1493,4 +1489,29 @@ body #backtotop a {
 
 .display {
   display: none;
+}
+
+.flash {
+  padding: 16px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: white;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin: 8px;
+  position: fixed;
+  bottom: 5px;
+  z-index: 10000;
+}
+
+.flash-info {
+  border: 2px solid #F36B7F;
 }
