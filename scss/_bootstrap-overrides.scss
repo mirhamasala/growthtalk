@@ -340,3 +340,10 @@ body.modal-open {
     height: 80vh;
   }
 }
+
+#html_element{
+  visibility: hidden;
+}
+#html_element.show{
+  visibility: visible;
+}

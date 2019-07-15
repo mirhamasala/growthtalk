@@ -558,6 +558,14 @@ body.modal-open {
   }
 }
 
+#html_element {
+  visibility: hidden;
+}
+
+#html_element.show {
+  visibility: visible;
+}
+
 section.code-of-work {
   padding: 100px 0 0 0;
   background-color: #F9D8EB;

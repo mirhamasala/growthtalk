@@ -63,9 +63,6 @@
     gtag('config', 'UA-142551611-1');
   </script>
 
-  <script src="https://www.google.com/recaptcha/api.js?render=6LfwiK0UAAAAAN9XDaa6k0kC_sl2urpBx0x8nh2P"></script>
-
-
 </head>
 
 <body id="page-top">
@@ -144,10 +141,12 @@
     </div>
   </header>
 
-  <form id="form" action="http://www.mailzen.io/5d1bc4326c88f800136fdb3a" method="POST">
+  <form id="form" name="submit-to-google-sheet">
+    <!-- action="http://www.mailzen.io/5d1bc4326c88f800136fdb3a" method="POST" -->
 
     <fieldset>
         <label for="name">What's your name?</label>
+        <input type="hidden" name="curious" value="curious" />
         <input required cf-questions="Hi there! What's your name? 😊" type="text" class="form-control" name="name" id="name" />
       </fieldset>
 
@@ -212,6 +211,74 @@
       </fieldset>
 
   </form>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzxv73bKXXgub0Nw9dsB4nxmd_Z4ZMTQk4wsm4aqyP-6jdVqKol/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<!--   <div id='html_element'>
+
+  </div> -->
+
+  <!-- Captcha -->
+  <!-- <script>
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '6Lfwnq0UAAAAALkGSM4pLc6ZXSfB--qJPugwWVpw',
+          'callback' : correctCaptcha
+        });
+      };
+
+      var currentCFSuccessCallback = null,
+          currentCFErrorCallback = null;
+
+      var correctCaptcha = function(response) {
+        if(response){
+            document.getElementById("html_element").classList.remove("show");
+            currentCFSuccessCallback();
+        }else{
+            document.getElementById("html_element").classList.add("show");
+            currentCFSuccessCallback("Recaptche not correct..");
+        }
+      };
+
+      (function(){
+        var conversationalForm = new cf.ConversationalForm({
+          formEl: document.getElementById("form"),
+          flowStepCallback: function(dto, success, error){
+            console.log(dto.tag.value, dto.tag.name, dto.tag.id);
+
+            if(dto.tag.value && dto.tag.value[0] == "recaptcha"){
+              currentCFSuccessCallback = success;
+              currentCFErrorCallback = error;
+              document.getElementById("html_element").classList.add("show");
+              conversationalForm.addRobotChatResponse("Recaptcha showing ...");
+            }else if(dto.tag.value && dto.tag.value[0] == "no-recaptcha"){
+              error("Please choose try recapture");
+            }else{
+              success();
+            }
+
+          },
+          submitCallback: function(){
+            // remove Conversational Form
+            alert("Recaptcha test done")
+          }
+        });
+      })();
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script> -->
 
   <!-- Modal GT_Personal_Form -->
   <div class="modal fade bd-form-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -547,9 +614,7 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <div style="height: 150px; overflow: hidden;">
+  </section><div style="height: 150px; overflow: hidden;">
     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
       <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #F8CF62;"></path>
     </svg>
