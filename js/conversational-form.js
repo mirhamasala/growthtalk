@@ -10,7 +10,7 @@ window.onload = function() {
         var formDataSerialized = conversationalForm.getFormData(true);
         console.log("Formdata:", formData);
         console.log("Formdata, serialized:", formDataSerialized);
-        conversationalForm.addRobotChatResponse("Awesome! My partners in crime Andreea and Maxime will get back to you within 24h! 🎉");
+        conversationalForm.addRobotChatResponse("Awesome! We will get back to you within 24h! 🎉");
     }
   });
 };
