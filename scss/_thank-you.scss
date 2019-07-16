@@ -1,0 +1,22 @@
+.flex-thank-you {
+  display: flex;
+  flex-direction: column;
+}
+
+.thank-you-img {
+  text-align: center;
+  margin: 50px;
+}
+
+.thank-you-img img {
+  max-width: 100%;
+}
+
+.thank-you-cta {
+  margin: 0 auto;
+}
+
+.thx-text {
+  margin: 0 0 50px;
+  text-align: center;
+}

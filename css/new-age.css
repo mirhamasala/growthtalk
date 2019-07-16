@@ -1523,3 +1523,31 @@ body #backtotop a {
 .flash-info {
   border: 2px solid #F36B7F;
 }
+
+.flex-thank-you {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.thank-you-img {
+  text-align: center;
+  margin: 50px;
+}
+
+.thank-you-img img {
+  max-width: 100%;
+}
+
+.thank-you-cta {
+  margin: 0 auto;
+}
+
+.thx-text {
+  margin: 0 0 50px;
+  text-align: center;
+}
