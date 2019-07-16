@@ -125,7 +125,7 @@
             <p class="mb-6">Redefining how busy individuals from the tech space share knowledge and create authentic stories.</p>
             <div class="button-centered">
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-outline btn-pink btn-xl" data-toggle="modal" data-target=".bd-form-modal-lg">
+              <button type="button" id="header-curious"class="btn btn-outline btn-pink btn-xl" data-toggle="modal" data-target=".bd-form-modal-lg">
                 I'm curious!
               </button>
 
@@ -145,7 +145,6 @@
 
     <fieldset>
         <label for="name">What's your name?</label>
-        <input type="hidden" name="curious" value="curious" />
         <input required cf-questions="Hi there! What's your name? 😊" type="text" class="form-control" name="name" id="name" />
       </fieldset>
 
@@ -191,7 +190,7 @@
 
       <fieldset>
         <label for="article_brief">Article Brief</label>
-        <input required cf-questions="To better understand what kind of article we will work on, could you share a quick article brief? (e.g. just one line describing your ideas and what you would like to achieve with the story)." type="text" class="form-control" name="article_brief" id="article_brief">
+        <input required cf-questions="Could you share a quick article brief? We just need a one-liner to understand the kind of article we will work on together. 😊" type="text" class="form-control" name="article_brief" id="article_brief">
       </fieldset>
 
       <fieldset>
@@ -402,7 +401,7 @@
           <li>
             <div class="content">
               <img src="img/01.png" alt="light" class="abs-illust">
-              <p>Welcome! We’d like to get to know you (first, through a quick <span class="button-hghlt"><a data-toggle="modal" data-target=".bd-form-modal-lg" style="text-decoration: none; color: black !important">chat</a>
+              <p>Welcome! We’d like to get to know you (first, through a quick <span class="button-hghlt"><a id="quick-chat" data-toggle="modal" data-target=".bd-form-modal-lg" style="text-decoration: none; color: black !important">chat</a>
               </span>).</p>
             </div>
           </li>
@@ -453,7 +452,7 @@
         <div class="col-md-8 mx-auto">
           <div class="text-justify">
             <h1 class="white-font section-heading">Knowledge deserves to be shared.<br></h1>
-            <p style="color: white;">Implicitly, valuable content deserves more time and effort spent writing, researching and asking the right questions.<br><br>
+            <p style="color: white;">Implicitly, valuable content requires more time and effort spent writing and researching.<br><br>
 
             Through our curiosity and hunger for knowledge, we can ask the right questions to curate stories from individuals like us, who are passionate about their work, who value ideas and yet don’t have time to put them on a canvas.<br><br>
             Ultimately, we want to help growth leaders get recognized as experts in their field.
@@ -607,7 +606,7 @@
           </div>
           <div class="button-centered">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-outline btn-yellow btn-xl" data-toggle="modal" data-target=".bd-form-modal-lg">Share knowledge
+            <button type="button" id="share-knowledge" class="btn btn-outline btn-yellow btn-xl" data-toggle="modal" data-target=".bd-form-modal-lg">Share knowledge
             </button>
           </div>
         </div>
@@ -859,7 +858,7 @@
           </div>
           <div class="pricing-footer">
             <div class="button-hghlt">
-              <a href="https://maxime434696.typeform.com/to/kR7B0J" data-mode="popup" target="_blank" class="typeform-share" style="text-decoration: none; color: black !important">Let's do it!</a>
+              <a href="" id="basic" data-toggle="modal" data-target=".bd-form-modal-lg" style="text-decoration: none; color: black !important">Let's do it!</a>
             </div>
           </div>
         </div>
@@ -892,7 +891,7 @@
           </div>
           <div class="pricing-footer">
             <div class="button-hghlt">
-              <a href="https://maxime434696.typeform.com/to/kR7B0J" data-mode="popup" target="_blank" class="typeform-share" style="text-decoration: none; color: black !important">Let's do it!</a>
+              <a href="" id="premium" data-toggle="modal" data-target=".bd-form-modal-lg" style="text-decoration: none; color: black !important">Let's do it!</a>
             </div>
           </div>
         </div>
@@ -900,7 +899,7 @@
         <div class="card-pricing card-cons">
           <!-- <div class="custom"><p class="card-font" style="color: #83B5A5;">Personal</p></div> -->
           <div class="pricing-header">
-            <h3>Sky is the limit</h3>
+            <h3>Sky Is the Limit</h3>
             <p class="card-font"><i>Go all in with your personal branding</i></p>
           </div>
           <div class="green-line"></div>
@@ -934,7 +933,7 @@
           </div>
           <div class="pricing-footer">
             <div class="button-hghlt">
-              <a href="https://maxime434696.typeform.com/to/kR7B0J" data-mode="popup" target="_blank" class="typeform-share" style="text-decoration: none; color: black !important">Let's do it!</a>
+              <a href="" id="sky" data-toggle="modal" data-target=".bd-form-modal-lg" style="text-decoration: none; color: black !important">Let's do it!</a>
             </div>
           </div>
         </div>
@@ -960,14 +959,6 @@
     </div>
   </footer>
 
-  <!-- Alert -->
-  <!-- <div id="discount_alert" class="flash flash-info alert alert-dismissible fade show display visibility" role="alert">
-    <span><strong>Welcome</strong> 🎉 Get 20% discount.</span>
-    <a data-dismiss="alert" aria-label="Close">
-      <i class="fas fa-times"></i>
-    </a>
-  </div>
- -->
   <!-- Back to top -->
   <div id="backtotop" class="display visibility"><a href="#"><i class="fas fa-angle-up"></i></a></div>
 
@@ -1006,8 +997,8 @@
   <!-- Conversational Form -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/space10-community/conversational-form@0.9.90/dist/conversational-form.min.js" crossorigin></script>
 
-  <!-- Script backtotop button -->
-  <script type="text/javascript" src="js/alert.min.js"></script>
+  <!-- Script hidden form value -->
+  <script type="text/javascript" src="js/hidden-form-value.min.js"></script>
 
   <!-- Bodymovin - Lottie Animation --><!--
   <script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript"></script>
