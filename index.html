@@ -212,74 +212,6 @@
 
   </form>
 
-  <!-- <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzxv73bKXXgub0Nw9dsB4nxmd_Z4ZMTQk4wsm4aqyP-6jdVqKol/exec'
-    const form = document.forms['submit-to-google-sheet']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script> -->
-
-<!--   <div id='html_element'>
-
-  </div> -->
-
-  <!-- Captcha -->
-  <!-- <script>
-      var onloadCallback = function() {
-        grecaptcha.render('html_element', {
-          'sitekey' : '6Lfwnq0UAAAAALkGSM4pLc6ZXSfB--qJPugwWVpw',
-          'callback' : correctCaptcha
-        });
-      };
-
-      var currentCFSuccessCallback = null,
-          currentCFErrorCallback = null;
-
-      var correctCaptcha = function(response) {
-        if(response){
-            document.getElementById("html_element").classList.remove("show");
-            currentCFSuccessCallback();
-        }else{
-            document.getElementById("html_element").classList.add("show");
-            currentCFSuccessCallback("Recaptche not correct..");
-        }
-      };
-
-      (function(){
-        var conversationalForm = new cf.ConversationalForm({
-          formEl: document.getElementById("form"),
-          flowStepCallback: function(dto, success, error){
-            console.log(dto.tag.value, dto.tag.name, dto.tag.id);
-
-            if(dto.tag.value && dto.tag.value[0] == "recaptcha"){
-              currentCFSuccessCallback = success;
-              currentCFErrorCallback = error;
-              document.getElementById("html_element").classList.add("show");
-              conversationalForm.addRobotChatResponse("Recaptcha showing ...");
-            }else if(dto.tag.value && dto.tag.value[0] == "no-recaptcha"){
-              error("Please choose try recapture");
-            }else{
-              success();
-            }
-
-          },
-          submitCallback: function(){
-            // remove Conversational Form
-            alert("Recaptcha test done")
-          }
-        });
-      })();
-    </script>
-
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-        async defer>
-    </script> -->
-
   <!-- Modal GT_Personal_Form -->
   <div class="modal fade bd-form-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -311,8 +243,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <div class="wave">
+  </section
+  ><div class="wave">
     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
       <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #9FBEFF;"></path>
     </svg>
@@ -466,8 +398,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <div class="wave">
+  </section
+  ><div class="wave">
     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
       <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #83B5A5;"></path>
     </svg>
@@ -595,32 +527,30 @@
     </div>
   </section>
 
-  <div style="display: block !important;">
-    <section class="cta" id="cta">
-      <div class="container" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="30">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <div class="text-justify">
-              <h1 class="black-font section-heading">The best content comes with telling genuine stories.<br></h1>
-              <p class="section-heading">
-                We help you build your personal branding and share your knowledge by writing authentic pieces of content on your behalf to bring immense value to your peers.
-              </p>
-            </div>
-            <div class="button-centered">
-              <!-- Button trigger modal -->
-              <button type="button" id="share-knowledge" class="btn btn-outline btn-yellow btn-xl" data-toggle="modal" data-target=".bd-form-modal-lg">Share knowledge
-              </button>
-            </div>
+
+  <section class="cta" id="cta">
+    <div class="container" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="30">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="text-justify">
+            <h1 class="black-font section-heading">The best content comes with telling genuine stories.<br></h1>
+            <p class="section-heading">
+              We help you build your personal branding and share your knowledge by writing authentic pieces of content on your behalf to bring immense value to your peers.
+            </p>
+          </div>
+          <div class="button-centered">
+            <!-- Button trigger modal -->
+            <button type="button" id="share-knowledge" class="btn btn-outline btn-yellow btn-xl" data-toggle="modal" data-target=".bd-form-modal-lg">Share knowledge
+            </button>
           </div>
         </div>
       </div>
-    </section>
-    <div class="wave">
-      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-        <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #F8CF62;"></path>
-      </svg>
     </div>
-
+  </section
+  ><div class="wave">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #F8CF62;"></path>
+    </svg>
   </div>
 
   <section class="articles" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="30" id="content">
@@ -820,8 +750,8 @@
       </div>
 
     </div>
-  </section>
-  <div class="wave">
+  </section
+  ><div class="wave">
     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
       <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #F9D8EB;"></path>
     </svg>
