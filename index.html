@@ -117,6 +117,7 @@
     </div>
   </header>
 
+  <!-- Conversational-form -->
   <form id="form" action="https://formsubmit.co/admin@growthtalk.co" method="POST">
 
     <fieldset>
@@ -128,7 +129,7 @@
         <label for="knowledge_topics">Knowledge Topics</label>
         <div class="checkbox">
           <label>
-            <input required cf-questions="Great to meet you, {previous-answer}! What knowledge topic(s) are you interested to share with us?|Awesome, {previous-answer}! What knowledge topic(s) are you interested to share with us?" type="checkbox" name="knowledge_topics" id="knowledge_topics-1" value="growth">
+            <input required cf-questions="Great to meet you, {previous-answer}! What knowledge topic(s) are you interested to share with us?" type="checkbox" name="knowledge_topics" id="knowledge_topics-1" value="growth">
             Growth
           </label>
         </div>
@@ -171,7 +172,8 @@
 
       <fieldset>
         <label for="email">Email</label>
-        <input required pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="Great. Now can you please share your email?" type="email" class="form-control" name="email" id="your-email">
+        <input required cf-questions="Great. Now can you please share your email?" type="email" class="form-control" name="email" id="your-email">
+        <!-- pattern=".+\@.+\..+" cf-error="E-mail not correct" -->
       </fieldset>
 
       <fieldset>
@@ -183,12 +185,14 @@
         <label for="position">Article Brief</label>
         <input required cf-questions="Last question. What is your position?" type="text" class="form-control" name="position" id="position">
       </fieldset>
+
+      <!-- https://formsubmit.co/ -->
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://growthtalk.co/thank-you.html">
 
   </form>
 
-  <!-- Modal GT_Personal_Form -->
+  <!-- Modal where Conversational-form is embedded -->
   <div class="modal fade bd-form-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
