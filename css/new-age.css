@@ -1279,6 +1279,10 @@ section.cta {
   border: 1px solid #83B5A5;
 }
 
+.card-corp {
+  border: 1px solid #F8CF62;
+}
+
 .green-line {
   width: 70%;
   margin: 0 auto;
