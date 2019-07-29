@@ -131,7 +131,7 @@
         <label for="knowledge_topics">Knowledge Topics</label>
         <div class="checkbox">
           <label>
-            <input required cf-questions="Great to meet you, {previous-answer}! What knowledge topic(s) are you interested to share with us?" type="checkbox" name="knowledge_topics" id="knowledge_topics-1" value="growth">
+            <input cf-questions="Great to meet you, {previous-answer}! What knowledge topic(s) are you interested to share with us?" type="checkbox" name="knowledge_topics" id="knowledge_topics-1" value="growth">
             Growth
           </label>
         </div>
@@ -174,8 +174,7 @@
 
       <fieldset>
         <label for="email">Email</label>
-        <input required cf-questions="Great. Now can you please share your email?" type="email" class="form-control" name="email" id="your-email">
-        <!-- pattern=".+\@.+\..+" cf-error="E-mail not correct" -->
+        <input required pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="Great. Now can you please share your email?" type="email" class="form-control" name="email" id="your-email">
       </fieldset>
 
       <fieldset>
@@ -918,7 +917,7 @@
   <script type="text/javascript" src="js/icon-toggler-navbar.min.js"></script>
 
   <!-- Script backtotop button -->
-  <script type="text/javascript" src="js/back-to-top.min.js"></script>
+  <!-- <script type="text/javascript" src="js/back-to-top.min.js"></script> -->
 
   <!-- Conversational Form -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/space10-community/conversational-form@0.9.90/dist/conversational-form.min.js" crossorigin></script>
