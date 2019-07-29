@@ -37,6 +37,6 @@ $(function() {
 
 $(function() {
   $('#sky').click(function(){
-    $("#form").append('<input type="hidden" name="sky is the limit" value="sky is the limit" />')
+    $("#form-2").append('<input type="hidden" name="sky is the limit" value="sky is the limit" />')
   });
 });

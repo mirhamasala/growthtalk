@@ -858,8 +858,8 @@
           </div>
           <div class="pricing-footer">
             <div class="button-hghlt">
-              <a href="" id="sky" data-toggle="modal" data-target=".bd-form-modal-lg" style="text-decoration: none; color: black !important">Let's chat!</a>
-              <!-- <a href="https://maxime434696.typeform.com/to/neo9yw" class="typeform-share" data-mode="popup" id="cta-curious" style="text-decoration: none; color: black !important">Let's chat!</a> -->
+              <a href="" id="sky" data-toggle="modal" data-target=".bd-form-2-modal-lg" style="text-decoration: none; color: black !important">Get in touch!</a>
+              <!-- <a href="https://maxime434696.typeform.com/to/neo9yw" class="typeform-share" data-mode="popup" id="cta-curious" style="text-decoration: none; color: black !important">Get in touch!</a> -->
             </div>
           </div>
         </div>
@@ -867,6 +867,86 @@
       </div>
     </div>
   </section>
+
+  <!-- Conversational-form-2 -->
+  <form id="form-2" action="https://formsubmit.co/admin@growthtalk.co" method="POST">
+
+    <fieldset>
+        <label for="name">What's your name?</label>
+        <input required cf-questions="Hi there! What's your name? 😊" type="text" class="form-control" name="name" />
+      </fieldset>
+
+      <fieldset>
+        <label for="knowledge_topics">Knowledge Topics</label>
+        <div class="checkbox">
+          <label>
+            <input cf-questions="Great to meet you, {previous-answer}! What knowledge-sharing services are you interested in?" type="checkbox" name="knowledge_services" value="personal branding">
+            Helping my employees develop their personal branding
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="knowledge_services" value="authentic content">
+            Helping my company spread its knowledge through authentic pieces of content
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="knowledge_services" value="other">
+            Other
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <label for="service_brief">Service Brief</label>
+        <input cf-questions="Do you want to share a bit more about your expectations from our service? 😊" type="text" class="form-control" name="service_brief">
+      </fieldset>
+
+      <fieldset>
+        <label for="email">Email</label>
+        <input required pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="Great. Now can you please share your email?" type="email" class="form-control" name="email" id="your-email">
+      </fieldset>
+
+      <fieldset>
+        <label for="company">Company</label>
+        <input required cf-questions="Not to be too nosy, but what company are you working for?" type="text" class="form-control" name="company" id="company">
+      </fieldset>
+
+      <fieldset>
+        <label for="position">Article Brief</label>
+        <input required cf-questions="Last question. What is your position?" type="text" class="form-control" name="position" id="position">
+      </fieldset>
+
+      <!-- https://formsubmit.co/ -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://growthtalk.co/thank-you.html">
+
+  </form>
+
+  <!-- Modal where Conversational-form is embedded in-->
+  <div class="modal fade bd-form-2-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+
+        <div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="img/cancel.svg" alt="close"></span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-4by3 embed-mobile">
+            <div class="embed-responsive embed-responsive-item" id="cf-context-2" role="cf-context" cf-context>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
 
   <footer>
     <div class="container">
