@@ -1,56 +1,60 @@
-#backtotop {
-    position: fixed;
-    right: 0;
-    opacity: 0;
-    visibility: hidden;
-    bottom: 25px;
-    margin: 0 25px 0 0;
-    z-index: 9999;
-    transition: 0.35s;
-    transform: scale(0.7);
-    transition: all 0.5s;
-}
+@media only screen and (max-device-width: 600px) {
 
-#backtotop.visibility {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
+  #backtotop {
+      position: fixed;
+      right: 0;
+      opacity: 0;
+      visibility: hidden;
+      bottom: 25px;
+      margin: 0 25px 0 0;
+      z-index: 9999;
+      transition: 0.35s;
+      transform: scale(0.7);
+      transition: all 0.5s;
+  }
 
-}
+  #backtotop.visibility {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
 
-#backtotop.visibility a:hover {
-    outline: none;
-    opacity: 0.9;
-    background: $pink-img;
-}
+  }
 
-#backtotop a {
-    outline: none;
-    text-decoration: none;
-    border: 0 none;
-    display: block;
-    width: 46px;
-    height: 46px;
-    background-color: $gray-dark;
-    opacity: .4;
-    transition: all 0.3s;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 26px
-}
+  #backtotop.visibility a:hover {
+      outline: none;
+      opacity: 0.9;
+      background: $pink-img;
+  }
 
-body #backtotop a {
-    outline: none;
-    color: #fff;
-}
+  #backtotop a {
+      outline: none;
+      text-decoration: none;
+      border: 0 none;
+      display: block;
+      width: 46px;
+      height: 46px;
+      background-color: $gray-dark;
+      opacity: .4;
+      transition: all 0.3s;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 26px
+  }
 
-.fa-angle-up:before {
-    position: absolute;
-    top: 9px;
-    right: 14.5px;
-}
+  body #backtotop a {
+      outline: none;
+      color: #fff;
+  }
 
-.display {
-  display: none;
+  .fa-angle-up:before {
+      position: absolute;
+      top: 9px;
+      right: 14.5px;
+  }
+
+  .display {
+    display: none;
+  }
+
 }
 

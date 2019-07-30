@@ -1229,40 +1229,6 @@ section.cta {
   background-color: #F8CF62;
 }
 
-#myBtn {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Fixed/sticky position */
-  bottom: 20px;
-  /* Place the button at the bottom of the page */
-  right: 30px;
-  /* Place the button 30px from the right */
-  z-index: 99;
-  /* Make sure it does not overlap */
-  border: none;
-  /* Remove borders */
-  outline: none;
-  /* Remove outline */
-  background-color: red;
-  /* Set a background color */
-  color: white;
-  /* Text color */
-  cursor: pointer;
-  /* Add a mouse pointer on hover */
-  padding: 15px;
-  /* Some padding */
-  border-radius: 10px;
-  /* Rounded corners */
-  font-size: 18px;
-  /* Increase font size */
-}
-
-#myBtn:hover {
-  background-color: #555;
-  /* Add a dark-grey background on hover */
-}
-
 .card-pricing {
   position: relative;
   height: 550px;
@@ -1448,64 +1414,60 @@ section.pricing {
   left: 8px;
 }
 
-#backtotop {
-  position: fixed;
-  right: 0;
-  opacity: 0;
-  visibility: hidden;
-  bottom: 25px;
-  margin: 0 25px 0 0;
-  z-index: 9999;
-  -webkit-transition: 0.35s;
-  transition: 0.35s;
-  -webkit-transform: scale(0.7);
-  transform: scale(0.7);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-#backtotop.visibility {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-#backtotop.visibility a:hover {
-  outline: none;
-  opacity: 0.9;
-  background: #F36B7F;
-}
-
-#backtotop a {
-  outline: none;
-  text-decoration: none;
-  border: 0 none;
-  display: block;
-  width: 46px;
-  height: 46px;
-  background-color: #333333;
-  opacity: .4;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 26px;
-}
-
-body #backtotop a {
-  outline: none;
-  color: #fff;
-}
-
-.fa-angle-up:before {
-  position: absolute;
-  top: 9px;
-  right: 14.5px;
-}
-
-.display {
-  display: none;
+@media only screen and (max-device-width: 600px) {
+  #backtotop {
+    position: fixed;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 25px;
+    margin: 0 25px 0 0;
+    z-index: 9999;
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #backtotop.visibility {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  #backtotop.visibility a:hover {
+    outline: none;
+    opacity: 0.9;
+    background: #F36B7F;
+  }
+  #backtotop a {
+    outline: none;
+    text-decoration: none;
+    border: 0 none;
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-color: #333333;
+    opacity: .4;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 26px;
+  }
+  body #backtotop a {
+    outline: none;
+    color: #fff;
+  }
+  .fa-angle-up:before {
+    position: absolute;
+    top: 9px;
+    right: 14.5px;
+  }
+  .display {
+    display: none;
+  }
 }
 
 .flash {
