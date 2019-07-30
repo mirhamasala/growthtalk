@@ -123,7 +123,7 @@
 
     <fieldset>
         <label for="name">What's your name?</label>
-        <input required cf-questions="Hi there! What's your name? 😊" type="text" class="form-control" name="name" id="name" />
+        <input required cf-questions="Hi there! What's your name? 😊" cf-error="Uh oh. Looks like this field is required!" type="text" class="form-control" name="name" id="name" />
       </fieldset>
 
       <fieldset>
@@ -168,7 +168,7 @@
 
       <fieldset>
         <label for="article_brief">Article Brief</label>
-        <input required cf-questions="Could you share a quick brief? We just need a one-liner to understand the kind of content we will work on together. 😊" type="text" class="form-control" name="article_brief" id="article_brief">
+        <input required cf-questions="Could you share a quick brief? We just need a one-liner to understand the kind of content we will work on together. 😊" cf-error="Uh oh. Looks like this field is required!" type="text" class="form-control" name="article_brief" id="article_brief">
       </fieldset>
 
       <fieldset>
@@ -178,12 +178,12 @@
 
       <fieldset>
         <label for="company">Company</label>
-        <input required cf-questions="Not to be too nosy, but what company are you working for?" type="text" class="form-control" name="company" id="company">
+        <input required cf-questions="Not to be too nosy, but what company are you working for?"cf-error="Uh oh. Looks like this field is required!" type="text" class="form-control" name="company" id="company">
       </fieldset>
 
       <fieldset>
         <label for="position">Article Brief</label>
-        <input required cf-questions="Last question. What is your position?" type="text" class="form-control" name="position" id="position">
+        <input required cf-questions="Last question. What is your position?" cf-error="Uh oh. Looks like this field is required!" type="text" class="form-control" name="position" id="position">
       </fieldset>
 
       <!-- https://formsubmit.co/ -->
