@@ -197,6 +197,12 @@
   text-align: justify;
 }
 
+.text-justify-desktop {
+  @media (min-width: 768px) {
+    text-align: justify;
+  }
+}
+
 .text-hghlt {
   padding-left: 10px;
   border-left: 2px solid;
