@@ -1299,7 +1299,7 @@ section.pricing {
 
 .cards-pricing {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
   padding: 15px;
   max-width: 1350px;
@@ -1341,15 +1341,7 @@ section.pricing {
   .cards-pricing {
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
-    padding: 20px 190px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .cards-pricing {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 35px;
-    padding: 20px 70px;
+    padding: 20px 150px;
   }
 }
 
