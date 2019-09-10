@@ -935,7 +935,7 @@ h1 {
 }
 
 section.team {
-  padding: 0 0 100px 0;
+  padding: 100px 0 0 0;
 }
 
 section.team .ma {
@@ -1235,10 +1235,10 @@ section.cta {
   background-color: #F8CF62;
 }
 
-.card-pricing {
+.card-service {
   position: relative;
   height: 550px;
-  padding: 15px;
+  padding: 2rem;
   background-color: white;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -1246,25 +1246,18 @@ section.cta {
   overflow: hidden;
 }
 
-.pricing-footer {
+.service-body {
+  padding-top: 20px;
+}
+
+.service-footer {
   position: absolute;
   right: 20px;
   bottom: 20px;
 }
 
-.card-cons {
-  border: 1px solid #83B5A5;
-}
-
 .card-corp {
   border: 1px solid #F8CF62;
-}
-
-.green-line {
-  width: 70%;
-  margin: 0 auto;
-  border-bottom: 0.5px solid #83B5A5;
-  border-radius: 10px;
 }
 
 .yellow-line {
@@ -1274,27 +1267,37 @@ section.cta {
   border-radius: 10px;
 }
 
-.margin-h3 {
-  margin: 20px 0;
-  text-align: center;
-}
-
 .margin-p {
   margin: 10px 0;
-}
-
-.custom {
-  position: absolute;
-  top: 10px;
-  right: 20px;
 }
 
 .indent-card {
   padding-left: 10px;
 }
 
-section.pricing {
-  padding: 100px 0 25px 0;
+.imgservice {
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 175px;
+  max-width: 280px;
+  margin: 1rem 0;
+}
+
+#content-strategy {
+  background-image: url(../img/04.png);
+}
+
+#brand-aware {
+  background-image: url(../img/07.png);
+}
+
+#lead-gen {
+  background-image: url(../img/11.png);
+}
+
+section.service {
+  padding: 100px 0;
 }
 
 .cards-pricing {
@@ -1339,9 +1342,9 @@ section.pricing {
 
 @media (min-width: 1200px) {
   .cards-pricing {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    padding: 20px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 20px 30px;
   }
 }
 

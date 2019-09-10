@@ -1,32 +1,25 @@
-.card-pricing {
+.card-service {
   position: relative;
   height: 550px;
-  padding: 15px;
+  padding: 2rem;
   background-color: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   border-radius: 10px;
   overflow: hidden;
 }
 
-.pricing-footer {
+.service-body {
+  padding-top: 20px;
+}
+
+.service-footer {
   position: absolute;
   right: 20px;
   bottom: 20px;
 }
 
-.card-cons {
-  border: 1px solid $green-img;
-}
-
 .card-corp {
   border: 1px solid $yellow-img;
-}
-
-.green-line {
-  width: 70%;
-  margin: 0 auto;
-  border-bottom: .5px solid $green-img;
-  border-radius: 10px;
 }
 
 .yellow-line {
@@ -36,21 +29,31 @@
   border-radius: 10px;
 }
 
-.margin-h3 {
-  margin: 20px 0;
-  text-align: center;
-}
-
 .margin-p {
   margin: 10px 0;
 }
 
-.custom {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-}
-
 .indent-card {
   padding-left: 10px;
+}
+
+.imgservice {
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 175px;
+  max-width: 280px;
+  margin: 1rem 0;
+}
+
+#content-strategy {
+  background-image:url(../img/04.png);
+}
+
+#brand-aware {
+  background-image:url(../img/07.png);
+}
+
+#lead-gen {
+  background-image:url(../img/11.png);
 }
