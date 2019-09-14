@@ -1,0 +1,101 @@
+:root {
+    --color-text: 0, 0, 0;
+    --color-background: 255, 255, 255;
+    --color-link: 0, 0, 0;
+    --type-base: calc(1.6em + 0.5vw);
+    --type-xxxx-small: 30%;
+    --type-xxx-small: 55%;
+    --type-xx-small: 65%;
+    --type-x-small: 75%;
+    --type-small: 85%;
+    --type-medium: 100%;
+    --type-large: 120%;
+    --type-x-large: 160%;
+    --type-xx-large: 200%;
+    --type-xxx-large: 300%;
+    --type-xxxx-large: 400%;
+}
+
+@media screen and (min-width: 50em) {
+  :root {
+    --type-base: calc(0.9em + 0.9vw);
+  }
+}
+
+.pb-body {
+  margin: 0;
+  padding: 0;
+}
+
+.pb-main {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 0;
+  display: grid;
+  grid-template-areas: "header" "sidebar" "content" "footer";
+  grid-template-columns: auto;
+}
+
+@media screen and (min-width: 50em) {
+  .pb-main {
+    margin: 0;
+    padding-left: 1em;
+    grid-template-areas: "header header" "sidebar content" "footer footer";
+    grid-template-columns: 0.9fr 2.5fr;
+  }
+}
+
+.pb-sidebar {
+  grid-area: sidebar;
+}
+
+.pb-content {
+  grid-area: content;
+  position: relative;
+}
+
+@media screen and (min-width: 50em) {
+  .intro {
+    text-align: right;
+  }
+
+  .intro-title {
+    text-align: right;
+    font-size: var(--type-xx-large);
+  }
+}
+
+.intro-sticky {
+  position: sticky;
+  top: 2em;
+}
+
+@media screen and (min-width: 50em) {
+  .pb-content {
+    padding: 2.5em 1em 0 4em;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .tocs {
+    display: block !important;
+    margin: 0.5em 0 0 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}
+
+.tocs {
+  display: none;
+}
+
+ul, ol {
+  margin: 1em 0 0 1em;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.sketch-underline {
+  background: url('../img/download.svg') bottom left/100% 0.75rem no-repeat;
+  padding-bottom: 0.1rem;
+}
