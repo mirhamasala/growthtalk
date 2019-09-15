@@ -1578,11 +1578,32 @@ section.service {
 
 .pb-sidebar {
   grid-area: sidebar;
+  padding: 0 .1em;
 }
 
 .pb-content {
   grid-area: content;
   position: relative;
+}
+
+.pb-content p {
+  line-height: 1.8em;
+  margin: 1em 0 0 0;
+}
+
+.pb-content h2 {
+  margin: 1.5em 0 0 0;
+  padding: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.pb-content p img {
+  max-width: 100%;
+  border-radius: 1rem;
 }
 
 @media screen and (min-width: 50em) {
@@ -1592,6 +1613,7 @@ section.service {
   .intro-title {
     text-align: right;
     font-size: var(--type-xx-large);
+    margin-bottom: .8em;
   }
 }
 
@@ -1620,6 +1642,11 @@ section.service {
   display: none;
 }
 
+.toc a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 ul, ol {
   margin: 1em 0 0 1em;
   padding: 0;
@@ -1628,5 +1655,5 @@ ul, ol {
 
 .sketch-underline {
   background: url("../img/download.svg") bottom left/100% 0.75rem no-repeat;
-  padding-bottom: 0.1rem;
+  padding-bottom: 0.4rem;
 }
