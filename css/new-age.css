@@ -1230,11 +1230,6 @@ section.articles #hideArticles:hover {
   }
 }
 
-section.cta {
-  padding: 100px 0 0 0;
-  background-color: #F8CF62;
-}
-
 .card-service {
   position: relative;
   height: 550px;
@@ -1656,4 +1651,48 @@ ul, ol {
 .sketch-underline {
   background: url("../img/download.svg") bottom left/100% 0.75rem no-repeat;
   padding-bottom: 0.4rem;
+}
+
+section.testimonial {
+  padding: 100px 0 0 0;
+  background-color: #F8CF62;
+}
+
+section.testimonial .image-responsive {
+  max-width: 100%;
+  height: auto;
+  width: 130px;
+  border-radius: 50%;
+}
+
+section.testimonial .image-responsive img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.testimonial .flex-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.testimonial .margin-left-70 {
+  margin-left: 70px;
+}
+
+section.testimonial .margin-left-20 {
+  margin-left: 20px;
+}
+
+section.testimonial .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
