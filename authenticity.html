@@ -63,21 +63,14 @@
   </script>
 
 </head>
-  <body class="pb-body">
+  <body class="pb-body" data-spy="scroll" data-target="#toc">
 
     <main class="pb-main">
       <div class="pb-sidebar">
         <div class="intro intro-sticky">
           <h1 class="intro-title"><span class='sketch-underline'>Authenticity in Tech</span> - A Rebellious Guide Against the “Fake It Till You Make it” Mantra</h1>
-          <ul class="tocs">
-            <li class="toc"><a href="#introduction">Introduction</a></li>
-            <li class="toc"><a href="#why-authenticity-matters">Why authenticity matters</a></li>
-            <li class="toc"><a href="#authenticity-in-a-company">How to instill authenticity in a company</a></li>
-            <li class="toc"><a href="#authenticity-in-content">Zooming in on authenticity in content</a></li>
-            <li class="toc"><a href="#authenticity-in-culture">Zooming in on authenticity in culture</a></li>
-            <li class="toc"><a href="#authenticity-in-product">Zooming in on authenticity in product growth</a></li>
-            <li class="toc"><a href="#key-takeaways">Key Takeaways</a></li>
-          </ul>
+          <nav id="toc" data-toggle="toc">
+          </nav>
         </div>
 
       </div>
@@ -134,6 +127,13 @@
         </p>
       </div>
     </main>
+
+    <!-- Script toc -->
+    <link
+      rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"
+    />
+
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 
   </body>
 </html>

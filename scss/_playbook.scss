@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 :root {
     --color-text: 0, 0, 0;
     --color-background: 255, 255, 255;
@@ -96,31 +100,9 @@
   }
 }
 
-@media screen and (min-width: 50em) {
-  .tocs {
-    display: block !important;
-    margin: 0.5em 0 0 0;
-    padding: 0;
-    list-style-type: none;
-  }
-}
-
-.tocs {
-  display: none;
-}
-
-.toc a {
-  color: inherit;
-  text-decoration: underline;
-}
-
-ul, ol {
-  margin: 1em 0 0 1em;
-  padding: 0;
-  line-height: 1.5;
-}
-
 .sketch-underline {
   background: url('../img/download.svg') bottom left/100% 0.75rem no-repeat;
   padding-bottom: 0.4rem;
 }
+
+
