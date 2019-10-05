@@ -105,4 +105,12 @@ body {
   padding-bottom: 0.4rem;
 }
 
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
 
+nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:focus, nav[data-toggle=toc] .nav-link.active:hover {
+  color: #ffcc02 !important;
+  border-left: 2px solid #ffcc02 !important;
+}
