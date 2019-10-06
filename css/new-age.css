@@ -1524,10 +1524,6 @@ section.service {
   overflow: hidden;
 }
 
-body {
-  position: relative;
-}
-
 :root {
   --color-text: 0, 0, 0;
   --color-background: 255, 255, 255;
@@ -1546,18 +1542,16 @@ body {
   --type-xxxx-large: 400%;
 }
 
-@media screen and (min-width: 50em) {
-  :root {
-    --type-base: calc(0.9em + 0.9vw);
-  }
+#bootstrap-overrides {
+  position: relative;
 }
 
-.pb-body {
+#bootstrap-overrides .pb-body {
   margin: 0;
   padding: 0;
 }
 
-.pb-main {
+#bootstrap-overrides .pb-main {
   width: 90%;
   margin: 0 auto;
   padding: 2em 0;
@@ -1567,30 +1561,56 @@ body {
 }
 
 @media screen and (min-width: 50em) {
-  .pb-main {
+  #bootstrap-overrides :root {
+    --type-base: calc(0.9em + 0.9vw);
+  }
+  #bootstrap-overrides .pb-main {
     margin: 0;
     padding-left: 1em;
     grid-template-areas: "header header" "sidebar content" "footer footer";
     grid-template-columns: 0.9fr 2.5fr;
   }
+  #bootstrap-overrides .pb-sidebar {
+    padding-top: 40px !important;
+  }
+  #bootstrap-overrides .intro {
+    text-align: right;
+  }
+  #bootstrap-overrides .intro-title {
+    text-align: right;
+    font-size: var(--type-xx-large);
+    margin-bottom: .8em;
+  }
+  #bootstrap-overrides .pb-content {
+    padding: 2.5em 1em 0 4em;
+  }
+  #bootstrap-overrides .pb-content .collab {
+    margin: 50px -100px 50px 100px;
+  }
 }
 
-.pb-sidebar {
+#bootstrap-overrides .pb-sidebar {
   grid-area: sidebar;
   padding: 0 .1em;
 }
 
-.pb-content {
+#bootstrap-overrides .pb-content {
   grid-area: content;
   position: relative;
 }
 
-.pb-content p {
-  line-height: 1.8em;
-  margin: 1em 0 0 0;
+#bootstrap-overrides .pb-content a {
+  color: black;
+  text-decoration: underline;
 }
 
-.pb-content h2 {
+#bootstrap-overrides .pb-content p {
+  line-height: 1.8em;
+  margin: 1em 0 0 0;
+  color: rgba(0, 0, 0, 0.84);
+}
+
+#bootstrap-overrides .pb-content h2 {
   margin: 1.5em 0 0 0;
   padding: 0;
   -webkit-box-align: center;
@@ -1600,47 +1620,65 @@ body {
   line-height: 1.2;
 }
 
-.pb-content p img {
+#bootstrap-overrides .pb-content h3 {
+  margin: 1em 0 0 0;
+  padding: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1.2;
+}
+
+#bootstrap-overrides .pb-content p img {
   max-width: 100%;
   border-radius: 1rem;
 }
 
-@media screen and (min-width: 50em) {
-  .intro {
-    text-align: right;
-  }
-  .intro-title {
-    text-align: right;
-    font-size: var(--type-xx-large);
-    margin-bottom: .8em;
-  }
-}
-
-.intro-sticky {
+#bootstrap-overrides .intro-sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 2em;
 }
 
-@media screen and (min-width: 50em) {
-  .pb-content {
-    padding: 2.5em 1em 0 4em;
-  }
-}
-
-.sketch-underline {
+#bootstrap-overrides .sketch-underline {
   background: url("../img/download.svg") bottom left/100% 0.75rem no-repeat;
   padding-bottom: 0.4rem;
 }
 
-.responsive {
+#bootstrap-overrides .responsive {
   max-width: 100%;
   height: auto;
 }
 
-nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:focus, nav[data-toggle=toc] .nav-link.active:hover {
+#bootstrap-overrides nav[data-toggle=toc] .nav-link.active, #bootstrap-overrides nav[data-toggle=toc] .nav-link.active:focus, #bootstrap-overrides nav[data-toggle=toc] .nav-link.active:hover {
   color: #ffcc02 !important;
   border-left: 2px solid #ffcc02 !important;
+}
+
+#bootstrap-overrides .nav-link {
+  color: black !important;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 15px !important;
+  padding: 2px 0 !important;
+}
+
+#bootstrap-overrides .nav-link:hover {
+  color: #ffcc02 !important;
+  border-left: 2px solid #ffcc02 !important;
+}
+
+#bootstrap-overrides .collab {
+  border: 2px dotted #ffcc02;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+#bootstrap-overrides .capital-l {
+  padding-top: 7px;
+  margin-right: 12px;
+  line-height: .83;
+  font-size: 66px;
+  float: left;
 }
 
 section.testimonial {
