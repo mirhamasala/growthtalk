@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  console.log('hello');
   // var hashTagActive = "";
   // $(".scroll").on("click touchstart" , function (event) {
   //     if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
@@ -19,7 +18,7 @@ $(document).ready(function() {
   //     }
   // });
 
-  $('#toc .nav-link').click(function(){
+  $('#tests').click(function(){
     console.log('hello');
     $(this).addClass("scroll");
   });
