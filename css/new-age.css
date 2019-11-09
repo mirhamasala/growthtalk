@@ -1543,74 +1543,52 @@ section.service {
 }
 
 #bootstrap-overrides {
-  position: relative;
-}
-
-#bootstrap-overrides .pb-body {
-  margin: 0;
-  padding: 0;
-}
-
-#bootstrap-overrides .pb-main {
-  width: 90%;
-  margin: 0 auto;
-  padding: 2em 0;
-  display: grid;
-  grid-template-areas: "header" "sidebar" "content" "footer";
-  grid-template-columns: auto;
+  /*----------------page-wrapper----------------*/
+  /*----------------toggeled sidebar----------------*/
+  /*----------------show sidebar button----------------*/
+  /*----------------sidebar-wrapper----------------*/
+  /*----------------sidebar-content----------------*/
+  /*----------------sidebar-toc----------------*/
+  /*--------------------sidebar-brand----------------------*/
+  /*--------------------sidebar-header----------------------*/
+  /*-----------------------sidebar-search------------------------*/
+  /*----------------------sidebar-menu-------------------------*/
+  /*--------------------------side-footer------------------------------*/
+  /*--------------------------page-content-----------------------------*/
+  /*------scroll bar---------------------*/
+  /*-----------------------------chiller-theme-------------------------------------------------*/
 }
 
 @media screen and (min-width: 50em) {
   #bootstrap-overrides :root {
     --type-base: calc(0.9em + 0.9vw);
   }
-  #bootstrap-overrides .pb-main {
-    margin: 0;
-    padding-left: 1em;
-    grid-template-areas: "header header" "sidebar content" "footer footer";
-    grid-template-columns: 0.9fr 2.5fr;
-  }
-  #bootstrap-overrides .pb-sidebar {
-    padding-top: 40px !important;
-  }
   #bootstrap-overrides .intro {
     text-align: right;
   }
   #bootstrap-overrides .intro-title {
-    text-align: right;
+    text-align: left;
     font-size: var(--type-xx-large);
     margin-bottom: .8em;
-  }
-  #bootstrap-overrides .pb-content {
-    padding: 2.5em 1em 0 4em;
   }
   #bootstrap-overrides .pb-content .collab {
     margin: 50px -100px 50px 100px;
   }
 }
 
-#bootstrap-overrides .pb-sidebar {
-  grid-area: sidebar;
-  padding: 0 .1em;
-}
-
-#bootstrap-overrides .pb-content {
-  grid-area: content;
-  position: relative;
-}
-
-#bootstrap-overrides .pb-content a {
+#bootstrap-overrides a {
   color: black;
   text-decoration: underline;
 }
 
-#bootstrap-overrides .pb-content p {
+#bootstrap-overrides p {
   line-height: 1.8em;
   margin: 1em 0 0 0;
   color: rgba(0, 0, 0, 0.84);
+  text-align: justify;
 }
 
-#bootstrap-overrides .pb-content h2 {
+#bootstrap-overrides h2 {
   margin: 1.5em 0 0 0;
   padding: 0;
   -webkit-box-align: center;
@@ -1620,7 +1598,7 @@ section.service {
   line-height: 1.2;
 }
 
-#bootstrap-overrides .pb-content h3 {
+#bootstrap-overrides h3 {
   margin: 1em 0 0 0;
   padding: 0;
   -webkit-box-align: center;
@@ -1629,7 +1607,7 @@ section.service {
   line-height: 1.2;
 }
 
-#bootstrap-overrides .pb-content p img {
+#bootstrap-overrides p img {
   max-width: 100%;
   border-radius: 1rem;
 }
@@ -1679,6 +1657,502 @@ section.service {
   line-height: .83;
   font-size: 66px;
   float: left;
+}
+
+#bootstrap-overrides .progress-container {
+  width: 100%;
+  height: 3px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+  background: #ccc;
+}
+
+#bootstrap-overrides .progress-bar {
+  height: 5px;
+  background: #ffdf00;
+  width: 0%;
+  z-index: 100000;
+}
+
+#bootstrap-overrides .fab {
+  color: #08a0e9;
+  font-size: 40px;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  30% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  70% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  30% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  70% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes sonar {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes sonar {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+#bootstrap-overrides .page-wrapper .sidebar-wrapper,
+#bootstrap-overrides .sidebar-wrapper .sidebar-brand > a,
+#bootstrap-overrides .sidebar-wrapper .sidebar-dropdown > a:after,
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before,
+#bootstrap-overrides .sidebar-wrapper ul li a i,
+#bootstrap-overrides .page-wrapper .page-content,
+#bootstrap-overrides .sidebar-wrapper .sidebar-search input.search-menu,
+#bootstrap-overrides .sidebar-wrapper .sidebar-search .input-group-text,
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu ul li a,
+#bootstrap-overrides #show-sidebar,
+#bootstrap-overrides #close-sidebar {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#bootstrap-overrides .page-wrapper {
+  height: 100vh;
+}
+
+#bootstrap-overrides .page-wrapper .theme.chiller-theme {
+  background: #1e2229;
+}
+
+#bootstrap-overrides .page-wrapper.toggled .sidebar-wrapper {
+  left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  #bootstrap-overrides .page-wrapper.toggled .page-content {
+    padding-left: 300px;
+  }
+}
+
+#bootstrap-overrides #show-sidebar {
+  position: fixed;
+  left: 0;
+  top: 10px;
+  border-radius: 0 4px 4px 0px;
+  width: 35px;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+#bootstrap-overrides .page-wrapper.toggled #show-sidebar {
+  left: -40px;
+}
+
+#bootstrap-overrides .sidebar-wrapper {
+  width: 320px;
+  height: 100%;
+  max-height: 100%;
+  position: fixed;
+  top: 0;
+  left: -380px;
+  z-index: 999;
+}
+
+@media screen and (min-width: 768px) {
+  #bootstrap-overrides .sidebar-wrapper {
+    width: 380px;
+    left: -420px;
+  }
+}
+
+#bootstrap-overrides .sidebar-wrapper ul {
+  list-style-type: none;
+}
+
+#bootstrap-overrides .sidebar-wrapper a {
+  text-decoration: none;
+}
+
+#bootstrap-overrides .sidebar-content {
+  max-height: calc(100% - 30px);
+  height: calc(100% - 30px);
+  overflow-y: auto;
+  position: relative;
+  margin: 15px;
+}
+
+#bootstrap-overrides .sidebar-content.desktop {
+  overflow-y: hidden;
+}
+
+#bootstrap-overrides nav[data-toggle="toc"] .nav-link.active, #bootstrap-overrides nav[data-toggle="toc"] .nav-link.active:focus, #bootstrap-overrides nav[data-toggle="toc"] .nav-link.active:hover {
+  color: #ffcc02 !important;
+  border-left: none !important;
+}
+
+#bootstrap-overrides nav[data-toggle="toc"] .nav-link, #bootstrap-overrides nav[data-toggle="toc"] .nav-link:focus, #bootstrap-overrides nav[data-toggle="toc"] .nav-link:hover {
+  border-left: none !important;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu ul li ul li {
+  margin-left: 10px !important;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-brand {
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-brand > a {
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-brand #close-sidebar {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#bootstrap-overrides #square-logo {
+  display: block;
+  max-width: 40px;
+  width: 100%;
+  height: auto;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-header {
+  padding: 20px;
+  overflow: hidden;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-header .user-pic {
+  float: left;
+  width: 60px;
+  padding: 2px;
+  border-radius: 12px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-header .user-pic img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-header .user-info {
+  float: left;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-header .user-info > span {
+  display: block;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-header .user-info .user-role {
+  font-size: 12px;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-header .user-info .user-status {
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-header .user-info .user-status i {
+  font-size: 8px;
+  margin-right: 4px;
+  color: #5cb85c;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu {
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu .header-menu span {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 15px 20px 5px 20px;
+  display: inline-block;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu ul li a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 30px 8px 20px;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu ul li a i {
+  margin-right: 10px;
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu ul li a:hover > i::before {
+  display: inline-block;
+  -webkit-animation: swing ease-in-out 0.5s 1 alternate;
+  animation: swing ease-in-out 0.5s 1 alternate;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  font-style: normal;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background: 0 0;
+  position: absolute;
+  right: 15px;
+  top: 14px;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu ul {
+  padding: 5px 0;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li {
+  padding-left: 25px;
+  font-size: 13px;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before {
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 10px;
+  font-size: 8px;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu ul li a span.label,
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu ul li a span.badge {
+  float: right;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a .badge,
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a .label {
+  float: right;
+  margin-top: 0px;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu .sidebar-submenu {
+  display: none;
+}
+
+#bootstrap-overrides .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 17px;
+}
+
+#bootstrap-overrides #cta-curious {
+  margin-top: 20px;
+}
+
+#bootstrap-overrides .sidebar-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#bootstrap-overrides .sidebar-footer > a {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+}
+
+#bootstrap-overrides .sidebar-footer > a .notification {
+  position: absolute;
+  top: 0;
+}
+
+#bootstrap-overrides .badge-sonar {
+  display: inline-block;
+  background: #980303;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  top: 0;
+}
+
+#bootstrap-overrides .badge-sonar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #980303;
+  opacity: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: sonar 1.5s infinite;
+  animation: sonar 1.5s infinite;
+}
+
+#bootstrap-overrides ::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+#bootstrap-overrides ::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+#bootstrap-overrides ::-webkit-scrollbar-thumb {
+  background: #525965;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+
+#bootstrap-overrides ::-webkit-scrollbar-thumb:hover {
+  background: #525965;
+}
+
+#bootstrap-overrides ::-webkit-scrollbar-thumb:active {
+  background: #525965;
+}
+
+#bootstrap-overrides ::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+#bootstrap-overrides ::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
+#bootstrap-overrides ::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+
+#bootstrap-overrides ::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+#bootstrap-overrides .chiller-theme .sidebar-wrapper {
+  background: white;
 }
 
 section.testimonial {
