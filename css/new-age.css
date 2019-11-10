@@ -1556,6 +1556,7 @@ section.service {
   /*--------------------------side-footer------------------------------*/
   /*--------------------------page-content-----------------------------*/
   /*------scroll bar---------------------*/
+  /*-----------------------------backtotop-------------------------------------------------*/
   /*-----------------------------chiller-theme-------------------------------------------------*/
 }
 
@@ -2149,6 +2150,67 @@ section.service {
 
 #bootstrap-overrides ::-webkit-scrollbar-corner {
   background: transparent;
+}
+
+#bootstrap-overrides #backtotop {
+  position: fixed;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 25px;
+  margin: 0 25px 0 0;
+  z-index: 9999;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#bootstrap-overrides #backtotop.visibility {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#bootstrap-overrides #backtotop.visibility a:hover {
+  outline: none;
+  opacity: 0.9;
+  background: #ffcb00;
+}
+
+#bootstrap-overrides #backtotop a {
+  outline: none;
+  text-decoration: none;
+  border: 0 none;
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-color: gray !important;
+  opacity: .4;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 26px;
+  color: white;
+}
+
+#bootstrap-overrides body #backtotop a {
+  outline: none;
+  color: #fff;
+}
+
+#bootstrap-overrides .fa-angle-up:before {
+  position: absolute;
+  top: 9px;
+  right: 14.5px;
+}
+
+#bootstrap-overrides .display {
+  display: none;
 }
 
 #bootstrap-overrides .chiller-theme .sidebar-wrapper {
