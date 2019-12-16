@@ -2325,6 +2325,27 @@ section.service {
   display: none;
 }
 
+@media (min-width: 60em) {
+  #bootstrap-overrides .playbook-illustration {
+    height: 100vh !important;
+  }
+}
+
+@media (max-width: 59.9375em) {
+  #bootstrap-overrides .playbook-illustration {
+    background-attachment: scroll !important;
+    background-position-y: 0 !important;
+    background-size: cover !important;
+  }
+}
+
+#bootstrap-overrides .playbook-illustration {
+  height: 400px;
+  position: relative;
+  width: 100%;
+  z-index: 200;
+}
+
 #bootstrap-overrides .chiller-theme .sidebar-wrapper {
   background: white;
 }
