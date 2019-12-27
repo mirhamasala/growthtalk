@@ -1790,14 +1790,18 @@ section.service {
   border-left: 2px solid #ffcc02 !important;
 }
 
-#bootstrap-overrides .collab {
-  border: 2px dotted #ffcc02;
-  padding: 20px;
-  border-radius: 25px;
+#bootstrap-overrides .responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+#bootstrap-overrides img.responsive-img {
+  display: block;
+  margin: 0 auto 30px auto;
 }
 
 #bootstrap-overrides .collab-img-style {
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 #bootstrap-overrides .capital-l {
@@ -1829,6 +1833,11 @@ section.service {
 #bootstrap-overrides .fab {
   color: #08a0e9;
   font-size: 40px;
+}
+
+#bootstrap-overrides .gray-bg {
+  background-color: #f0f0f0;
+  background-size: cover;
 }
 
 @-webkit-keyframes swing {

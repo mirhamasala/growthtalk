@@ -257,16 +257,20 @@
     border-left: 2px solid $yellow-pb !important;
   }
 
-  // Collaborators
-
-  .collab {
-    border: 2px dotted $yellow-pb;
-    padding: 20px;
-    border-radius: 25px;
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
   }
 
+  img.responsive-img {
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+  // Collaborators
+
   .collab-img-style {
-    border-radius: 25px;
+    border-radius: 5px;
   }
 
   .capital-l {
@@ -299,6 +303,10 @@
     font-size: 40px;
   }
 
+  .gray-bg {
+    background-color: rgb(240,240,240);
+    background-size: cover;
+  }
 
   // codepen
 
