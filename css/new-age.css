@@ -1554,7 +1554,7 @@ section.service {
   /*----------------sidebar-content----------------*/
   /*----------------sidebar-toc----------------*/
   /*--------------------sidebar-brand----------------------*/
-  /*--------------------sidebar-header----------------------*/
+  /*--------------------sidebar-----------------------*/
   /*----------------------sidebar-menu-------------------------*/
   /*--------------------------side-footer------------------------------*/
   /*--------------------------page-content-----------------------------*/
@@ -1766,11 +1766,98 @@ section.service {
   padding-bottom: 0.4rem;
 }
 
-#bootstrap-overrides .responsive {
-  max-width: 100%;
-  height: auto;
-  max-height: 600px;
-  width: 100%;
+#bootstrap-overrides .header-playbook {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 400px) {
+  #bootstrap-overrides .header-playbook {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1))), url("../img/artwork-mobile.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/artwork-mobile.jpg");
+    height: 560px;
+  }
+  #bootstrap-overrides .header {
+    position: absolute;
+    top: 12%;
+    color: white;
+  }
+  #bootstrap-overrides .header h1 {
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  #bootstrap-overrides .header-playbook {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1))), url("../img/artwork-mobile.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/artwork-mobile.jpg");
+    height: 620px;
+  }
+  #bootstrap-overrides .header {
+    position: absolute;
+    top: 12%;
+    color: white;
+  }
+  #bootstrap-overrides .header h1 {
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+  #bootstrap-overrides .header-playbook {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1))), url("../img/artwork.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/artwork.jpg");
+    height: 300px;
+  }
+  #bootstrap-overrides .header {
+    position: absolute;
+    color: white;
+    top: 8%;
+    left: 5%;
+    right: 50%;
+  }
+  #bootstrap-overrides .header h1 {
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  #bootstrap-overrides .header-playbook {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1))), url("../img/artwork.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/artwork.jpg");
+    height: 410px;
+  }
+  #bootstrap-overrides .header {
+    position: absolute;
+    color: white;
+    top: 10%;
+    left: 5%;
+    right: 55%;
+  }
+  #bootstrap-overrides .header h1 {
+    line-height: 1.8;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  #bootstrap-overrides .header-playbook {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1))), url("../img/artwork.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/artwork.jpg");
+    height: 550px;
+  }
+  #bootstrap-overrides .header {
+    position: absolute;
+    color: white;
+    top: 18%;
+    left: 5%;
+    right: 60%;
+  }
+  #bootstrap-overrides .header h1 {
+    line-height: 1.5;
+    font-weight: 500;
+  }
 }
 
 #bootstrap-overrides nav[data-toggle=toc] .nav-link.active, #bootstrap-overrides nav[data-toggle=toc] .nav-link.active:focus, #bootstrap-overrides nav[data-toggle=toc] .nav-link.active:hover {

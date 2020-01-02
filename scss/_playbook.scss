@@ -233,12 +233,112 @@
     padding-bottom: 0.4rem;
   }
 
-  .responsive {
-    max-width: 100%;
-    height: auto;
-    max-height: 600px;
-    width: 100%;
+  // .mobile-header {
+  //   visibility: hidden;
+  // }
+
+  .header-playbook {
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
+
+  @media (max-width: 400px) {
+    .header-playbook {
+      background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url("../img/artwork-mobile.jpg");
+      height: 560px;
+    }
+
+    .header {
+      position: absolute;
+      top: 12%;
+      color: white;
+    }
+
+    .header h1 {
+      line-height: 1.5;
+    }
+  }
+  @media (min-width: 400px) and (max-width: 600px) {
+    .header-playbook {
+      background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url("../img/artwork-mobile.jpg");
+      height: 620px;
+    }
+
+    .header {
+      position: absolute;
+      top: 12%;
+      color: white;
+    }
+
+    .header h1 {
+      line-height: 1.5;
+    }
+  }
+  @media (min-width: 601px) and (max-width: 992px) {
+    .header-playbook {
+      background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url("../img/artwork.jpg");
+      height: 300px;
+    }
+
+    .header {
+      position: absolute;
+      color: white;
+      top: 8%;
+      left: 5%;
+      right: 50%;
+    }
+
+    .header h1 {
+      line-height: 1.5;
+      font-size: 1.5rem;
+    }
+  }
+  @media (min-width: 993px) and (max-width: 1200px) {
+    .header-playbook {
+      background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url("../img/artwork.jpg");
+      height: 410px;
+    }
+
+    .header {
+      position: absolute;
+      color: white;
+      top: 10%;
+      left: 5%;
+      right: 55%;
+    }
+
+    .header h1 {
+      line-height: 1.8;
+      font-size: 1.5rem;
+    }
+  }
+  @media (min-width: 1201px) {
+    .header-playbook {
+      background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url("../img/artwork.jpg");
+      height: 550px;
+    }
+
+    .header {
+      position: absolute;
+      color: white;
+      top: 18%;
+      left: 5%;
+      right: 60%;
+    }
+
+    .header h1 {
+      line-height: 1.5;
+      font-weight: 500;
+      // font-size: 1.5rem;
+    }
+  }
+
+  // .responsive {
+  //   max-width: 100%;
+  //   height: auto;
+  //   max-height: 600px;
+  //   width: 100%;
+  // }
 
   nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:focus, nav[data-toggle=toc] .nav-link.active:hover {
     color: $yellow-pb !important;
@@ -476,7 +576,7 @@
     cursor: pointer;
     font-size: 20px;
   }
-  /*--------------------sidebar-header----------------------*/
+  /*--------------------sidebar-----------------------*/
 
   #square-logo {
     display: block;
