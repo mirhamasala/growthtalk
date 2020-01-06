@@ -170,6 +170,7 @@
       font-size: 1.125rem;
       padding-left: 20px;
       margin: 0 0 20px 0;
+      list-style-type: circle;
 
       @include respond-to('medium') {
         letter-spacing: 0.3px;
@@ -232,10 +233,6 @@
     background: url('../img/download.svg') bottom left/100% 0.75rem no-repeat;
     padding-bottom: 0.4rem;
   }
-
-  // .mobile-header {
-  //   visibility: hidden;
-  // }
 
   .header-playbook {
     background-size: 100%;
@@ -874,6 +871,17 @@
     position: relative;
     width: 100%;
     z-index: 200;
+  }
+
+  .intro-flex {
+    display: flex;
+  }
+
+  @media (max-width: 991px) {
+    .intro-flex {
+        display: flex;
+        flex-wrap: wrap-reverse;
+      }
   }
 
   /*-----------------------------chiller-theme-------------------------------------------------*/

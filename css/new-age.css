@@ -1739,6 +1739,7 @@ section.service {
   font-size: 1.125rem;
   padding-left: 20px;
   margin: 0 0 20px 0;
+  list-style-type: circle;
 }
 
 @media only screen and (min-width: 48rem) {
@@ -2444,6 +2445,22 @@ section.service {
   position: relative;
   width: 100%;
   z-index: 200;
+}
+
+#bootstrap-overrides .intro-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  #bootstrap-overrides .intro-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
 }
 
 #bootstrap-overrides .chiller-theme .sidebar-wrapper {
