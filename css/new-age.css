@@ -1628,9 +1628,7 @@ section.service {
 #bootstrap-overrides .l-post-content h4,
 #bootstrap-overrides .l-post-content h5,
 #bootstrap-overrides .l-post-content h6 {
-  color: #000;
   line-height: 1.3;
-  font-weight: 700;
   padding-top: 5px;
   margin: 0 0 30px;
 }
@@ -1659,11 +1657,15 @@ section.service {
 
 #bootstrap-overrides .l-post-content h2 {
   font-size: 1.750rem;
+  color: #58CEAA;
+  font-family: lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media only screen and (min-width: 48rem) {
   #bootstrap-overrides .l-post-content h2 {
-    font-size: 2.250rem;
+    font-size: 3.75rem;
   }
 }
 
@@ -1778,6 +1780,11 @@ section.service {
 
 #bootstrap-overrides .header h1 {
   font-family: 'Noticia Text', serif;
+}
+
+#bootstrap-overrides .chapter-nb {
+  color: #76A1FF;
+  font-style: italic;
 }
 
 @media (max-width: 400px) {
