@@ -71,6 +71,10 @@ section {
     @include title-pb;
   }
 
+  h3 {
+    @include section-title-pb;
+  }
+
   p.quote-pb {
     @include quote-pb;
   }

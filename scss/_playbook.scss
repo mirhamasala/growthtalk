@@ -59,6 +59,7 @@
 
   .l-post-content a {
     color: $link-blue-pb;
+    text-decoration: none;
   }
 
   .l-post-content {
@@ -110,9 +111,10 @@
 
     h3 {
       font-size: 1.375rem;
+      color: $mid-pink-pb;
 
       @include respond-to('medium') {
-        font-size: 1.750rem;
+        font-size: 2.5rem;
       }
     }
 
@@ -160,7 +162,7 @@
     }
 
     b, strong {
-      font-weight: 600;
+      color: $dark-gray-pb;
     }
 
     ul, ol {

@@ -86,6 +86,12 @@ section {
   font-style: normal;
 }
 
+#bootstrap-overrides h3 {
+  font-family: lato, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 #bootstrap-overrides p.quote-pb {
   font-family: merriweather, serif;
   font-weight: 400;
@@ -1615,6 +1621,7 @@ section.service {
 
 #bootstrap-overrides .l-post-content a {
   color: #6188DF;
+  text-decoration: none;
 }
 
 #bootstrap-overrides .l-post-content {
@@ -1681,11 +1688,12 @@ section.service {
 
 #bootstrap-overrides .l-post-content h3 {
   font-size: 1.375rem;
+  color: #F296CF;
 }
 
 @media only screen and (min-width: 48rem) {
   #bootstrap-overrides .l-post-content h3 {
-    font-size: 1.750rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -1741,7 +1749,7 @@ section.service {
 }
 
 #bootstrap-overrides .l-post-content b, #bootstrap-overrides .l-post-content strong {
-  font-weight: 600;
+  color: #464646;
 }
 
 #bootstrap-overrides .l-post-content ul, #bootstrap-overrides .l-post-content ol {
