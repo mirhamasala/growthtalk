@@ -867,4 +867,77 @@
       background: white;
   }
 
+  /*-----------------------------asana-sidenav-------------------------------------------------*/
+
+  .ebook-sideNav {
+      box-sizing: border-box;
+      flex: 0 1 auto;
+      position: relative;
+      opacity: 0;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: opacity .15s;
+      z-index: 100;
+  }
+
+  .ebook-sideNav.-absolute {
+      position: absolute;
+  }
+
+  .ebook-sideNav.-visible {
+      opacity: 1;
+  }
+  @media (min-width: 80em) {
+    .ebook-sideNav {
+        left: 45px;
+    }
+  }
+
+  @media (min-width: 60em) {
+    .ebook-sideNav {
+        left: 25px;
+    }
+  }
+
+  @media (min-width: 30em) {
+    .ebook-sideNav {
+        flex-basis: 16.66667%;
+        max-width: 16.66667%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+  }
+
+  .ebook-sideNav-item {
+      color: inherit;
+      cursor: pointer;
+      display: block;
+  }
+
+  .ebook-sideNav-item span {
+      display: table-cell;
+      font-size: .875rem;
+      font-weight: 400;
+      position: relative;
+      transition: opacity .15s;
+      vertical-align: middle;
+  }
+
+  .ebook-sideNav-number {
+      opacity: 0;
+      width: 25px;
+  }
+
+  .ebook-sideNav-divider {
+      border-right: 1px solid #b7bfc6;
+      padding-right: 4px;
+      vertical-align: middle;
+  }
+
+  .ebook-sideNav-chapter {
+      opacity: 0;
+      padding-left: 10px;
+  }
+
 }
