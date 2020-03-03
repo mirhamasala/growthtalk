@@ -2496,6 +2496,14 @@ section.service {
   }
 }
 
+#bootstrap-overrides .learn-section {
+  background-color: #F7FBFF;
+  padding: 2em 2em;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 #bootstrap-overrides .chiller-theme .sidebar-wrapper {
   background: white;
 }
