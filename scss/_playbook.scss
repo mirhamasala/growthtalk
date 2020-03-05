@@ -36,26 +36,27 @@
     }
   }
 
-  @media screen and (min-width: 50em) {
+  // I believe you can safely delete this code
+  // Otherwise better to split it up and add
+  // it in the right place further below
 
-    // :root {
-    //   --type-base: calc(0.9em + 0.9vw);
-    // }
+  // @media screen and (min-width: 50em) {
+  //   // :root {
+  //   //   --type-base: calc(0.9em + 0.9vw);
+  //   // }
 
-    .intro {
-      text-align: right;
-    }
-
-    .intro-title {
-      text-align: left;
-      font-size: var(--type-xx-large);
-      margin-bottom: .8em;
-    }
-
-    .pb-content .collab {
-      margin: 50px -100px 50px 100px;
-    }
-  }
+  //   .intro {
+  //     text-align: right;
+  //   }
+  //   .intro-title {
+  //     text-align: left;
+  //     font-size: var(--type-xx-large);
+  //     margin-bottom: .8em;
+  //   }
+  //   .pb-content .collab {
+  //     margin: 50px -100px 50px 100px;
+  //   }
+  // }
 
   .l-post-content a {
     color: $link-blue-pb;
@@ -192,11 +193,6 @@
     top: 2em;
   }
 
-  .sketch-underline {
-    background: url('../img/download.svg') bottom left/100% 0.75rem no-repeat;
-    padding-bottom: 0.4rem;
-  }
-
   .header-playbook {
     background-size: 100%;
     background-repeat: no-repeat;
@@ -299,6 +295,19 @@
       line-height: 1.5;
       font-weight: 500;
     }
+  }
+
+   // Sidebar header
+
+  .intro-title .intro-title-main {
+    display: block;
+    color: $dark-green-pb;
+    @include sidebar-header-pb;
+    font-size: 1.5rem;
+  }
+
+  .intro-title .intro-title-sub {
+    color: $light-gray-pb;
   }
 
   nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:focus, nav[data-toggle=toc] .nav-link.active:hover {
@@ -502,6 +511,9 @@
   .sidebar-wrapper a {
     text-decoration: none;
   }
+
+  /*----------------sidebar-header----------------*/
+
 
   /*----------------sidebar-content----------------*/
 
