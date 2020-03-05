@@ -2194,7 +2194,6 @@ section.service {
 
 #bootstrap-overrides .sidebar-wrapper .sidebar-brand #close-sidebar {
   cursor: pointer;
-  font-size: 20px;
 }
 
 #bootstrap-overrides #square-logo {
@@ -2639,5 +2638,4 @@ section.testimonial .flex {
 .icon {
   width: 32px;
   height: 32px;
-  color: red;
 }
