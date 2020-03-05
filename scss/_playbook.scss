@@ -299,11 +299,16 @@
 
    // Sidebar header
 
+  .intro-title {
+     margin-bottom: 24px;
+  }
+
   .intro-title .intro-title-main {
     display: block;
     color: $dark-green-pb;
     @include sidebar-header-pb;
     font-size: 1.5rem;
+
   }
 
   .intro-title .intro-title-sub {
@@ -522,7 +527,7 @@
     height: calc(100% - 30px);
     overflow-y: auto;
     position: relative;
-    margin: 15px;
+    margin: 16px;
   }
 
   .sidebar-content.desktop {
@@ -547,7 +552,7 @@
   /*--------------------sidebar-brand----------------------*/
 
   .sidebar-wrapper .sidebar-brand {
-    padding: 10px 20px;
+    padding: 12px 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -573,15 +578,15 @@
   }
 
   .sidebar-wrapper .sidebar-header {
-    padding: 20px;
-    overflow: hidden;
+    padding-top: 24px;
+    padding-left: 18px;
+    // overflow: hidden;
   }
 
   /*----------------------sidebar-menu-------------------------*/
 
   .sidebar-wrapper .sidebar-menu {
-    padding-bottom: 10px;
-    padding-left: 30px;
+    padding-left: 18px;
   }
 
   .sidebar-wrapper .sidebar-menu .header-menu span {
@@ -680,7 +685,10 @@
   /*--------------------------side-footer------------------------------*/
 
   #cta-curious {
-    margin-top: 20px;
+    display: block;
+    margin-top: 24px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .sidebar-footer {
