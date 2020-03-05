@@ -452,7 +452,8 @@
   /*----------------toggeled sidebar----------------*/
 
   .page-wrapper.toggled .sidebar-wrapper {
-    left: 0px;
+    left: 0;
+    top: 5px; // To account for the height of progression bar
   }
 
   @media screen and (min-width: 768px) {
