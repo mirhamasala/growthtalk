@@ -3,7 +3,7 @@
   height: 550px;
   padding: 2rem;
   background-color: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -25,7 +25,7 @@
 .yellow-line {
   width: 70%;
   margin: 0 auto;
-  border-bottom: .5px solid $yellow-img;
+  border-bottom: 0.5px solid $yellow-img;
   border-radius: 10px;
 }
 
@@ -47,13 +47,13 @@
 }
 
 #content-strategy {
-  background-image:url(../img/04.png);
+  background-image: url(../img/04.png);
 }
 
 #brand-aware {
-  background-image:url(../img/07.png);
+  background-image: url(../img/07.png);
 }
 
 #lead-gen {
-  background-image:url(../img/11.png);
+  background-image: url(../img/11.png);
 }

@@ -1,12 +1,13 @@
 // Mixins
+
 @mixin transition-all() {
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 @mixin h1-font {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 200;
   letter-spacing: 1px;
 
@@ -20,18 +21,18 @@
 }
 
 @mixin heading-font {
-    font-family: 'Lato', sans-serif;
-    color: black;
+  font-family: "Lato", sans-serif;
+  color: black;
 }
 
 @mixin body-font {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @mixin alt-font {
-    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 // Playbook Start
@@ -72,7 +73,6 @@
 
 // Playbook End
 
-
 $break-small: 35.5rem; // >= 568px @ 16px
 $break-medium: 48rem; // >= 768px @ 16px
 $break-large: 64rem; // >= 1024px @ 16px
@@ -80,16 +80,40 @@ $break-extra-large: 80rem; // >= 1280px @ 16px
 $break-largest: 90rem; // >= 1440px @ 16px
 
 // @include respond-to( );
-@mixin respond-to( $condition ) {
-  @if $condition == 'initialize' { @media only screen and (min-width: 1px) { @content; } }
+@mixin respond-to($condition) {
+  @if $condition == "initialize" {
+    @media only screen and (min-width: 1px) {
+      @content;
+    }
+  }
 
-  @if $condition == 'small' { @media only screen and (min-width: $break-small) { @content; } }
+  @if $condition == "small" {
+    @media only screen and (min-width: $break-small) {
+      @content;
+    }
+  }
 
-  @if $condition == 'medium' { @media only screen and (min-width: $break-medium) { @content; } }
+  @if $condition == "medium" {
+    @media only screen and (min-width: $break-medium) {
+      @content;
+    }
+  }
 
-  @if $condition == 'large' { @media only screen and (min-width: $break-large) { @content; } }
+  @if $condition == "large" {
+    @media only screen and (min-width: $break-large) {
+      @content;
+    }
+  }
 
-  @if $condition == 'extra-large' { @media only screen and (min-width: $break-extra-large) { @content; } }
+  @if $condition == "extra-large" {
+    @media only screen and (min-width: $break-extra-large) {
+      @content;
+    }
+  }
 
-  @if $condition == 'largest' { @media only screen and (min-width: $break-largest) { @content; } }
+  @if $condition == "largest" {
+    @media only screen and (min-width: $break-largest) {
+      @content;
+    }
+  }
 }

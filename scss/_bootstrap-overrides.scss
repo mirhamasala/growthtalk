@@ -1,7 +1,7 @@
 // Bootstrap overrides for this template
-.no-gutter > [class*='col-'] {
-    padding-right: 0;
-    padding-left: 0;
+.no-gutter > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .blue-bg {
@@ -24,8 +24,7 @@
   font-weight: 700;
 }
 
-
-.navbar{
+.navbar {
   padding: 1.5rem 1rem;
 }
 
@@ -71,7 +70,7 @@
 }
 
 #img-background-manifesto {
-  background:url(../img/blob-shape.svg) no-repeat;
+  background: url(../img/blob-shape.svg) no-repeat;
   // background-size: 100%;
   // opacity: .4;
   // position: relative;
@@ -126,43 +125,43 @@
   text-indent: 1.2em;
   font-weight: bold;
   margin-bottom: 20px;
-  background-color: rgba(243,107,127,.2);
+  background-color: rgba(243, 107, 127, 0.2);
 }
 
-.section-heading{
+.section-heading {
   padding-bottom: 30px !important;
 }
 
-.section-heading-two{
+.section-heading-two {
   padding-bottom: 40px !important;
 }
 
-.dark-purple-font{
+.dark-purple-font {
   color: $dark-purple-img;
   font-weight: 700;
 }
 
-.green-font{
+.green-font {
   color: $green-img;
   font-weight: 700;
 }
 
-.white-font{
+.white-font {
   color: white;
   font-weight: 700;
 }
 
-.black-font{
+.black-font {
   color: black;
   font-weight: 700;
 }
 
-.blue-font{
+.blue-font {
   color: $light-blue-img;
   font-weight: 700;
 }
 
-.pink-font{
+.pink-font {
   color: $pink-img;
   font-weight: 700;
 }
@@ -170,30 +169,30 @@
 @media (min-width: 768px) {
   .modal-xxl {
     width: 90%;
-    max-width:1200px;
+    max-width: 1200px;
   }
 }
 
 .highlight-light-purple {
-  background-color: rgba(249,216,235,.8);
+  background-color: rgba(249, 216, 235, 0.8);
   font-weight: bold;
 }
 
 .specific-highlight-light-purple {
-  background-color: rgba(249,216,235,.8);
+  background-color: rgba(249, 216, 235, 0.8);
   padding: 8px;
 
   @media (min-width: 100px) and (max-width: 991px) {
-  line-height: 2.26;
+    line-height: 2.26;
   }
 }
 
 .specific-highlight-light-blue {
-  background-color: rgba(159,190,255,.8);
+  background-color: rgba(159, 190, 255, 0.8);
   padding: 8px;
 
   @media (min-width: 100px) and (max-width: 991px) {
-  line-height: 2.26;
+    line-height: 2.26;
   }
 }
 
@@ -221,13 +220,13 @@
 
 // Fix issue when the modal is enabled swiping up/down will scroll the body instead of the modal
 body.modal-open {
-    position: fixed;
-    overflow: hidden;
-    left:0;
-    right:0;
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  right: 0;
 }
-.modal{
-    -webkit-overflow-scrolling: touch;
+.modal {
+  -webkit-overflow-scrolling: touch;
 }
 
 // Conversational Form
@@ -252,9 +251,9 @@ body.modal-open {
   }
 }
 
-#html_element{
+#html_element {
   visibility: hidden;
 }
-#html_element.show{
+#html_element.show {
   visibility: visible;
 }

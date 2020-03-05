@@ -6,7 +6,7 @@
   overflow: hidden;
 
   &:hover {
-    opacity: .95;
+    opacity: 0.95;
     // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.1));
   }
 }
@@ -32,33 +32,32 @@
   }
 }
 
-
 #bg-growth {
-  background:url(../img/Growth.png) no-repeat center;
+  background: url(../img/Growth.png) no-repeat center;
   background-size: 100%;
 }
 
 #bg-product {
-  background:url(../img/Product.png) no-repeat center;
+  background: url(../img/Product.png) no-repeat center;
   background-size: 100%;
 }
 
 #bg-culture {
-  background:url(../img/Culture.png) no-repeat center;
+  background: url(../img/Culture.png) no-repeat center;
   background-size: 100%;
 }
 
 #bg-strategy {
-  background:url(../img/Strategy.png) no-repeat center;
+  background: url(../img/Strategy.png) no-repeat center;
   background-size: 100%;
 }
 
 #bg-hiring {
-  background:url(../img/Management.png) no-repeat center;
+  background: url(../img/Management.png) no-repeat center;
   background-size: 90%;
 }
 
 #bg-decision {
-  background:url(../img/Decision.png) no-repeat center;
+  background: url(../img/Decision.png) no-repeat center;
   background-size: 100%;
 }
