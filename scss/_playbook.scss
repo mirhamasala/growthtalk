@@ -456,7 +456,7 @@
     background: #1e2229;
   }
 
-  /*----------------toggeled sidebar----------------*/
+  /*----------------toggled sidebar----------------*/
 
   .page-wrapper.toggled .sidebar-wrapper {
     left: 0;
@@ -468,18 +468,16 @@
       padding-left: 300px;
     }
   }
+
   /*----------------show sidebar button----------------*/
+
   #show-sidebar {
     position: fixed;
-    left: 0;
-    top: 10px;
-    border-radius: 0 4px 4px 0px;
-    width: 35px;
+    left: 34px; // Same spacing as logo on sidebar menu
+    top: 28px;  // Same spacing as logo on sidebar menu
     transition-delay: 0.3s;
   }
-  .page-wrapper.toggled #show-sidebar {
-    left: -40px;
-  }
+
   /*----------------sidebar-wrapper----------------*/
 
   .sidebar-wrapper {
