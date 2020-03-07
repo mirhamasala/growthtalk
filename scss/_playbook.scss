@@ -374,9 +374,12 @@
     font-size: 40px;
   }
 
-  .gray-bg {
-    background-color: rgb(240,240,240);
-    background-size: cover;
+  .collab-bg {
+    background-color: $collab-blue-pb;
+    max-width: 55em;
+    margin: auto;
+    border-radius: 24px;
+    padding: 1em 0;
   }
 
   // codepen

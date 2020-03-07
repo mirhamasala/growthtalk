@@ -1960,9 +1960,12 @@ section.service {
   font-size: 40px;
 }
 
-#bootstrap-overrides .gray-bg {
-  background-color: #f0f0f0;
-  background-size: cover;
+#bootstrap-overrides .collab-bg {
+  background-color: #EBF6FF;
+  max-width: 55em;
+  margin: auto;
+  border-radius: 24px;
+  padding: 1em 0;
 }
 
 @-webkit-keyframes swing {
