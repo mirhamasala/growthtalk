@@ -35,44 +35,6 @@
   text-transform: uppercase;
 }
 
-// Playbook Start
-
-@mixin title-pb {
-  font-family: lato, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@mixin subtitle-pb {
-  font-family: lato, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-@mixin section-title-pb {
-  font-family: lato, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-@mixin body-pb {
-  font-family: montserrat, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-@mixin quote-pb {
-  font-family: merriweather, serif;
-  font-weight: 400;
-}
-
-@mixin sidebar-header-pb {
-  font-family: merriweather, serif;
-  font-weight: 500;
-}
-
-// Playbook End
-
 $break-small: 35.5rem; // >= 568px @ 16px
 $break-medium: 48rem; // >= 768px @ 16px
 $break-large: 64rem; // >= 1024px @ 16px
