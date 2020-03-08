@@ -49,34 +49,3 @@ section {
     padding: 100px 0;
 }
 
-// Playbook
-
-#bootstrap-overrides {
-
-  main {
-
-    @include body-pb;
-    font-size: 1rem;
-
-  }
-
-  nav h1 {
-
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-
-  }
-
-  h2 {
-    @include title-pb;
-  }
-
-  h3 {
-    @include section-title-pb;
-  }
-
-  p.quote-pb {
-    @include quote-pb;
-  }
-
-}
