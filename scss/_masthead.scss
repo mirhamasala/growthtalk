@@ -1,6 +1,5 @@
 // Styling for the masthead
 header.masthead {
-
   padding-top: 150px;
   padding-bottom: 100px;
 
@@ -14,12 +13,12 @@ header.masthead {
   }
 
   .mb-6 {
-    margin-bottom: 4rem!important;
+    margin-bottom: 4rem !important;
     line-height: 1.5em;
   }
 
   @media (min-width: 1200px) {
-    .container{
+    .container {
       max-width: 1350px;
     }
   }

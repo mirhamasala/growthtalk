@@ -2121,7 +2121,8 @@ section.service {
 }
 
 #bootstrap-overrides .page-wrapper.toggled .sidebar-wrapper {
-  left: 0px;
+  left: 0;
+  top: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2152,6 +2153,10 @@ section.service {
   top: 0;
   left: -380px;
   z-index: 999;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 768px) {
@@ -2217,7 +2222,6 @@ section.service {
 
 #bootstrap-overrides .sidebar-wrapper .sidebar-brand #close-sidebar {
   cursor: pointer;
-  font-size: 20px;
 }
 
 #bootstrap-overrides #square-logo {
@@ -2657,4 +2661,9 @@ section.testimonial .flex {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
 }

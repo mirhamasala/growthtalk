@@ -1,31 +1,30 @@
 // Global styling for this template
 html,
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    @include body-font;
+  @include body-font;
 }
 
 a {
-    @include transition-all;
+  @include transition-all;
 }
 
 hr {
-    max-width: 100px;
-    margin: 25px auto 0;
-    border-width: 1px;
-    border-color: fade-out($gray-darker, .9);
+  max-width: 100px;
+  margin: 25px auto 0;
+  border-width: 1px;
+  border-color: fade-out($gray-darker, 0.9);
 }
 
 hr.light {
-    border-color: white;
+  border-color: white;
 }
 
-h1
-{
+h1 {
   @include h1-font;
 }
 
@@ -33,19 +32,17 @@ h2,
 h3,
 h4,
 h5,
-h6
-{
+h6 {
   @include heading-font;
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    color: black;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: black;
 }
 
 section {
-    padding: 100px 0;
+  padding: 100px 0;
 }
-
