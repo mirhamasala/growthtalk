@@ -4,6 +4,20 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
  */
 
+@font-face {
+  font-family: 'kazimir-mediumita';
+  src: url("kazimir_medium_italic-webfont.woff2") format("woff2"), url("kazimir_medium_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kazimir-regularita';
+  src: url("kazimir_italic-webfont.woff2") format("woff2"), url("kazimir_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   width: 100%;
@@ -1245,6 +1259,7 @@ section.packages .text-justify {
   /*--------------------------side-footer------------------------------*/
   /*------scroll bar---------------------*/
   /*-----------------------------backtotop-------------------------------------------------*/
+  /*-----------------------------what you'll learn - section-------------------------------------------------*/
   /*-----------------------------chiller-theme-------------------------------------------------*/
   /*------------------------------sidenav-------------------------------------------------*/
 }
@@ -1311,6 +1326,10 @@ section.packages .text-justify {
     padding-top: 10px;
     margin-bottom: 40px;
   }
+}
+
+#bootstrap-overrides .l-post-content h1 {
+  font-family: 'kazimir-regularita';
 }
 
 @media only screen and (min-width: 48rem) {
@@ -1490,7 +1509,7 @@ section.packages .text-justify {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   #bootstrap-overrides .header-playbook {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1))), url("../img/artwork-mobile.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/artwork-mobile.jpg");
@@ -1503,26 +1522,9 @@ section.packages .text-justify {
   }
 }
 
-@media (min-width: 400px) and (max-width: 600px) {
-  #bootstrap-overrides .header-playbook {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1))), url("../img/artwork-mobile.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/artwork-mobile.jpg");
-    height: 620px;
-  }
-  #bootstrap-overrides .header {
-    position: absolute;
-    top: 12%;
-    color: white;
-  }
-  #bootstrap-overrides .header h1 {
-    line-height: 1.5;
-  }
-}
-
 @media (min-width: 601px) and (max-width: 992px) {
   #bootstrap-overrides .header-playbook {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1))), url("../img/artwork.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/artwork.jpg");
+    background-image: url("../img/spotlight.jpg");
     height: 300px;
   }
   #bootstrap-overrides .header {
@@ -1540,8 +1542,7 @@ section.packages .text-justify {
 
 @media (min-width: 993px) and (max-width: 1200px) {
   #bootstrap-overrides .header-playbook {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1))), url("../img/artwork.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/artwork.jpg");
+    background-image: url("../img/spotlight.jpg");
     height: 410px;
   }
   #bootstrap-overrides .header {
@@ -1559,8 +1560,11 @@ section.packages .text-justify {
 
 @media (min-width: 1201px) {
   #bootstrap-overrides .header-playbook {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url("../img/artwork.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/artwork.jpg");
+    background-image: url("../img/spotlight.jpg");
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 550px;
   }
   #bootstrap-overrides .header {
@@ -1583,7 +1587,7 @@ section.packages .text-justify {
 #bootstrap-overrides .intro-title .intro-title-main {
   display: block;
   color: #2ab58b;
-  font-family: merriweather, serif;
+  font-family: 'kazimir-regularita', serif;
   font-weight: 500;
   font-size: 1.5rem;
 }
@@ -2133,6 +2137,10 @@ section.packages .text-justify {
   display: flex;
 }
 
+#bootstrap-overrides .intro-margin {
+  margin: 50px 100px;
+}
+
 @media (max-width: 991px) {
   #bootstrap-overrides .intro-flex {
     display: -webkit-box;
@@ -2140,6 +2148,9 @@ section.packages .text-justify {
     display: flex;
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
+  }
+  #bootstrap-overrides .intro-margin {
+    margin: 20px 40px;
   }
 }
 
@@ -2149,6 +2160,16 @@ section.packages .text-justify {
   border-radius: 25px;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#bootstrap-overrides .icons-learn {
+  max-width: 16px;
+}
+
+#bootstrap-overrides .learn-text p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding-left: 10px;
 }
 
 #bootstrap-overrides .chiller-theme .sidebar-wrapper {

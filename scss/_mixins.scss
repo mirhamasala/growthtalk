@@ -35,6 +35,24 @@
   text-transform: uppercase;
 }
 
+@font-face {
+    font-family: 'kazimir-mediumita';
+    src: url('kazimir_medium_italic-webfont.woff2') format('woff2'),
+         url('kazimir_medium_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kazimir-regularita';
+    src: url('kazimir_italic-webfont.woff2') format('woff2'),
+         url('kazimir_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 $break-small: 35.5rem; // >= 568px @ 16px
 $break-medium: 48rem; // >= 768px @ 16px
 $break-large: 64rem; // >= 1024px @ 16px

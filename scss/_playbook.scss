@@ -56,6 +56,8 @@
     }
 
     h1 {
+      font-family: 'kazimir-regularita';
+
       @include respond-to("medium") {
         font-size: 2.625rem;
       }
@@ -222,10 +224,10 @@
     background-repeat: no-repeat;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 600px) {
     .header-playbook {
       background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-        url("../img/artwork-mobile.jpg");
+      url("../img/artwork-mobile.jpg");
       height: 560px;
     }
 
@@ -236,27 +238,10 @@
     }
 
   }
-  @media (min-width: 400px) and (max-width: 600px) {
-    .header-playbook {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-        url("../img/artwork-mobile.jpg");
-      height: 620px;
-    }
 
-    .header {
-      position: absolute;
-      top: 12%;
-      color: white;
-    }
-
-    .header h1 {
-      line-height: 1.5;
-    }
-  }
   @media (min-width: 601px) and (max-width: 992px) {
     .header-playbook {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-        url("../img/artwork.jpg");
+      background-image: url("../img/spotlight.jpg");
       height: 300px;
     }
 
@@ -275,8 +260,7 @@
   }
   @media (min-width: 993px) and (max-width: 1200px) {
     .header-playbook {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-        url("../img/artwork.jpg");
+      background-image: url("../img/spotlight.jpg");
       height: 410px;
     }
 
@@ -295,8 +279,11 @@
   }
   @media (min-width: 1201px) {
     .header-playbook {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-        url("../img/artwork.jpg");
+      background-image: url("../img/spotlight.jpg");
+      // background-size: auto 100%;
+      background-size: cover;                      /* <------ */
+      background-repeat:   no-repeat;
+      background-position: center center;
       height: 550px;
     }
 
@@ -322,7 +309,7 @@
   .intro-title .intro-title-main {
     display: block;
     color: $dark-green-pb;
-    font-family: merriweather, serif;
+    font-family: 'kazimir-regularita', serif;
     font-weight: 500;
     font-size: 1.5rem;
   }
@@ -926,18 +913,39 @@
     display: flex;
   }
 
+  .intro-margin {
+      margin: 50px 100px;
+    }
+
   @media (max-width: 991px) {
     .intro-flex {
       display: flex;
       flex-wrap: wrap-reverse;
     }
+
+    .intro-margin {
+      margin: 20px 40px;
+    }
   }
+
+
+  /*-----------------------------what you'll learn - section-------------------------------------------------*/
 
   .learn-section {
     background-color: $super-light-blue-pb;
     padding: 2em 2em;
     border-radius: 25px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .icons-learn {
+    max-width: 16px;
+  }
+
+  .learn-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-left: 10px;
   }
 
   /*-----------------------------chiller-theme-------------------------------------------------*/
