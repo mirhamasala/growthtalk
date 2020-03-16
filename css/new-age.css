@@ -1615,8 +1615,8 @@ section.packages .text-justify {
   margin-bottom: 10px;
 }
 
-#bootstrap-overrides .collab-bg {
-  background: url(/img/collaborators/collab_bg.svg) no-repeat bottom;
+#bootstrap-overrides .collab-margin-bottom {
+  margin-bottom: 30px;
 }
 
 #bootstrap-overrides .dark-gray {
@@ -1661,11 +1661,12 @@ section.packages .text-justify {
 }
 
 #bootstrap-overrides .collab-bg {
-  background-color: #EBF6FF;
   max-width: 50em;
   margin: auto;
+  margin-bottom: 30px;
   border-radius: 24px;
   padding: 1em 0;
+  background: #EBF6FF url(/img/collaborators/collab_bg.svg) no-repeat bottom;
 }
 
 @-webkit-keyframes swing {

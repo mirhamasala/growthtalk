@@ -339,10 +339,11 @@
     margin-bottom: 10px
   }
 
-  .collab-bg {
-    // background-image: url('img/collaborators/collab_bg.svg');
-    background: url(/img/collaborators/collab_bg.svg) no-repeat bottom;
+  .collab-margin-bottom {
+    margin-bottom: 30px;
   }
+
+
 
   .dark-gray {
     font-weight: bold;
@@ -385,11 +386,12 @@
   }
 
   .collab-bg {
-    background-color: $collab-blue-pb;
     max-width: 50em;
     margin: auto;
+    margin-bottom: 30px;
     border-radius: 24px;
     padding: 1em 0;
+    background: $collab-blue-pb url(/img/collaborators/collab_bg.svg) no-repeat bottom;
   }
 
   // codepen
