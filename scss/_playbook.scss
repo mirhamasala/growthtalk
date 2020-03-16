@@ -56,7 +56,7 @@
     }
 
     h1 {
-      font-family: 'kazimir-regularita';
+      // font-family: 'kazimir-regularita';
 
       @include respond-to("medium") {
         font-size: 2.625rem;
@@ -208,10 +208,6 @@
     background-repeat: no-repeat;
   }
 
-  .header h1 {
-    font-family: "Noticia Text", serif;
-  }
-
   .chapter-nb {
     color: $mid-blue-pb;
     font-style: italic;
@@ -220,64 +216,22 @@
   // Hero Playbook
 
   .header-playbook {
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  @media (max-width: 600px) {
-    .header-playbook {
       background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
       url("../img/artwork-mobile.jpg");
       height: 560px;
-    }
-
-    .header {
-      position: absolute;
-      top: 12%;
-      color: white;
-    }
-
   }
 
-  @media (min-width: 601px) and (max-width: 992px) {
-    .header-playbook {
-      background-image: url("../img/spotlight.jpg");
-      height: 300px;
-    }
-
-    .header {
+  .header {
       position: absolute;
-      color: white;
-      top: 8%;
-      left: 5%;
-      right: 50%;
-    }
-
-    .header h1 {
-      line-height: 1.5;
-      font-size: 1.5rem;
-    }
-  }
-  @media (min-width: 993px) and (max-width: 1200px) {
-    .header-playbook {
-      background-image: url("../img/spotlight.jpg");
-      height: 410px;
-    }
-
-    .header {
-      position: absolute;
-      color: white;
       top: 10%;
-      left: 5%;
-      right: 55%;
-    }
-
-    .header h1 {
-      line-height: 1.8;
-      font-size: 1.5rem;
-    }
+      color: white;
   }
-  @media (min-width: 1201px) {
+
+  .header img {
+    max-width: 168px;
+  }
+
+  @include respond-to('medium') {
     .header-playbook {
       background-image: url("../img/spotlight.jpg");
       // background-size: auto 100%;
@@ -290,14 +244,30 @@
     .header {
       position: absolute;
       color: white;
-      top: 18%;
-      left: 5%;
-      right: 60%;
+      top: 12%;
+      left: 10%;
+      max-width: 40em;
     }
 
     .header h1 {
       line-height: 1.5;
       font-weight: 500;
+      text-align: left;
+    }
+
+    .header h1 .header-first {
+      line-height: 1.5;
+      font-weight: 500;
+      font-family: merriweather, serif;
+      font-size: 60px;
+    }
+
+    .margin-20 {
+      margin: 20px 0;
+    }
+
+    .margin-40 {
+      margin: 40px 0;
     }
   }
 
@@ -309,9 +279,10 @@
   .intro-title .intro-title-main {
     display: block;
     color: $dark-green-pb;
-    font-family: 'kazimir-regularita', serif;
+    font-family: merriweather, serif;
     font-weight: 500;
     font-size: 1.5rem;
+
   }
 
   .intro-title .intro-title-sub {
@@ -547,7 +518,7 @@
   .sidebar-content {
     max-height: calc(100% - 30px);
     height: calc(100% - 30px);
-    overflow-y: auto;
+    overflow-y: hidden;
     position: relative;
     margin: 16px;
   }

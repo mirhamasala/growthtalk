@@ -1328,10 +1328,6 @@ section.packages .text-justify {
   }
 }
 
-#bootstrap-overrides .l-post-content h1 {
-  font-family: 'kazimir-regularita';
-}
-
 @media only screen and (min-width: 48rem) {
   #bootstrap-overrides .l-post-content h1 {
     font-size: 2.625rem;
@@ -1495,70 +1491,28 @@ section.packages .text-justify {
   background-repeat: no-repeat;
 }
 
-#bootstrap-overrides .header h1 {
-  font-family: "Noticia Text", serif;
-}
-
 #bootstrap-overrides .chapter-nb {
   color: #75a1ff;
   font-style: italic;
 }
 
 #bootstrap-overrides .header-playbook {
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1))), url("../img/artwork-mobile.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/artwork-mobile.jpg");
+  height: 560px;
 }
 
-@media (max-width: 600px) {
-  #bootstrap-overrides .header-playbook {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.1))), url("../img/artwork-mobile.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/artwork-mobile.jpg");
-    height: 560px;
-  }
-  #bootstrap-overrides .header {
-    position: absolute;
-    top: 12%;
-    color: white;
-  }
+#bootstrap-overrides .header {
+  position: absolute;
+  top: 10%;
+  color: white;
 }
 
-@media (min-width: 601px) and (max-width: 992px) {
-  #bootstrap-overrides .header-playbook {
-    background-image: url("../img/spotlight.jpg");
-    height: 300px;
-  }
-  #bootstrap-overrides .header {
-    position: absolute;
-    color: white;
-    top: 8%;
-    left: 5%;
-    right: 50%;
-  }
-  #bootstrap-overrides .header h1 {
-    line-height: 1.5;
-    font-size: 1.5rem;
-  }
+#bootstrap-overrides .header img {
+  max-width: 168px;
 }
 
-@media (min-width: 993px) and (max-width: 1200px) {
-  #bootstrap-overrides .header-playbook {
-    background-image: url("../img/spotlight.jpg");
-    height: 410px;
-  }
-  #bootstrap-overrides .header {
-    position: absolute;
-    color: white;
-    top: 10%;
-    left: 5%;
-    right: 55%;
-  }
-  #bootstrap-overrides .header h1 {
-    line-height: 1.8;
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1201px) {
+@media only screen and (min-width: 48rem) {
   #bootstrap-overrides .header-playbook {
     background-image: url("../img/spotlight.jpg");
     background-size: cover;
@@ -1570,13 +1524,26 @@ section.packages .text-justify {
   #bootstrap-overrides .header {
     position: absolute;
     color: white;
-    top: 18%;
-    left: 5%;
-    right: 60%;
+    top: 12%;
+    left: 10%;
+    max-width: 40em;
   }
   #bootstrap-overrides .header h1 {
     line-height: 1.5;
     font-weight: 500;
+    text-align: left;
+  }
+  #bootstrap-overrides .header h1 .header-first {
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: merriweather, serif;
+    font-size: 60px;
+  }
+  #bootstrap-overrides .margin-20 {
+    margin: 20px 0;
+  }
+  #bootstrap-overrides .margin-40 {
+    margin: 40px 0;
   }
 }
 
@@ -1587,7 +1554,7 @@ section.packages .text-justify {
 #bootstrap-overrides .intro-title .intro-title-main {
   display: block;
   color: #2ab58b;
-  font-family: 'kazimir-regularita', serif;
+  font-family: merriweather, serif;
   font-weight: 500;
   font-size: 1.5rem;
 }
@@ -1877,7 +1844,7 @@ section.packages .text-justify {
 #bootstrap-overrides .sidebar-content {
   max-height: calc(100% - 30px);
   height: calc(100% - 30px);
-  overflow-y: auto;
+  overflow-y: hidden;
   position: relative;
   margin: 16px;
 }
