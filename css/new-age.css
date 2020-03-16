@@ -1384,7 +1384,7 @@ section.packages .text-justify {
 
 @media only screen and (min-width: 48rem) {
   #bootstrap-overrides .l-post-content h5 {
-    font-size: 1.125rem;
+    font-size: 30px;
   }
 }
 
@@ -1582,9 +1582,7 @@ section.packages .text-justify {
 }
 
 #bootstrap-overrides .collab-img-style {
-  border: 3px solid #2ab58b;
-  width: 200px;
-  border-radius: 50%;
+  max-width: 200px;
 }
 
 #bootstrap-overrides .margin-collab {
@@ -1615,6 +1613,10 @@ section.packages .text-justify {
   font-size: 14px;
   color: #464646;
   margin-bottom: 10px;
+}
+
+#bootstrap-overrides .collab-bg {
+  background: url(/img/collaborators/collab_bg.svg) no-repeat bottom;
 }
 
 #bootstrap-overrides .dark-gray {
@@ -2137,6 +2139,10 @@ section.packages .text-justify {
   font-size: 14px;
   margin-bottom: 20px;
   padding-left: 10px;
+}
+
+#bootstrap-overrides .font-learn p {
+  font-family: "Montserrat Medium";
 }
 
 #bootstrap-overrides .chiller-theme .sidebar-wrapper {

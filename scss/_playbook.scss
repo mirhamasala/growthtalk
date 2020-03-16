@@ -107,7 +107,7 @@
       font-weight: normal;
 
       @include respond-to("medium") {
-        font-size: 1.125rem;
+        font-size: 30px;
       }
     }
 
@@ -311,9 +311,7 @@
   // Collaborators
 
   .collab-img-style {
-    border: 3px solid $dark-green-pb;
-    width: 200px;
-    border-radius: 50%;
+    max-width: 200px;
   }
 
   .margin-collab {
@@ -339,6 +337,11 @@
     font-size: 14px;
     color: $dark-gray-pb;
     margin-bottom: 10px
+  }
+
+  .collab-bg {
+    // background-image: url('img/collaborators/collab_bg.svg');
+    background: url(/img/collaborators/collab_bg.svg) no-repeat bottom;
   }
 
   .dark-gray {
@@ -917,6 +920,10 @@
     font-size: 14px;
     margin-bottom: 20px;
     padding-left: 10px;
+  }
+
+  .font-learn p {
+    font-family: "Montserrat Medium";
   }
 
   /*-----------------------------chiller-theme-------------------------------------------------*/
