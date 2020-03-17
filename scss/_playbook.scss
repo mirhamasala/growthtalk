@@ -59,7 +59,7 @@
       // font-family: 'kazimir-regularita';
 
       @include respond-to("medium") {
-        font-size: 2.625rem;
+        font-size: 3.6rem;
       }
     }
 
@@ -130,7 +130,7 @@
       line-height: 1.5;
       font-size: 1.125rem;
       margin-bottom: 25px;
-      font-family: montserrat, sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-weight: 300;
       font-style: normal;
       color: $light-gray-pb;
@@ -186,6 +186,10 @@
     }
   }
 
+  .bold {
+    font-weight: 500;
+  }
+
   .yellow-q {
     color: $dark-yellow-pb;
     font-size: 20px;
@@ -231,13 +235,19 @@
     max-width: 168px;
   }
 
+  .header h1 .header-first {
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: merriweather, serif;
+    font-size: 2.75rem;
+  }
+
   @include respond-to('medium') {
     .header-playbook {
       background-image: url("../img/spotlight.jpg");
-      // background-size: auto 100%;
       background-size: cover;                      /* <------ */
       background-repeat:   no-repeat;
-      background-position: center center;
+      background-position: center right;
       height: 550px;
     }
 
@@ -256,10 +266,8 @@
     }
 
     .header h1 .header-first {
-      line-height: 1.5;
-      font-weight: 500;
-      font-family: merriweather, serif;
-      font-size: 60px;
+      line-height: 1.6;
+      font-size: 3.75rem;
     }
 
     .margin-20 {
@@ -342,8 +350,6 @@
   .collab-margin-bottom {
     margin-bottom: 30px;
   }
-
-
 
   .dark-gray {
     font-weight: bold;
@@ -909,9 +915,9 @@
 
   .learn-section {
     background-color: $super-light-blue-pb;
-    padding: 2em 2em;
-    border-radius: 25px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 2.5em 2em;
+    border-radius: 24px;
+    box-shadow: 0px 2px 8px #71717129;
   }
 
   .icons-learn {
@@ -920,12 +926,17 @@
 
   .learn-text p {
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     padding-left: 10px;
   }
 
   .font-learn p {
-    font-family: "Montserrat Medium";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+
+  .margin-bottom-learn {
+    margin-bottom: 20px;
   }
 
   /*-----------------------------chiller-theme-------------------------------------------------*/

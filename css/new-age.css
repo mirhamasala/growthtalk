@@ -1330,7 +1330,7 @@ section.packages .text-justify {
 
 @media only screen and (min-width: 48rem) {
   #bootstrap-overrides .l-post-content h1 {
-    font-size: 2.625rem;
+    font-size: 3.6rem;
   }
 }
 
@@ -1409,7 +1409,7 @@ section.packages .text-justify {
   line-height: 1.5;
   font-size: 1.125rem;
   margin-bottom: 25px;
-  font-family: montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-style: normal;
   color: #6e6e6e;
@@ -1468,6 +1468,10 @@ section.packages .text-justify {
   font-weight: normal;
 }
 
+#bootstrap-overrides .bold {
+  font-weight: 500;
+}
+
 #bootstrap-overrides .yellow-q {
   color: #d79a0f;
   font-size: 20px;
@@ -1512,13 +1516,20 @@ section.packages .text-justify {
   max-width: 168px;
 }
 
+#bootstrap-overrides .header h1 .header-first {
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: merriweather, serif;
+  font-size: 2.75rem;
+}
+
 @media only screen and (min-width: 48rem) {
   #bootstrap-overrides .header-playbook {
     background-image: url("../img/spotlight.jpg");
     background-size: cover;
     /* <------ */
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center right;
     height: 550px;
   }
   #bootstrap-overrides .header {
@@ -1534,10 +1545,8 @@ section.packages .text-justify {
     text-align: left;
   }
   #bootstrap-overrides .header h1 .header-first {
-    line-height: 1.5;
-    font-weight: 500;
-    font-family: merriweather, serif;
-    font-size: 60px;
+    line-height: 1.6;
+    font-size: 3.75rem;
   }
   #bootstrap-overrides .margin-20 {
     margin: 20px 0;
@@ -1910,13 +1919,13 @@ section.packages .text-justify {
 }
 
 #bootstrap-overrides .sidebar-wrapper .sidebar-menu ul li a:hover {
-  background-color: #ebf6ff;
+  background-color: #F7FBFF;
   color: #6e6e6e;
   border-left: none;
 }
 
 #bootstrap-overrides .sidebar-wrapper .sidebar-menu ul li a.active {
-  background-color: #ebf6ff;
+  background-color: #F7FBFF;
 }
 
 #bootstrap-overrides #cta-curious {
@@ -2125,11 +2134,11 @@ section.packages .text-justify {
 }
 
 #bootstrap-overrides .learn-section {
-  background-color: #ebf6ff;
-  padding: 2em 2em;
-  border-radius: 25px;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #F7FBFF;
+  padding: 2.5em 2em;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 2px 8px #71717129;
+  box-shadow: 0px 2px 8px #71717129;
 }
 
 #bootstrap-overrides .icons-learn {
@@ -2138,12 +2147,17 @@ section.packages .text-justify {
 
 #bootstrap-overrides .learn-text p {
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   padding-left: 10px;
 }
 
 #bootstrap-overrides .font-learn p {
-  font-family: "Montserrat Medium";
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+#bootstrap-overrides .margin-bottom-learn {
+  margin-bottom: 20px;
 }
 
 #bootstrap-overrides .chiller-theme .sidebar-wrapper {
