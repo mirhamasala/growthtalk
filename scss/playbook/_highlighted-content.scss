@@ -1,0 +1,27 @@
+.highlighted-content-wrap {
+  padding-right: 22px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+  max-width: 50em;
+}
+
+.highlighted-content {
+  position: relative;
+  border: 4px dotted $bordered-yellow-pb;
+  border-radius: 20px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.highlighted-content::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  left: 20px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  border: 4px dotted $bordered-yellow-pb;
+  border-radius: 20px;
+}
