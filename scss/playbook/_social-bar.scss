@@ -1,0 +1,26 @@
+.social-bar {
+  position: fixed;
+  top: 50%;
+  right: 28px;
+}
+
+.social-bar-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $light-blue-pb;
+  border-radius: 50%;
+  padding: 12px;
+  margin-bottom: 12px;
+  &:hover {
+    text-decoration: none;
+    i.fab {
+      color: $light-blue-pb !important;
+    }
+  }
+
+  i.fab {
+    color: $mid-blue-gray-pb !important;
+    font-size: 24px !important;
+  }
+}
